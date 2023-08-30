@@ -1,0 +1,181 @@
++ export GASNET_BACKTRACE=1
++ GASNET_BACKTRACE=1
++ export 'GASNET_PHYSMEM_MAX=167 GB'
++ GASNET_PHYSMEM_MAX='167 GB'
++ numLocales=1
++ for remoteBufferSize in 10000
++ for cacheNumberBits in 26
++ for numConsumerTasks in 24
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 1 -n 1 singularity exec ../benchmark-matrix-vector-product.sif BenchmarkMatrixVectorProduct --numLocales 1 --kHamiltonian data/heisenberg_chain_36_symm.yaml --kDisplayTimings=true --kNumConsumerTasks=24 --kRemoteBufferSize=10000 --kCacheNumberBits=26 --kFactor=1 --memTrack=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn396.local.snellius.surf.nl:2434491] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   Sleeping...
+[Debug]   [LOCALE0]   Current memory usage: 99360
+[Debug]   [LOCALE0]   determineEnumerationRanges(262143..34359607296) took 0.111698
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 6.73444
+  ├─ 856.147 in _enumerateStates
+  ├─ 0.644026 in _enumStatesComputeMasksAndCounts
+  └─ 0.000526 in PUT
+     (parallel speedup: 127.225)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..63068875}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 6.85571
+  ├─ 6.73458 in _enumStatesComputeCounts
+  └─ 0.072917 shuffling stuff around
+      ├─ 0.14036 copying states
+      └─ 0.018729 copying masks
+[Debug]   [LOCALE0]   Hilbert space dimension: 63068876
+[Debug]   [LOCALE0]   masks.size(): 63068876
+[Debug]   [LOCALE0]   Current memory usage: 567775988
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..63068875}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..63068875}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   Allocation and filling: 0.025094
+[Debug]   [LOCALE0]   Current memory usage: 1576883476
+[Debug]   [LOCALE0]   remoteBufferSize: 10000; numChunks: 227048; batchedOperatorChunkSize: 278
+[Debug]   [LOCALE0]   matrixVectorProduct: 7.18757
+  ├─ localDiagonal: 0.046879
+  └─ localOffDiagonalNoQueue: 7.13123
+     ├─ initialization: 0.016258
+     └─ Producer.run: 7.07023
+        ├─ BatchedOperator.computeOffDiag: 6.29929
+        │  ├─ ls_internal_operator_apply_off_diag_x1: 0.100387
+        │  ├─ memcpy: 0.000193516
+        │  ├─ ls_hs_state_info: 6.14508
+        │  ├─ rescale coeffs: 0.0528527
+        │  └─ localeIdxOf: 0.000274992
+        ├─ localProcess: 0.76912
+        │  ├─ allocation: 0.00299948
+        │  ├─ ls_hs_state_index: 0.56027
+        │  └─ localAdd: 0.201888
+        ├─ radixOneStep: 6.47969e-05
+        └─ submit: 0.000134922
+           ├─ extra iterations per submit: 0.0
+           ├─ number overflows: 0.0
+           ├─ put: 0.0
+           │  └─ bandwidth (Gb/s): nan
+           └─ fastOn: 0.0
+
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 1 -n 1 singularity exec ../benchmark-matrix-vector-product.sif BenchmarkMatrixVectorProduct --numLocales 1 --kHamiltonian data/heisenberg_chain_40_symm.yaml --kDisplayTimings=true --kNumConsumerTasks=24 --kRemoteBufferSize=10000 --kCacheNumberBits=26 --kFactor=1 --memTrack=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn396.local.snellius.surf.nl:2434967] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   Sleeping...
+[Debug]   [LOCALE0]   Current memory usage: 105504
+[Debug]   [LOCALE0]   determineEnumerationRanges(1048575..549755289600) took 0.136051
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 100.953
+  ├─ 12862.7 in _enumerateStates
+  ├─ 0.741428 in _enumStatesComputeMasksAndCounts
+  └─ 0.000623 in PUT
+     (parallel speedup: 127.419)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..861725793}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 102.137
+  ├─ 100.954 in _enumStatesComputeCounts
+  └─ 1.07509 shuffling stuff around
+      ├─ 2.45227 copying states
+      └─ 0.349471 copying masks
+[Debug]   [LOCALE0]   Hilbert space dimension: 861725794
+[Debug]   [LOCALE0]   masks.size(): 861725794
+[Debug]   [LOCALE0]   Current memory usage: 7755694394
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..861725793}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..861725793}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   Allocation and filling: 0.263726
+[Debug]   [LOCALE0]   Current memory usage: 21543312570
+[Debug]   [LOCALE0]   remoteBufferSize: 10000; numChunks: 3446904; batchedOperatorChunkSize: 250
+[Debug]   [LOCALE0]   matrixVectorProduct: 124.591
+  ├─ localDiagonal: 0.667057
+  └─ localOffDiagonalNoQueue: 123.915
+     ├─ initialization: 0.090636
+     └─ Producer.run: 123.777
+        ├─ BatchedOperator.computeOffDiag: 105.135
+        │  ├─ ls_internal_operator_apply_off_diag_x1: 1.72166
+        │  ├─ memcpy: 0.00275573
+        │  ├─ ls_hs_state_info: 102.598
+        │  ├─ rescale coeffs: 0.799776
+        │  └─ localeIdxOf: 0.00440952
+        ├─ localProcess: 18.6143
+        │  ├─ allocation: 0.0409643
+        │  ├─ ls_hs_state_index: 15.55
+        │  └─ localAdd: 2.94814
+        ├─ radixOneStep: 0.000997227
+        └─ submit: 0.00212602
+           ├─ extra iterations per submit: 0.0
+           ├─ number overflows: 0.0
+           ├─ put: 0.0
+           │  └─ bandwidth (Gb/s): nan
+           └─ fastOn: 0.0
+
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 1 -n 1 singularity exec ../benchmark-matrix-vector-product.sif BenchmarkMatrixVectorProduct --numLocales 1 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kDisplayTimings=true --kNumConsumerTasks=24 --kRemoteBufferSize=10000 --kCacheNumberBits=26 --kFactor=1 --memTrack=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn396.local.snellius.surf.nl:2436723] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   Sleeping...
+[Debug]   [LOCALE0]   Current memory usage: 105504
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 0.151082
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 403.255
+  ├─ 51378.2 in _enumerateStates
+  ├─ 1.02559 in _enumStatesComputeMasksAndCounts
+  └─ 0.000965 in PUT
+     (parallel speedup: 127.411)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..3204236778}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 407.45
+  ├─ 403.255 in _enumStatesComputeCounts
+  └─ 3.90154 shuffling stuff around
+      ├─ 8.34845 copying states
+      └─ 1.15798 copying masks
+[Debug]   [LOCALE0]   Hilbert space dimension: 3204236779
+[Debug]   [LOCALE0]   masks.size(): 3204236779
+[Debug]   [LOCALE0]   Current memory usage: 28838293259
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..3204236778}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   finalizeInitialization: {0..0, 0..3204236778}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   Allocation and filling: 0.975809
+[Debug]   [LOCALE0]   Current memory usage: 80106087195
+[Debug]   [LOCALE0]   remoteBufferSize: 10000; numChunks: 13457795; batchedOperatorChunkSize: 239
+[Debug]   [LOCALE0]   matrixVectorProduct: 510.388
+  ├─ localDiagonal: 2.60576
+  └─ localOffDiagonalNoQueue: 507.772
+     ├─ initialization: 0.329909
+     └─ Producer.run: 507.395
+        ├─ BatchedOperator.computeOffDiag: 427.538
+        │  ├─ ls_internal_operator_apply_off_diag_x1: 5.79156
+        │  ├─ memcpy: 0.010431
+        │  ├─ ls_hs_state_info: 418.569
+        │  ├─ rescale coeffs: 3.11959
+        │  └─ localeIdxOf: 0.0162549
+        ├─ localProcess: 79.7519
+        │  ├─ allocation: 0.173107
+        │  ├─ ls_hs_state_index: 68.0607
+        │  └─ localAdd: 11.2939
+        ├─ radixOneStep: 0.00388998
+        └─ submit: 0.00798805
+           ├─ extra iterations per submit: 0.0
+           ├─ number overflows: 0.0
+           ├─ put: 0.0
+           │  └─ bandwidth (Gb/s): nan
+           └─ fastOn: 0.0
+
+
+JOB STATISTICS
+==============
+Job ID: 3076428
+Cluster: snellius
+User/Group: twest/twest
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 1-16:40:21
+CPU Efficiency: 95.09% of 1-18:46:24 core-walltime
+Job Wall-clock time: 00:20:03
+Memory Utilized: 167.59 GB
+Memory Efficiency: 74.82% of 224.00 GB

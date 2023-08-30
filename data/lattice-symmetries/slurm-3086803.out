@@ -1,0 +1,136 @@
++ export GASNET_BACKTRACE=1
++ GASNET_BACKTRACE=1
++ export 'GASNET_PHYSMEM_MAX=167 GB'
++ GASNET_PHYSMEM_MAX='167 GB'
++ numLocales=2
++ remoteBufferSize=10000
++ cacheNumberBits=26
++ numConsumerTasks=24
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 2 -n 2 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 2 --kHamiltonian data/heisenberg_chain_36_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn255.local.snellius.surf.nl:3299083] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn194.local.snellius.surf.nl:574100] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(262143..34359607296) took 0.22455
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 2.5264
+  ├─ 320.91 in _enumerateStates
+  ├─ 0.665875 in _enumStatesComputeMasksAndCounts
+  └─ 0.000306 in PUT
+     (parallel speedup: 127.286)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 2.60302
+  ├─ 321.895 in _enumerateStates
+  ├─ 0.687967 in _enumStatesComputeMasksAndCounts
+  └─ 0.002987 in PUT
+     (parallel speedup: 123.928)
+[Debug]   [LOCALE0]   enumerateStates: 2.68828
+  ├─ 2.60593 in _enumStatesComputeCounts
+  ├─ 0.004593 in _enumStatesMakeBuckets
+  ├─ 0.009338 in allocation
+  ├─ 0.020111 in _enumStatesMakeMasks
+  ├─ 0.007161 in _enumStatesPrepareDescriptors
+  └─ 0.041064 shuffling stuff around
+      ├─ 0.091554 0.106255 copying states
+      └─ 0.037255 0.029256 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.059029
+  ├─ counts: 0.015033
+  └─ distribute: 0.017123
+
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.049884
+  ├─ counts: 0.006841
+  ├─ makeDestArr: 0.013102
+  └─ distribute: 0.029941
+     └─ permute (mean over locales, sum over tasks): 1.40126
+
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 2 -n 2 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 2 --kHamiltonian data/heisenberg_chain_40_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn194.local.snellius.surf.nl:574602] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn255.local.snellius.surf.nl:3299454] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(1048575..549755289600) took 0.271448
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 39.7772
+  ├─ 5055.82 in _enumerateStates
+  ├─ 9.04644 in _enumStatesComputeMasksAndCounts
+  └─ 0.00484 in PUT
+     (parallel speedup: 127.331)
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 40.0181
+  ├─ 5080.86 in _enumerateStates
+  ├─ 9.05264 in _enumStatesComputeMasksAndCounts
+  └─ 0.000354 in PUT
+     (parallel speedup: 127.19)
+[Debug]   [LOCALE0]   enumerateStates: 40.7623
+  ├─ 40.0182 in _enumStatesComputeCounts
+  ├─ 0.00488 in _enumStatesMakeBuckets
+  ├─ 0.038153 in allocation
+  ├─ 0.014632 in _enumStatesMakeMasks
+  ├─ 0.007011 in _enumStatesPrepareDescriptors
+  └─ 0.679275 shuffling stuff around
+      ├─ 0.902415 0.898672 copying states
+      └─ 0.200697 0.429703 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.288216
+  ├─ counts: 0.04115
+  └─ distribute: 0.211394
+
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.273761
+  ├─ counts: 0.010825
+  ├─ makeDestArr: 0.032011
+  └─ distribute: 0.230925
+     └─ permute (mean over locales, sum over tasks): 16.5973
+
++ for chainLength in 36 40 42
++ srun --mpi=pmix -N 2 -n 2 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 2 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn194.local.snellius.surf.nl:575151] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn255.local.snellius.surf.nl:3300023] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 0.302878
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 157.269
+  ├─ 20025.9 in _enumerateStates
+  ├─ 33.1607 in _enumStatesComputeMasksAndCounts
+  └─ 0.006619 in PUT
+     (parallel speedup: 127.546)
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 158.025
+  ├─ 20076.9 in _enumerateStates
+  ├─ 34.0663 in _enumStatesComputeMasksAndCounts
+  └─ 0.000451 in PUT
+     (parallel speedup: 127.265)
+[Debug]   [LOCALE0]   enumerateStates: 160.717
+  ├─ 158.025 in _enumStatesComputeCounts
+  ├─ 0.005142 in _enumStatesMakeBuckets
+  ├─ 0.121662 in allocation
+  ├─ 0.018491 in _enumStatesMakeMasks
+  ├─ 0.007126 in _enumStatesPrepareDescriptors
+  └─ 2.53936 shuffling stuff around
+      ├─ 3.03492 2.79763 copying states
+      └─ 0.654502 1.69629 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 1.07967
+  ├─ counts: 0.148775
+  └─ distribute: 0.81408
+
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.0015
+  ├─ counts: 0.022106
+  ├─ makeDestArr: 0.12369
+  └─ distribute: 0.855705
+     └─ permute (mean over locales, sum over tasks): 64.1191
+
+
+JOB STATISTICS
+==============
+Job ID: 3086803
+Cluster: snellius
+User/Group: twest/twest
+State: COMPLETED (exit code 0)
+Nodes: 2
+Cores per node: 128
+CPU Utilized: 14:30:34
+CPU Efficiency: 88.71% of 16:21:20 core-walltime
+Job Wall-clock time: 00:03:50
+Memory Utilized: 334.20 GB (estimated maximum)
+Memory Efficiency: 74.60% of 448.00 GB (1.75 GB/core)

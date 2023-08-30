@@ -1,0 +1,1361 @@
++ module load 2023
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load GCC/12.3.0 OpenMPI/4.1.5-GCC-12.3.0
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ cd example_02/1/
++ srun ../../spinpack/exe/spin --maxmem=0
+
+SPINPACK version 2.59d 2023-07-20
+ Copyright (C) 2001-2021 Joerg (dot) Schulenburg at ovgu.de
+ released under the GNU General Public License
+ base coding for Heisenberg-model (JJ) NN=48
+Host: tcn442.local
+DBG: SLURM_CLUSTER_NAME=snellius
+DBG: SLURM_JOB_PARTITION=thin
+DBG: PWD=/gpfs/home2/twest/spinpack-nix/example_02/1
+DBG: program name (arg0): /gpfs/home2/twest/spinpack-nix/example_02/1/../../spinpack/exe/spin
+DBG: argument 1: --maxmem=0
+Compiler: GNUC 12.3.0
+Compiler: STDC 199901
+ CPU-Features: SSE SSE2 SSE3 AVX AVX2 BMI BMI2 int64 int128
+ OpenMP-Support: OPENMP=201511
+MPI: MPI-3.1 OMPI-4.1.5 using MPI-3.1
+MPI: MPI_MAX_NUM=4096  mpi_n_bits=7  mpi_n= 128
+DBG: MPI_THREAD_MULTIPLE not supported
+MPI: mpi_thread_level=0 (MPI_THREAD_SINGLE) requested=0 
+MPI: using better scaling Alltoallv (since 2017-01-16)
+MPI: partly nonblocking  Ialltoallv (since 2017-02-24)
+MPI: SLURM_NNODES=1
+MPI: SLURM_TASKS_PER_NODE=128
+MPI: SLURM_CPUS_PER_TASK=1
+DBG: SLURM_CPU_BIND=quiet,mask_cpu:0x00000000000000000000000000000001,0x00000000000000000000000000000002,0x00000000000000000000000000000004,0x00000000000000000000000000000008,0x00000000000000000000000000000010,0x00000000000000000000000000000020,0x00000000000000000000000000000040,0x00000000000000000000000000000080,0x00000000000000000000000000000100,0x00000000000000000000000000000200,0x00000000000000000000000000000400,0x00000000000000000000000000000800,0x00000000000000000000000000001000,0x00000000000000000000000000002000,0x00000000000000000000000000004000,0x00000000000000000000000000008000,0x00000000000000000000000000010000,0x00000000000000000000000000020000,0x00000000000000000000000000040000,0x00000000000000000000000000080000,0x00000000000000000000000000100000,0x00000000000000000000000000200000,0x00000000000000000000000000400000,0x00000000000000000000000000800000,0x00000000000000000000000001000000,0x00000000000000000000000002000000,0x00000000000000000000000004000000,0x00000000000000000000000008000000,0x00000000000000000000000010000000,0x00000000000000000000000020000000,0x00000000000000000000000040000000,0x00000000000000000000000080000000,0x00000000000000000000000100000000,0x00000000000000000000000200000000,0x00000000000000000000000400000000,0x00000000000000000000000800000000,0x00000000000000000000001000000000,0x00000000000000000000002000000000,0x00000000000000000000004000000000,0x00000000000000000000008000000000,0x00000000000000000000010000000000,0x00000000000000000000020000000000,0x00000000000000000000040000000000,0x00000000000000000000080000000000,0x00000000000000000000100000000000,0x00000000000000000000200000000000,0x00000000000000000000400000000000,0x00000000000000000000800000000000,0x00000000000000000001000000000000,0x00000000000000000002000000000000,0x00000000000000000004000000000000,0x00000000000000000008000000000000,0x00000000000000000010000000000000,0x00000000000000000020000000000000,0x00000000000000000040000000000000,0x00000000000000000080000000000000,0x00000000000000000100000000000000,0x00000000000000000200000000000000,0x00000000000000000400000000000000,0x00000000000000000800000000000000,0x00000000000000001000000000000000,0x00000000000000002000000000000000,0x00000000000000004000000000000000,0x00000000000000008000000000000000,0x00000000000000010000000000000000,0x00000000000000020000000000000000,0x00000000000000040000000000000000,0x00000000000000080000000000000000,0x00000000000000100000000000000000,0x00000000000000200000000000000000,0x00000000000000400000000000000000,0x00000000000000800000000000000000,0x00000000000001000000000000000000,0x00000000000002000000000000000000,0x00000000000004000000000000000000,0x00000000000008000000000000000000,0x00000000000010000000000000000000,0x00000000000020000000000000000000,0x00000000000040000000000000000000,0x00000000000080000000000000000000,0x00000000000100000000000000000000,0x00000000000200000000000000000000,0x00000000000400000000000000000000,0x00000000000800000000000000000000,0x00000000001000000000000000000000,0x00000000002000000000000000000000,0x00000000004000000000000000000000,0x00000000008000000000000000000000,0x00000000010000000000000000000000,0x00000000020000000000000000000000,0x00000000040000000000000000000000,0x00000000080000000000000000000000,0x00000000100000000000000000000000,0x00000000200000000000000000000000,0x00000000400000000000000000000000,0x00000000800000000000000000000000,0x00000001000000000000000000000000,0x00000002000000000000000000000000,0x00000004000000000000000000000000,0x00000008000000000000000000000000,0x00000010000000000000000000000000,0x00000020000000000000000000000000,0x00000040000000000000000000000000,0x00000080000000000000000000000000,0x00000100000000000000000000000000,0x00000200000000000000000000000000,0x00000400000000000000000000000000,0x00000800000000000000000000000000,0x00001000000000000000000000000000,0x00002000000000000000000000000000,0x00004000000000000000000000000000,0x00008000000000000000000000000000,0x00010000000000000000000000000000,0x00020000000000000000000000000000,0x00040000000000000000000000000000,0x00080000000000000000000000000000,0x00100000000000000000000000000000,0x00200000000000000000000000000000,0x00400000000000000000000000000000,0x00800000000000000000000000000000,0x01000000000000000000000000000000,0x02000000000000000000000000000000,0x04000000000000000000000000000000,0x08000000000000000000000000000000,0x10000000000000000000000000000000,0x20000000000000000000000000000000,0x40000000000000000000000000000000,0x80000000000000000000000000000000
+DBG: SLURM_CPU_BIND_LIST=0x00000000000000000000000000000001,0x00000000000000000000000000000002,0x00000000000000000000000000000004,0x00000000000000000000000000000008,0x00000000000000000000000000000010,0x00000000000000000000000000000020,0x00000000000000000000000000000040,0x00000000000000000000000000000080,0x00000000000000000000000000000100,0x00000000000000000000000000000200,0x00000000000000000000000000000400,0x00000000000000000000000000000800,0x00000000000000000000000000001000,0x00000000000000000000000000002000,0x00000000000000000000000000004000,0x00000000000000000000000000008000,0x00000000000000000000000000010000,0x00000000000000000000000000020000,0x00000000000000000000000000040000,0x00000000000000000000000000080000,0x00000000000000000000000000100000,0x00000000000000000000000000200000,0x00000000000000000000000000400000,0x00000000000000000000000000800000,0x00000000000000000000000001000000,0x00000000000000000000000002000000,0x00000000000000000000000004000000,0x00000000000000000000000008000000,0x00000000000000000000000010000000,0x00000000000000000000000020000000,0x00000000000000000000000040000000,0x00000000000000000000000080000000,0x00000000000000000000000100000000,0x00000000000000000000000200000000,0x00000000000000000000000400000000,0x00000000000000000000000800000000,0x00000000000000000000001000000000,0x00000000000000000000002000000000,0x00000000000000000000004000000000,0x00000000000000000000008000000000,0x00000000000000000000010000000000,0x00000000000000000000020000000000,0x00000000000000000000040000000000,0x00000000000000000000080000000000,0x00000000000000000000100000000000,0x00000000000000000000200000000000,0x00000000000000000000400000000000,0x00000000000000000000800000000000,0x00000000000000000001000000000000,0x00000000000000000002000000000000,0x00000000000000000004000000000000,0x00000000000000000008000000000000,0x00000000000000000010000000000000,0x00000000000000000020000000000000,0x00000000000000000040000000000000,0x00000000000000000080000000000000,0x00000000000000000100000000000000,0x00000000000000000200000000000000,0x00000000000000000400000000000000,0x00000000000000000800000000000000,0x00000000000000001000000000000000,0x00000000000000002000000000000000,0x00000000000000004000000000000000,0x00000000000000008000000000000000,0x00000000000000010000000000000000,0x00000000000000020000000000000000,0x00000000000000040000000000000000,0x00000000000000080000000000000000,0x00000000000000100000000000000000,0x00000000000000200000000000000000,0x00000000000000400000000000000000,0x00000000000000800000000000000000,0x00000000000001000000000000000000,0x00000000000002000000000000000000,0x00000000000004000000000000000000,0x00000000000008000000000000000000,0x00000000000010000000000000000000,0x00000000000020000000000000000000,0x00000000000040000000000000000000,0x00000000000080000000000000000000,0x00000000000100000000000000000000,0x00000000000200000000000000000000,0x00000000000400000000000000000000,0x00000000000800000000000000000000,0x00000000001000000000000000000000,0x00000000002000000000000000000000,0x00000000004000000000000000000000,0x00000000008000000000000000000000,0x00000000010000000000000000000000,0x00000000020000000000000000000000,0x00000000040000000000000000000000,0x00000000080000000000000000000000,0x00000000100000000000000000000000,0x00000000200000000000000000000000,0x00000000400000000000000000000000,0x00000000800000000000000000000000,0x00000001000000000000000000000000,0x00000002000000000000000000000000,0x00000004000000000000000000000000,0x00000008000000000000000000000000,0x00000010000000000000000000000000,0x00000020000000000000000000000000,0x00000040000000000000000000000000,0x00000080000000000000000000000000,0x00000100000000000000000000000000,0x00000200000000000000000000000000,0x00000400000000000000000000000000,0x00000800000000000000000000000000,0x00001000000000000000000000000000,0x00002000000000000000000000000000,0x00004000000000000000000000000000,0x00008000000000000000000000000000,0x00010000000000000000000000000000,0x00020000000000000000000000000000,0x00040000000000000000000000000000,0x00080000000000000000000000000000,0x00100000000000000000000000000000,0x00200000000000000000000000000000,0x00400000000000000000000000000000,0x00800000000000000000000000000000,0x01000000000000000000000000000000,0x02000000000000000000000000000000,0x04000000000000000000000000000000,0x08000000000000000000000000000000,0x10000000000000000000000000000000,0x20000000000000000000000000000000,0x40000000000000000000000000000000,0x80000000000000000000000000000000
+MPI.HELP: try setting OMPI_MCA_mpi_yield_when_idle=1 (busy_wait=off)
+MPI: OMPI_MCA_hwloc_base_binding_policy=none
+MPI: malloc_mpi_sendrecv_buffers= 2386 MiB
+DBG: OpenMP threads=1
+ set pt_n=$OMP_NUM_THREADS=1
+
+CPU.cpuinfo: cores/cpu= 64 cpus/node= 2
+MEM.vm.overcommit_memory= 1 (2 is good, 0 is bad)
+WARNING: overcommit_memory < 2, linux may crash on memory pressure
+MEM.statm0 vm,rss[4KB]= 8.9e+05 1.9e+04  vm,rss[B]= 3.66e+09 7.91e+07
+MEM.status: VmPeak:	 3572468 kB
+MEM.status: VmSize:	 3572468 kB
+MEM.status: MemTotal:       263912924 kB
+MEM.status: MemFree:        240979372 kB
+MEM.status: MemAvailable:   238115512 kB
+MEM numcores= 128 coremem[B]= 1.9e+09 (dflt[B]=70%=1.3e+09)
+DBG: parse argument 1: --maxmem=0
+DBG: opt_maxmem=0.000000e+00 (Byte per thread)
+ write spins.pid
+PTHREAD max=B_NUM=128 threads/mpi-task, pt_bits=0  pt_n= 1
+PTHREAD use option -t<threads> [-v4]
+DBG_OMP: create thread 0
+
+
+DBG.cpumask: cpuset.bits=1024  CPU_SETSIZE=1024 CFG_CPUSET=2
+
+
+
+
+
+DBG.cpumask     1. 0 0x0000000000000002 nbits=1  1...1 set 1
+DBG.cpumask     0. 0 0x0000000000000001 nbits=1  0...0 set 0
+DBG.cpumask     0. 0 0x0000000000000001 nbits=1  0...0
+DBG.cpumask     3. 0 0x0000000000000008 nbits=1  3...3 set 3
+
+
+
+
+DBG.cpumask   127. 0 0x0000000000000000 nbits=1 127...127 set 127
+DBG_PT: enter worker loop 0DBG_OMP: master still alive, go on ...
+
+ Hcfg: H_JZ=1 Jadd=0.0 Ham2=0 Ham3=0 HFIELD=0 SZSYM=1
+ using  L1_PACKED=0 VecType=1 Tnorm2=_int64
+ h_file.h: TYPE_SIZE XY=4 BY=2 HR=8 in Byte, Hsize=6076kB
+ using CKPT_HELP=0 (pkill -SIGUSR1 spin  for safe ckpt)
+use symmetric base configurations (mandatory)
+S1SYM: use S1-symmetric base configurations (default)
+ pipe.c sub_ini STOREH=4 fread 8*sizeof(size_t)=64
+CplxInfo: no complex numbers used, all numbers real
+ long=8 int=4  double=8 sdouble=8  cplx=8 scplx=8
+ tbase1=8 tbase=8
+
+HRMAX=0 HRsize=8B
+TUNING: VS= 32 (independent inner computations, vector/SIMD)
+TUNING: NAH=NumAheadLines= 1024= 1K (matrix_lines/compute_block)
+ NZXMAX= 434 (non-zero matrix elements per line, about Nw=432)
+ NZ_BUFSZ1/NAH= 434.000
+ HBLen= NZX*NAH= 444416= 434K  (non-zero matrix block length)
+ hnzSize=Hsize/HBLen=6076KB/434K= 14B
+ MPI_MAX_NUM= 4096  n_mpi= 128   B_NUM=maxPT= 128  pt_n= 1
+ estimated_mpi_flt_pktsize  pt_n*NAH*NZX*4B/mpi_n= 14KB
+   maximum_mpi_flt_pktsize B_NUM*NAH*NZX*4B/mpi_n= 1736KB
+ vs. p.e. 10GB/s * 1us * 10 = 100kB
+
+WARNING: pt_n < B_NUM, unused MPI-buffer
+
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   0
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node   0
+
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  32
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node  32
+
+DBG.cpumask    64. 0 0x0000000000000000 nbits=1 64...64
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  64
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node  64
+
+DBG.cpumask     2. 0 0x0000000000000004 nbits=1  2...2
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   2
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node   2
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   8
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node   8
+
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  16
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node  16
+DBG.cpumask    31. 0 0x0000000080000000 nbits=1 31...31 set 31
+
+
+
+
+
+
+
+
+
+
+DBG.cpumask    63. 0 0x8000000000000000 nbits=1 63...63 set 63
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DBG.cpumask     1. 0 0x0000000000000002 nbits=1  1...1
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   1
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node   1
+DBG.cpumask     3. 0 0x0000000000000008 nbits=1  3...3
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   4
+
+ERROR load model failed, sleep8s + 2nd try
+DBG src/spins.c L5664 node   4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DBG.cpumask   127. 0 0x0000000000000000 nbits=1 127...127
+DBG.cpumask     7. 0 0x0000000000000080 nbits=1  7...7 set 7
+
+
+DBG.cpumask    15. 0 0x0000000000008000 nbits=1 15...15 set 15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DBG.cpumask   126. 0 0x0000000000000000 nbits=1 126...126
+
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   0
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk000 tcn442.local num=0 errno=2 src/spins.c L5665
+PERROR: No such file or directory
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk012 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  32
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk032 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk040 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  64
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk064 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk073 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk074 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk075 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk098 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   1
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk001 tcn442.local num=0 errno=2 src/spins.c L5665
+PERROR: No such file or directory
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   2
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk002 tcn442.local num=0 errno=2 src/spins.c L5665
+PERROR: No such file or directory
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk003 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   4
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk004 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk005 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk006 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk007 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node   8
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk008 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk009 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk010 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk011 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk015 tcn442.local num=0 errno=2 src/spins.c L5665
+
+ERROR ropen "daten.def"
+DBG src/modeldef.c L154 node  16
+
+FATAL load model from daten.def
+ERROR 9999 doc/error.html tsk016 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk017 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk018 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk019 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk020 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk021 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk022 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk023 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk024 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk025 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk026 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk027 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk028 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk029 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk030 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk031 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk033 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk034 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk035 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk036 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk037 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk038 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk039 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk041 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk042 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk043 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk044 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk045 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk046 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk047 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk048 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk049 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk050 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk051 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk052 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk053 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk054 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk055 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk056 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk057 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk058 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk059 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk060 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk061 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk062 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk063 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk065 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk066 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk067 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk068 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk069 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk070 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk071 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk072 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk076 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk077 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk078 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk079 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk080 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk081 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk082 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk083 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk084 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk085 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk086 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk087 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk088 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk089 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk090 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk091 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk092 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk093 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk094 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk095 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk096 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk097 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk099 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk100 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk101 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk102 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk103 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk104 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk105 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk106 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk107 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk108 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk109 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk110 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk111 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk112 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk113 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk114 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk115 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk116 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk117 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk118 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk119 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk120 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk121 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk122 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk123 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk124 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk125 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk126 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk127 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk013 tcn442.local num=0 errno=2 src/spins.c L5665
+ERROR load model failed, sleep8s + 2nd try
+FATAL load model from daten.defERROR 9999 doc/error.html tsk014 tcn442.local num=0 errno=2 src/spins.c L5665
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 82 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 4 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 10 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 17 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 20 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 21 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 23 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 28 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 33 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 55 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 89 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 77 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 110 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 93 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 103 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 104 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 121 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 78 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 97 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 127 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 6 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 54 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 3 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 53 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 38 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 45 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 76 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 114 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 37 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 52 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 60 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 115 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 43 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 47 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 88 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 96 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 100 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 101 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 118 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 120 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 123 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 5 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 7 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 15 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 22 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 24 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 25 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 36 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 62 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 80 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 81 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 90 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 108 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 116 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 117 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 119 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 126 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 3102016.0 ON tcn442 CANCELLED AT 2023-07-20T13:13:23 ***
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 19 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 35 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 105 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 29 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 46 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 50 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 84 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 95 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 112 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 30 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 31 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 91 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 106 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 27 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 34 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 42 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 61 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 65 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 49 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 63 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 69 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 72 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 83 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 87 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 102 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 109 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 8 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 18 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 26 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 44 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 58 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 59 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 92 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 125 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 75 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 99 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 113 in communicator MPI_COMM_WORLD
+with errorcode 9999.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+srun: error: tcn442: tasks 0,2-81,83-127: Killed
+srun: Terminating StepId=3102016.0
+srun: error: tcn442: tasks 1,82: Exited with exit code 15
+
+JOB STATISTICS
+==============
+Job ID: 3102016
+Cluster: snellius
+User/Group: twest/twest
+State: RUNNING
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 01:25:20 core-walltime
+Job Wall-clock time: 00:00:40
+Memory Utilized: 0.00 MB (estimated maximum)
+Memory Efficiency: 0.00% of 224.00 GB (1.75 GB/core)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.

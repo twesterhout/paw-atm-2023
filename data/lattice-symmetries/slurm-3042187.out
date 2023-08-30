@@ -1,0 +1,67 @@
++ export GASNET_BACKTRACE=1
++ GASNET_BACKTRACE=1
++ export 'GASNET_PHYSMEM_MAX=167 GB'
++ GASNET_PHYSMEM_MAX='167 GB'
++ numLocales=1
++ srun --mpi=pmix -n 1 singularity exec ../result.sif TestMatrixVectorProduct --numLocales 1 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kCacheNumberBits=26
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn455.local.snellius.surf.nl:634154] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 0.141865
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 318.635
+  ├─ 40708.1 in _enumerateStates
+  ├─ 0.339962 in _enumStatesComputeMasksAndCounts
+  └─ 0.000645 in PUT
+     (parallel speedup: 127.759)
+[Debug]   [LOCALE0]   enumerateStates: 323.626
+  ├─ 318.635 in _enumStatesComputeCounts
+  └─ 4.75204 shuffling stuff around
+      ├─ 7.18734 copying states
+      └─ 1.03313 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 2.83494
+  ├─ counts: 0.256627
+  ├─ makeDestArr: 0.375533
+  └─ distribute: 2.20278
+     └─ permute (mean over locales, sum over tasks): 161.535
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 518.906
+  ├─ localDiagonal: 2.60191
+  └─ localOffDiagonalNoQueue: 516.291
+     ├─ initialization: 0.021782
+     └─ Producer.run: 516.19
+        ├─ BatchedOperator.computeOffDiag: 428.116
+        │  ├─ ls_internal_operator_apply_off_diag_x1: 5.83801
+        │  ├─ memcpy: 0.0194632
+        │  ├─ ls_hs_state_info: 419.036
+        │  ├─ rescale coeffs: 3.17746
+        │  └─ localeIdxOf: 0.0366923
+        ├─ localProcess: 88.0527
+        │  ├─ allocation: 0.0238617
+        │  ├─ ls_hs_state_index: 77.3731
+        │  └─ localAdd: 10.5957
+        ├─ radixOneStep: 0.000612422
+        └─ submit: 0.00145223
+           ├─ extra iterations per submit: 0.0
+           ├─ put: 0.0
+           └─ fastOn: 0.0
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 3.31525
+  ├─ counts: 0.495231
+  └─ distribute: 2.32454
+
+true
+521.971
+
+JOB STATISTICS
+==============
+Job ID: 3042187
+Cluster: snellius
+User/Group: twest/twest
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 128
+CPU Utilized: 1-05:50:14
+CPU Efficiency: 95.25% of 1-07:19:28 core-walltime
+Job Wall-clock time: 00:14:41
+Memory Utilized: 140.89 GB
+Memory Efficiency: 62.90% of 224.00 GB

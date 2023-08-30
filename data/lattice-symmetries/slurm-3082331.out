@@ -1,0 +1,622 @@
++ export GASNET_BACKTRACE=1
++ GASNET_BACKTRACE=1
++ export 'GASNET_PHYSMEM_MAX=167 GB'
++ GASNET_PHYSMEM_MAX='167 GB'
++ numLocales=16
++ remoteBufferSize=10000
++ cacheNumberBits=26
++ numConsumerTasks=24
++ for chainLength in 36 40 42 44
++ srun --mpi=pmix -N 16 -n 16 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 16 --kHamiltonian data/heisenberg_chain_36_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn162.local.snellius.surf.nl:1817995] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn145.local.snellius.surf.nl:165766] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn149.local.snellius.surf.nl:2752240] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn157.local.snellius.surf.nl:444469] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn165.local.snellius.surf.nl:2181726] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:3327958] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn163.local.snellius.surf.nl:294434] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn148.local.snellius.surf.nl:1842165] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:550861] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn147.local.snellius.surf.nl:787601] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:4193168] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn159.local.snellius.surf.nl:295821] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn152.local.snellius.surf.nl:4082867] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn150.local.snellius.surf.nl:1201662] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1448688] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn156.local.snellius.surf.nl:60500] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(262143..34359607296) took 1.81774
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 0.322619
+  ├─ 40.8859 in _enumerateStates
+  ├─ 0.089787 in _enumStatesComputeMasksAndCounts
+  └─ 0.000276 in PUT
+     (parallel speedup: 127.01)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 0.352211
+  ├─ 40.7856 in _enumerateStates
+  ├─ 0.086568 in _enumStatesComputeMasksAndCounts
+  └─ 0.002399 in PUT
+     (parallel speedup: 116.051)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 0.354052
+  ├─ 40.8971 in _enumerateStates
+  ├─ 0.088917 in _enumStatesComputeMasksAndCounts
+  └─ 0.002171 in PUT
+     (parallel speedup: 115.769)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 0.354217
+  ├─ 40.785 in _enumerateStates
+  ├─ 0.089691 in _enumStatesComputeMasksAndCounts
+  └─ 0.002437 in PUT
+     (parallel speedup: 115.401)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 0.354075
+  ├─ 40.8491 in _enumerateStates
+  ├─ 0.090014 in _enumStatesComputeMasksAndCounts
+  └─ 0.001895 in PUT
+     (parallel speedup: 115.628)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 0.356095
+  ├─ 41.0372 in _enumerateStates
+  ├─ 0.091267 in _enumStatesComputeMasksAndCounts
+  └─ 0.002044 in PUT
+     (parallel speedup: 115.504)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 0.356212
+  ├─ 41.0729 in _enumerateStates
+  ├─ 0.093364 in _enumStatesComputeMasksAndCounts
+  └─ 0.002119 in PUT
+     (parallel speedup: 115.573)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 0.35631
+  ├─ 41.0877 in _enumerateStates
+  ├─ 0.091672 in _enumStatesComputeMasksAndCounts
+  └─ 0.002805 in PUT
+     (parallel speedup: 115.58)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 0.356747
+  ├─ 41.1407 in _enumerateStates
+  ├─ 0.091313 in _enumStatesComputeMasksAndCounts
+  └─ 0.002248 in PUT
+     (parallel speedup: 115.584)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 0.356521
+  ├─ 41.1136 in _enumerateStates
+  ├─ 0.11612 in _enumStatesComputeMasksAndCounts
+  └─ 0.002005 in PUT
+     (parallel speedup: 115.65)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 0.357797
+  ├─ 41.2556 in _enumerateStates
+  ├─ 0.107933 in _enumStatesComputeMasksAndCounts
+  └─ 0.002237 in PUT
+     (parallel speedup: 115.612)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 0.357839
+  ├─ 41.2652 in _enumerateStates
+  ├─ 0.115915 in _enumStatesComputeMasksAndCounts
+  └─ 0.002404 in PUT
+     (parallel speedup: 115.648)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 0.358247
+  ├─ 41.2567 in _enumerateStates
+  ├─ 0.094362 in _enumStatesComputeMasksAndCounts
+  └─ 0.002066 in PUT
+     (parallel speedup: 115.432)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 0.358947
+  ├─ 41.3433 in _enumerateStates
+  ├─ 0.098758 in _enumStatesComputeMasksAndCounts
+  └─ 0.001984 in PUT
+     (parallel speedup: 115.46)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 0.360278
+  ├─ 41.5979 in _enumerateStates
+  ├─ 0.090436 in _enumStatesComputeMasksAndCounts
+  └─ 0.001869 in PUT
+     (parallel speedup: 115.717)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 0.398847
+  ├─ 46.6184 in _enumerateStates
+  ├─ 0.091925 in _enumStatesComputeMasksAndCounts
+  └─ 0.002362 in PUT
+     (parallel speedup: 117.119)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..3945461}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 2.00317
+  ├─ 0.40133 in _enumStatesComputeCounts
+  └─ 0.07011 shuffling stuff around
+      ├─ 0.2087 0.144977 0.144781 0.141847 0.13777 0.135543 0.12381 0.151325 0.155304 0.1587 0.145101 0.143141 0.143872 0.143323 0.139902 0.14034 copying states
+      └─ 0.065629 0.010852 0.011628 0.013849 0.010152 0.043218 0.05705 0.021341 0.022852 0.011242 0.030244 0.024221 0.03278 0.03168 0.022559 0.023312 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.038625
+  ├─ counts: 0.008033
+  └─ distribute: 0.014032
+
+[Debug]   [LOCALE0]   finalizeInitialization: {0..3945461}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.034352
+  ├─ counts: 0.002618
+  ├─ makeDestArr: 0.016857
+  └─ distribute: 0.014877
+     └─ permute (mean over locales, sum over tasks): 0.860087
+
++ for chainLength in 36 40 42 44
++ srun --mpi=pmix -N 16 -n 16 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 16 --kHamiltonian data/heisenberg_chain_40_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn151.local.snellius.surf.nl:4193620] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:551307] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn165.local.snellius.surf.nl:2182087] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn157.local.snellius.surf.nl:444846] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:3328316] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn163.local.snellius.surf.nl:294794] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1449051] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn149.local.snellius.surf.nl:2752594] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn150.local.snellius.surf.nl:1202103] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn152.local.snellius.surf.nl:4083235] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn159.local.snellius.surf.nl:296177] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn148.local.snellius.surf.nl:1842626] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn145.local.snellius.surf.nl:166171] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn156.local.snellius.surf.nl:60956] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn147.local.snellius.surf.nl:787981] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn162.local.snellius.surf.nl:1818405] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(1048575..549755289600) took 2.17269
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 4.96288
+  ├─ 630.512 in _enumerateStates
+  ├─ 1.12053 in _enumStatesComputeMasksAndCounts
+  └─ 0.000275 in PUT
+     (parallel speedup: 127.271)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 4.98728
+  ├─ 629.5 in _enumerateStates
+  ├─ 1.10434 in _enumStatesComputeMasksAndCounts
+  └─ 0.002912 in PUT
+     (parallel speedup: 126.443)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 4.98879
+  ├─ 629.505 in _enumerateStates
+  ├─ 1.13444 in _enumStatesComputeMasksAndCounts
+  └─ 0.002631 in PUT
+     (parallel speedup: 126.412)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 4.98938
+  ├─ 629.203 in _enumerateStates
+  ├─ 1.09632 in _enumStatesComputeMasksAndCounts
+  └─ 0.003016 in PUT
+     (parallel speedup: 126.329)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 4.99124
+  ├─ 629.781 in _enumerateStates
+  ├─ 1.11107 in _enumStatesComputeMasksAndCounts
+  └─ 0.003093 in PUT
+     (parallel speedup: 126.401)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 4.99524
+  ├─ 630.201 in _enumerateStates
+  ├─ 1.12783 in _enumStatesComputeMasksAndCounts
+  └─ 0.002646 in PUT
+     (parallel speedup: 126.387)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 4.99829
+  ├─ 629.877 in _enumerateStates
+  ├─ 1.13394 in _enumStatesComputeMasksAndCounts
+  └─ 0.002785 in PUT
+     (parallel speedup: 126.246)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 5.00086
+  ├─ 631.061 in _enumerateStates
+  ├─ 1.1217 in _enumStatesComputeMasksAndCounts
+  └─ 0.002999 in PUT
+     (parallel speedup: 126.415)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 5.00178
+  ├─ 630.923 in _enumerateStates
+  ├─ 1.14038 in _enumStatesComputeMasksAndCounts
+  └─ 0.003039 in PUT
+     (parallel speedup: 126.368)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 5.00348
+  ├─ 631.4 in _enumerateStates
+  ├─ 1.1164 in _enumStatesComputeMasksAndCounts
+  └─ 0.002653 in PUT
+     (parallel speedup: 126.416)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 5.00415
+  ├─ 630.748 in _enumerateStates
+  ├─ 1.13672 in _enumStatesComputeMasksAndCounts
+  └─ 0.002818 in PUT
+     (parallel speedup: 126.273)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 5.00502
+  ├─ 631.193 in _enumerateStates
+  ├─ 1.13794 in _enumStatesComputeMasksAndCounts
+  └─ 0.003067 in PUT
+     (parallel speedup: 126.34)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 5.01121
+  ├─ 632.391 in _enumerateStates
+  ├─ 1.13905 in _enumStatesComputeMasksAndCounts
+  └─ 0.003087 in PUT
+     (parallel speedup: 126.423)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 5.01155
+  ├─ 632.23 in _enumerateStates
+  ├─ 1.16757 in _enumStatesComputeMasksAndCounts
+  └─ 0.00277 in PUT
+     (parallel speedup: 126.388)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 5.01229
+  ├─ 632.547 in _enumerateStates
+  ├─ 1.11574 in _enumStatesComputeMasksAndCounts
+  └─ 0.003199 in PUT
+     (parallel speedup: 126.422)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 5.01786
+  ├─ 632.754 in _enumerateStates
+  ├─ 1.15979 in _enumStatesComputeMasksAndCounts
+  └─ 0.00275 in PUT
+     (parallel speedup: 126.332)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..53867621}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 6.76416
+  ├─ 5.0206 in _enumStatesComputeCounts
+  └─ 0.175979 shuffling stuff around
+      ├─ 0.96531 0.453944 0.400117 0.461347 0.452268 0.43618 0.45675 0.428255 0.43951 0.45528 0.41776 0.459343 0.457803 0.45019 0.411929 0.467683 copying states
+      └─ 0.21496 0.091945 0.140708 0.044081 0.038791 0.112323 0.081697 0.070561 0.083419 0.105278 0.031661 0.038685 0.039265 0.103108 0.317076 0.028512 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.068307
+  ├─ counts: 0.008433
+  └─ distribute: 0.041861
+
+[Debug]   [LOCALE0]   finalizeInitialization: {0..53867621}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.0614
+  ├─ counts: 0.008253
+  ├─ makeDestArr: 0.012193
+  └─ distribute: 0.040953
+     └─ permute (mean over locales, sum over tasks): 3.65045
+
++ for chainLength in 36 40 42 44
++ srun --mpi=pmix -N 16 -n 16 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 16 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn164.local.snellius.surf.nl:3328685] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:551713] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn149.local.snellius.surf.nl:2752948] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn163.local.snellius.surf.nl:295168] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1449422] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn159.local.snellius.surf.nl:296646] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn150.local.snellius.surf.nl:1202565] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn148.local.snellius.surf.nl:1842989] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn147.local.snellius.surf.nl:788357] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn145.local.snellius.surf.nl:166598] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn165.local.snellius.surf.nl:2182533] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:4193995] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn157.local.snellius.surf.nl:445245] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn156.local.snellius.surf.nl:61337] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn152.local.snellius.surf.nl:4083671] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn162.local.snellius.surf.nl:1818765] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 2.40465
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 19.6865
+  ├─ 2495.63 in _enumerateStates
+  ├─ 3.98044 in _enumStatesComputeMasksAndCounts
+  └─ 0.003127 in PUT
+     (parallel speedup: 126.971)
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 19.6952
+  ├─ 2504.66 in _enumerateStates
+  ├─ 4.08399 in _enumStatesComputeMasksAndCounts
+  └─ 0.000924 in PUT
+     (parallel speedup: 127.378)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 19.7017
+  ├─ 2498.92 in _enumerateStates
+  ├─ 4.12854 in _enumStatesComputeMasksAndCounts
+  └─ 0.003456 in PUT
+     (parallel speedup: 127.048)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 19.7257
+  ├─ 2502.71 in _enumerateStates
+  ├─ 4.2825 in _enumStatesComputeMasksAndCounts
+  └─ 0.00304 in PUT
+     (parallel speedup: 127.093)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 19.7358
+  ├─ 2503.48 in _enumerateStates
+  ├─ 4.20408 in _enumStatesComputeMasksAndCounts
+  └─ 0.003289 in PUT
+     (parallel speedup: 127.063)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 19.7368
+  ├─ 2502.17 in _enumerateStates
+  ├─ 4.06562 in _enumStatesComputeMasksAndCounts
+  └─ 0.003528 in PUT
+     (parallel speedup: 126.983)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 19.7444
+  ├─ 2503.56 in _enumerateStates
+  ├─ 4.07886 in _enumStatesComputeMasksAndCounts
+  └─ 0.003479 in PUT
+     (parallel speedup: 127.005)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 19.7455
+  ├─ 2504.97 in _enumerateStates
+  ├─ 4.23013 in _enumStatesComputeMasksAndCounts
+  └─ 0.003817 in PUT
+     (parallel speedup: 127.077)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 19.7479
+  ├─ 2505.65 in _enumerateStates
+  ├─ 4.19994 in _enumStatesComputeMasksAndCounts
+  └─ 0.003714 in PUT
+     (parallel speedup: 127.094)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 19.759
+  ├─ 2505.39 in _enumerateStates
+  ├─ 4.08945 in _enumStatesComputeMasksAndCounts
+  └─ 0.003937 in PUT
+     (parallel speedup: 127.004)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 19.7644
+  ├─ 2506.43 in _enumerateStates
+  ├─ 4.32297 in _enumStatesComputeMasksAndCounts
+  └─ 0.003364 in PUT
+     (parallel speedup: 127.035)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 19.7648
+  ├─ 2507.43 in _enumerateStates
+  ├─ 4.1688 in _enumStatesComputeMasksAndCounts
+  └─ 0.003375 in PUT
+     (parallel speedup: 127.075)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 19.7745
+  ├─ 2508.55 in _enumerateStates
+  ├─ 4.37329 in _enumStatesComputeMasksAndCounts
+  └─ 0.003194 in PUT
+     (parallel speedup: 127.079)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 19.7823
+  ├─ 2510.74 in _enumerateStates
+  ├─ 4.1711 in _enumStatesComputeMasksAndCounts
+  └─ 0.003399 in PUT
+     (parallel speedup: 127.129)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 19.7837
+  ├─ 2510.21 in _enumerateStates
+  ├─ 4.22234 in _enumStatesComputeMasksAndCounts
+  └─ 0.004338 in PUT
+     (parallel speedup: 127.096)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 19.7938
+  ├─ 2510.04 in _enumerateStates
+  ├─ 4.26021 in _enumStatesComputeMasksAndCounts
+  └─ 0.004031 in PUT
+     (parallel speedup: 127.025)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..200282506}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 21.9244
+  ├─ 19.7965 in _enumStatesComputeCounts
+  └─ 0.556884 shuffling stuff around
+      ├─ 2.04707 1.4303 1.22306 1.37417 1.30407 1.23525 1.32982 1.40043 1.30535 1.3818 1.3825 1.26662 1.32815 1.35462 1.23915 1.29795 copying states
+      └─ 0.171826 0.189306 0.720762 0.124548 0.533021 0.384074 0.444735 0.13491 0.458776 0.127212 0.169632 0.942679 0.456399 0.117765 0.314103 0.088811 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.202405
+  ├─ counts: 0.009406
+  └─ distribute: 0.162986
+
+[Debug]   [LOCALE0]   finalizeInitialization: {0..200282506}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.199231
+  ├─ counts: 0.010757
+  ├─ makeDestArr: 0.030508
+  └─ distribute: 0.157966
+     └─ permute (mean over locales, sum over tasks): 12.9477
+
++ for chainLength in 36 40 42 44
++ srun --mpi=pmix -N 16 -n 16 singularity exec ../benchmark-block-hashed.sif BenchmarkBlockHashed --numLocales 16 --kHamiltonian data/heisenberg_chain_44_symm.yaml --kDisplayTimings=true
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn151.local.snellius.surf.nl:02319] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn157.local.snellius.surf.nl:445788] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn147.local.snellius.surf.nl:788912] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:552280] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn165.local.snellius.surf.nl:2183015] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn163.local.snellius.surf.nl:295789] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:3329249] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn148.local.snellius.surf.nl:1843468] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn156.local.snellius.surf.nl:61810] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn159.local.snellius.surf.nl:297088] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn149.local.snellius.surf.nl:2753500] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn152.local.snellius.surf.nl:4084239] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1449891] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn150.local.snellius.surf.nl:1202954] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn162.local.snellius.surf.nl:1819377] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn145.local.snellius.surf.nl:167268] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[Debug]   [LOCALE0]   determineEnumerationRanges(4194303..8796090925056) took 2.66066
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 78.0402
+  ├─ 9930.77 in _enumerateStates
+  ├─ 15.429 in _enumStatesComputeMasksAndCounts
+  └─ 0.005169 in PUT
+     (parallel speedup: 127.45)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 78.1554
+  ├─ 9932.18 in _enumerateStates
+  ├─ 15.3652 in _enumStatesComputeMasksAndCounts
+  └─ 0.00495 in PUT
+     (parallel speedup: 127.279)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 78.1916
+  ├─ 9934.31 in _enumerateStates
+  ├─ 15.6432 in _enumStatesComputeMasksAndCounts
+  └─ 0.004662 in PUT
+     (parallel speedup: 127.251)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 78.2014
+  ├─ 9933.93 in _enumerateStates
+  ├─ 15.5972 in _enumStatesComputeMasksAndCounts
+  └─ 0.005084 in PUT
+     (parallel speedup: 127.23)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 78.2145
+  ├─ 9941.12 in _enumerateStates
+  ├─ 15.2003 in _enumStatesComputeMasksAndCounts
+  └─ 0.004693 in PUT
+     (parallel speedup: 127.295)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 78.2458
+  ├─ 9946.36 in _enumerateStates
+  ├─ 15.7579 in _enumStatesComputeMasksAndCounts
+  └─ 0.004761 in PUT
+     (parallel speedup: 127.318)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 78.2462
+  ├─ 9953.46 in _enumerateStates
+  ├─ 15.4861 in _enumStatesComputeMasksAndCounts
+  └─ 0.005174 in PUT
+     (parallel speedup: 127.405)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 78.2729
+  ├─ 9939.45 in _enumerateStates
+  ├─ 15.6959 in _enumStatesComputeMasksAndCounts
+  └─ 0.004779 in PUT
+     (parallel speedup: 127.185)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 78.3172
+  ├─ 9946.63 in _enumerateStates
+  ├─ 15.2562 in _enumStatesComputeMasksAndCounts
+  └─ 0.004661 in PUT
+     (parallel speedup: 127.199)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 78.3409
+  ├─ 9957.69 in _enumerateStates
+  ├─ 15.7135 in _enumStatesComputeMasksAndCounts
+  └─ 0.004654 in PUT
+     (parallel speedup: 127.308)
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 78.3716
+  ├─ 9959.47 in _enumerateStates
+  ├─ 15.5699 in _enumStatesComputeMasksAndCounts
+  └─ 0.00068 in PUT
+     (parallel speedup: 127.279)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 78.4538
+  ├─ 9961.64 in _enumerateStates
+  ├─ 15.7825 in _enumStatesComputeMasksAndCounts
+  └─ 0.005314 in PUT
+     (parallel speedup: 127.176)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 78.4805
+  ├─ 9971.47 in _enumerateStates
+  ├─ 15.7526 in _enumStatesComputeMasksAndCounts
+  └─ 0.004297 in PUT
+     (parallel speedup: 127.257)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 78.5561
+  ├─ 9981.8 in _enumerateStates
+  ├─ 15.6966 in _enumStatesComputeMasksAndCounts
+  └─ 0.005538 in PUT
+     (parallel speedup: 127.266)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 82.6189
+  ├─ 10498.7 in _enumerateStates
+  ├─ 15.6414 in _enumStatesComputeMasksAndCounts
+  └─ 0.00484 in PUT
+     (parallel speedup: 127.264)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 82.7561
+  ├─ 10508.8 in _enumerateStates
+  ├─ 15.6868 in _enumStatesComputeMasksAndCounts
+  └─ 0.004539 in PUT
+     (parallel speedup: 127.175)
+[Debug]   [LOCALE0]   finalizeInitialization: {0..747303527}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   enumerateStates: 86.5365
+  ├─ 82.7589 in _enumStatesComputeCounts
+  └─ 1.6769 shuffling stuff around
+      ├─ 5.54419 5.15662 4.63974 4.65775 4.39221 4.73312 4.74958 4.72001 4.82881 4.57414 4.45653 4.67567 4.52615 4.66923 4.24286 4.63706 copying states
+      └─ 0.49893 0.478979 1.05946 0.906842 2.41633 0.475968 0.434412 0.432103 1.15056 2.11469 1.14803 0.703273 0.404336 0.423242 1.23337 1.6502 copying masks
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 0.636683
+  ├─ counts: 0.014013
+  └─ distribute: 0.552651
+
+[Debug]   [LOCALE0]   finalizeInitialization: {0..747303527}
+[Debug]   [LOCALE0]   finalizeInitialization: complete!
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 0.6154
+  ├─ counts: 0.010873
+  ├─ makeDestArr: 0.065533
+  └─ distribute: 0.538993
+     └─ permute (mean over locales, sum over tasks): 47.4092
+
+
+JOB STATISTICS
+==============
+Job ID: 3082331
+Cluster: snellius
+User/Group: twest/twest
+State: COMPLETED (exit code 0)
+Nodes: 16
+Cores per node: 128
+CPU Utilized: 2-14:10:39
+CPU Efficiency: 68.31% of 3-19:01:20 core-walltime
+Job Wall-clock time: 00:02:40
+Memory Utilized: 2.61 TB (estimated maximum)
+Memory Efficiency: 74.61% of 3.50 TB (1.75 GB/core)

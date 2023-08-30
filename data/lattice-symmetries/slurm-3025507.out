@@ -1,0 +1,4808 @@
++ export GASNET_BACKTRACE=1
++ GASNET_BACKTRACE=1
++ export 'GASNET_PHYSMEM_MAX=167 GB'
++ GASNET_PHYSMEM_MAX='167 GB'
++ for numLocales in 16 20 24 28 32
++ srun --mpi=pmix -n 16 singularity exec ../result.sif TestMatrixVectorProduct -v --numLocales 16 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kNumConsumerTasks=16 --kRemoteBufferSize=50000
+srun: Warning: can't run 16 processes on 32 nodes, setting nnodes to 16
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn13.local.snellius.surf.nl:1615698] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn19.local.snellius.surf.nl:2976535] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn36.local.snellius.surf.nl:2983973] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn65.local.snellius.surf.nl:2527267] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1430613] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn91.local.snellius.surf.nl:2761641] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:2529584] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn204.local.snellius.surf.nl:2684926] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn221.local.snellius.surf.nl:3920393] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn67.local.snellius.surf.nl:2974367] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:2140837] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:580737] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn233.local.snellius.surf.nl:1963240] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn213.local.snellius.surf.nl:2322144] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn225.local.snellius.surf.nl:2026734] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn195.local.snellius.surf.nl:2012845] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 5 of 16 node(s): tcn91.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 1 of 16 node(s): tcn19.local.snellius.surf.nl
+oversubscribed = False
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 0 of 16 node(s): tcn13.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 2 of 16 node(s): tcn36.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 8 of 16 node(s): tcn160.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 3 of 16 node(s): tcn65.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 13 of 16 node(s): tcn221.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 4 of 16 node(s): tcn67.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 12 of 16 node(s): tcn213.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 6 of 16 node(s): tcn151.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 15 of 16 node(s): tcn233.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 11 of 16 node(s): tcn204.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 7 of 16 node(s): tcn153.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 14 of 16 node(s): tcn225.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 9 of 16 node(s): tcn164.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 10 of 16 node(s): tcn195.local.snellius.surf.nl
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 2.28993
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 18.5486
+  ├─ 2358.27 in _enumerateStates
+  ├─ 4.13313 in _enumStatesComputeMasksAndCounts
+  └─ 0.002126 in PUT
+     (parallel speedup: 127.363)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 24.3667
+  ├─ 2364.36 in _enumerateStates
+  ├─ 4.30514 in _enumStatesComputeMasksAndCounts
+  └─ 0.004321 in PUT
+     (parallel speedup: 97.2092)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 24.3688
+  ├─ 2358.5 in _enumerateStates
+  ├─ 4.13596 in _enumStatesComputeMasksAndCounts
+  └─ 0.004822 in PUT
+     (parallel speedup: 96.9536)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 24.3699
+  ├─ 2366.87 in _enumerateStates
+  ├─ 4.22671 in _enumStatesComputeMasksAndCounts
+  └─ 0.004806 in PUT
+     (parallel speedup: 97.2962)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 24.3733
+  ├─ 2364.4 in _enumerateStates
+  ├─ 4.19773 in _enumStatesComputeMasksAndCounts
+  └─ 0.004382 in PUT
+     (parallel speedup: 97.1802)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 24.3776
+  ├─ 2363.74 in _enumerateStates
+  ├─ 4.28406 in _enumStatesComputeMasksAndCounts
+  └─ 0.004641 in PUT
+     (parallel speedup: 97.1399)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 24.3887
+  ├─ 2370.65 in _enumerateStates
+  ├─ 4.13582 in _enumStatesComputeMasksAndCounts
+  └─ 0.004688 in PUT
+     (parallel speedup: 97.3726)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 24.3899
+  ├─ 2377.29 in _enumerateStates
+  ├─ 4.2765 in _enumStatesComputeMasksAndCounts
+  └─ 0.00492 in PUT
+     (parallel speedup: 97.646)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 24.3914
+  ├─ 2383.97 in _enumerateStates
+  ├─ 4.43865 in _enumStatesComputeMasksAndCounts
+  └─ 0.003868 in PUT
+     (parallel speedup: 97.9201)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 24.3919
+  ├─ 2377.56 in _enumerateStates
+  ├─ 4.26985 in _enumStatesComputeMasksAndCounts
+  └─ 0.004515 in PUT
+     (parallel speedup: 97.6488)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 24.3923
+  ├─ 2381.46 in _enumerateStates
+  ├─ 4.4063 in _enumStatesComputeMasksAndCounts
+  └─ 0.00458 in PUT
+     (parallel speedup: 97.8123)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 24.3921
+  ├─ 2373.28 in _enumerateStates
+  ├─ 4.15894 in _enumStatesComputeMasksAndCounts
+  └─ 0.004641 in PUT
+     (parallel speedup: 97.4678)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 24.3978
+  ├─ 2380.66 in _enumerateStates
+  ├─ 4.33082 in _enumStatesComputeMasksAndCounts
+  └─ 0.004137 in PUT
+     (parallel speedup: 97.7546)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 24.3979
+  ├─ 2370.26 in _enumerateStates
+  ├─ 4.11444 in _enumStatesComputeMasksAndCounts
+  └─ 0.004438 in PUT
+     (parallel speedup: 97.3188)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 24.3998
+  ├─ 2376.39 in _enumerateStates
+  ├─ 4.25482 in _enumStatesComputeMasksAndCounts
+  └─ 0.00428 in PUT
+     (parallel speedup: 97.5685)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 24.4287
+  ├─ 2363.26 in _enumerateStates
+  ├─ 4.22964 in _enumStatesComputeMasksAndCounts
+  └─ 0.004195 in PUT
+     (parallel speedup: 96.9143)
+[Debug]   [LOCALE0]   enumerateStates: 28.2696
+  ├─ 24.4337 in _enumStatesComputeCounts
+  └─ 2.21137 shuffling stuff around
+      ├─ 16.7367 16.6731 14.7936 17.3646 15.6357 14.5599 15.8345 17.508 15.4853 16.591 16.8967 20.1757 16.9817 16.4269 16.7258 30.103 copying states
+      └─ 3.03379 3.96277 6.38267 3.70441 5.1786 4.69947 4.03223 3.60459 4.64073 3.63438 4.1094 7.9661 4.74084 3.45288 4.8785 2.48907 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.58739
+  ├─ counts: 0.009322
+  ├─ makeDestArr: 0.031845
+  └─ distribute: 1.54623
+     └─ permute (mean over locales, sum over tasks): 129.608
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 57.8446
+  ├─ localDiagonal: 0.164537
+  └─ localOffDiagonalNoQueue: 57.6754
+     ├─ initialization: 0.107081
+     ├─ Producer.run: 57.5077
+     │  ├─ BatchedOperator.computeOffDiag: 31.2016
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.455666
+     │  │  ├─ memcpy: 0.000713732
+     │  │  ├─ ls_hs_state_info: 29.8843
+     │  │  ├─ rescale coeffs: 0.223381
+     │  │  └─ localeIdxOf: 0.637041
+     │  ├─ localProcess: 0.466126
+     │  │  ├─ allocation: 0.000952366
+     │  │  ├─ ls_hs_state_index: 0.390494
+     │  │  └─ localAdd: 0.0729276
+     │  ├─ radixOneStep: 0.19233
+     │  └─ submit: 25.6462
+     │     ├─ extra iterations per submit: 4.54089e+05
+     │     ├─ put: 1.63728
+     │     └─ fastOn: 1.62648
+     └─ Consumer.run: 56.2787
+        ├─ localProcess: 47.0578
+        │  ├─ allocation: 0.0556584
+        │  ├─ ls_hs_state_index: 39.5792
+        │  └─ localAdd: 7.29898
+        └─ fastOn: 6.62742
+
+[Debug]   [LOCALE2]   matrixVectorProduct: 57.779
+  ├─ localDiagonal: 0.169701
+  └─ localOffDiagonalNoQueue: 57.6042
+     ├─ initialization: 0.035884
+     ├─ Producer.run: 55.6881
+     │  ├─ BatchedOperator.computeOffDiag: 31.2124
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.454568
+     │  │  ├─ memcpy: 0.000693464
+     │  │  ├─ ls_hs_state_info: 29.8956
+     │  │  ├─ rescale coeffs: 0.223688
+     │  │  └─ localeIdxOf: 0.63726
+     │  ├─ localProcess: 0.474614
+     │  │  ├─ allocation: 0.00103493
+     │  │  ├─ ls_hs_state_index: 0.396128
+     │  │  └─ localAdd: 0.075534
+     │  ├─ radixOneStep: 0.192741
+     │  └─ submit: 23.8069
+     │     ├─ extra iterations per submit: 4.08318e+05
+     │     ├─ put: 1.72766
+     │     └─ fastOn: 1.35382
+     └─ Consumer.run: 57.5385
+        ├─ localProcess: 47.8891
+        │  ├─ allocation: 0.0566276
+        │  ├─ ls_hs_state_index: 40.9295
+        │  └─ localAdd: 6.76457
+        └─ fastOn: 6.19547
+
+[Debug]   [LOCALE12]   matrixVectorProduct: 57.7899
+  ├─ localDiagonal: 0.164736
+  └─ localOffDiagonalNoQueue: 57.6201
+     ├─ initialization: 0.051682
+     ├─ Producer.run: 55.9919
+     │  ├─ BatchedOperator.computeOffDiag: 31.2077
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.457113
+     │  │  ├─ memcpy: 0.000779804
+     │  │  ├─ ls_hs_state_info: 29.8882
+     │  │  ├─ rescale coeffs: 0.223572
+     │  │  └─ localeIdxOf: 0.637529
+     │  ├─ localProcess: 0.475821
+     │  │  ├─ allocation: 0.00103275
+     │  │  ├─ ls_hs_state_index: 0.396291
+     │  │  └─ localAdd: 0.0765242
+     │  ├─ radixOneStep: 0.192549
+     │  └─ submit: 24.1143
+     │     ├─ extra iterations per submit: 4.14086e+05
+     │     ├─ put: 2.44706
+     │     └─ fastOn: 0.71592
+     └─ Consumer.run: 57.5678
+        ├─ localProcess: 48.1724
+        │  ├─ allocation: 0.0567118
+        │  ├─ ls_hs_state_index: 41.614
+        │  └─ localAdd: 6.37153
+        └─ fastOn: 4.01956
+
+[Debug]   [LOCALE10]   matrixVectorProduct: 57.7762
+  ├─ localDiagonal: 0.17136
+  └─ localOffDiagonalNoQueue: 57.5996
+     ├─ initialization: 0.031195
+     ├─ Producer.run: 54.9608
+     │  ├─ BatchedOperator.computeOffDiag: 31.2217
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.455899
+     │  │  ├─ memcpy: 0.000696643
+     │  │  ├─ ls_hs_state_info: 29.9033
+     │  │  ├─ rescale coeffs: 0.223568
+     │  │  └─ localeIdxOf: 0.637689
+     │  ├─ localProcess: 0.480129
+     │  │  ├─ allocation: 0.00105919
+     │  │  ├─ ls_hs_state_index: 0.398133
+     │  │  └─ localAdd: 0.0789941
+     │  ├─ radixOneStep: 0.192915
+     │  └─ submit: 23.0646
+     │     ├─ extra iterations per submit: 3.95857e+05
+     │     ├─ put: 2.73515
+     │     └─ fastOn: 0.749827
+     └─ Consumer.run: 57.5465
+        ├─ localProcess: 47.1937
+        │  ├─ allocation: 0.0626751
+        │  ├─ ls_hs_state_index: 40.5046
+        │  └─ localAdd: 6.48546
+        └─ fastOn: 3.87277
+
+[Debug]   [LOCALE3]   matrixVectorProduct: 57.78
+  ├─ localDiagonal: 0.171091
+  └─ localOffDiagonalNoQueue: 57.6008
+     ├─ initialization: 0.032412
+     ├─ Producer.run: 56.2446
+     │  ├─ BatchedOperator.computeOffDiag: 31.2064
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.45672
+     │  │  ├─ memcpy: 0.000727571
+     │  │  ├─ ls_hs_state_info: 29.8879
+     │  │  ├─ rescale coeffs: 0.223369
+     │  │  └─ localeIdxOf: 0.6372
+     │  ├─ localProcess: 0.471597
+     │  │  ├─ allocation: 0.00101309
+     │  │  ├─ ls_hs_state_index: 0.391065
+     │  │  └─ localAdd: 0.0776048
+     │  ├─ radixOneStep: 0.192318
+     │  └─ submit: 24.3728
+     │     ├─ extra iterations per submit: 4.1344e+05
+     │     ├─ put: 2.15099
+     │     └─ fastOn: 0.698459
+     └─ Consumer.run: 57.5449
+        ├─ localProcess: 46.4387
+        │  ├─ allocation: 0.062338
+        │  ├─ ls_hs_state_index: 39.8677
+        │  └─ localAdd: 6.37616
+        └─ fastOn: 3.80348
+
+[Debug]   [LOCALE13]   matrixVectorProduct: 57.7725
+  ├─ localDiagonal: 0.169717
+  └─ localOffDiagonalNoQueue: 57.5977
+     ├─ initialization: 0.029292
+     ├─ Producer.run: 55.1376
+     │  ├─ BatchedOperator.computeOffDiag: 31.2063
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.455469
+     │  │  ├─ memcpy: 0.000683357
+     │  │  ├─ ls_hs_state_info: 29.8889
+     │  │  ├─ rescale coeffs: 0.223413
+     │  │  └─ localeIdxOf: 0.637249
+     │  ├─ localProcess: 0.470567
+     │  │  ├─ allocation: 0.000963759
+     │  │  ├─ ls_hs_state_index: 0.391738
+     │  │  └─ localAdd: 0.0760088
+     │  ├─ radixOneStep: 0.192551
+     │  └─ submit: 23.2669
+     │     ├─ extra iterations per submit: 3.97381e+05
+     │     ├─ put: 1.83074
+     │     └─ fastOn: 0.793196
+     └─ Consumer.run: 57.5476
+        ├─ localProcess: 47.4904
+        │  ├─ allocation: 0.0563566
+        │  ├─ ls_hs_state_index: 40.5959
+        │  └─ localAdd: 6.70552
+        └─ fastOn: 3.95023
+
+[Debug]   [LOCALE11]   matrixVectorProduct: 57.7767
+  ├─ localDiagonal: 0.169687
+  └─ localOffDiagonalNoQueue: 57.6017
+     ├─ initialization: 0.033337
+     ├─ Producer.run: 55.7962
+     │  ├─ BatchedOperator.computeOffDiag: 31.2137
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456374
+     │  │  ├─ memcpy: 0.000692821
+     │  │  ├─ ls_hs_state_info: 29.8951
+     │  │  ├─ rescale coeffs: 0.223664
+     │  │  └─ localeIdxOf: 0.637348
+     │  ├─ localProcess: 0.481001
+     │  │  ├─ allocation: 0.000991786
+     │  │  ├─ ls_hs_state_index: 0.40037
+     │  │  └─ localAdd: 0.0777641
+     │  ├─ radixOneStep: 0.192024
+     │  └─ submit: 23.908
+     │     ├─ extra iterations per submit: 4.06272e+05
+     │     ├─ put: 2.6141
+     │     └─ fastOn: 0.743851
+     └─ Consumer.run: 57.55
+        ├─ localProcess: 47.3832
+        │  ├─ allocation: 0.0612827
+        │  ├─ ls_hs_state_index: 40.5844
+        │  └─ localAdd: 6.60673
+        └─ fastOn: 3.82025
+
+[Debug]   [LOCALE15]   matrixVectorProduct: 57.7725
+  ├─ localDiagonal: 0.169898
+  └─ localOffDiagonalNoQueue: 57.5974
+     ├─ initialization: 0.02903
+     ├─ Producer.run: 53.9122
+     │  ├─ BatchedOperator.computeOffDiag: 31.2245
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.457212
+     │  │  ├─ memcpy: 0.00070858
+     │  │  ├─ ls_hs_state_info: 29.9016
+     │  │  ├─ rescale coeffs: 0.223683
+     │  │  └─ localeIdxOf: 0.640745
+     │  ├─ localProcess: 0.466401
+     │  │  ├─ allocation: 0.00103337
+     │  │  ├─ ls_hs_state_index: 0.388447
+     │  │  └─ localAdd: 0.0750653
+     │  ├─ radixOneStep: 0.192825
+     │  └─ submit: 22.0271
+     │     ├─ extra iterations per submit: 3.71609e+05
+     │     ├─ put: 1.68021
+     │     └─ fastOn: 0.620655
+     └─ Consumer.run: 57.5478
+        ├─ localProcess: 46.9432
+        │  ├─ allocation: 0.0626526
+        │  ├─ ls_hs_state_index: 39.993
+        │  └─ localAdd: 6.75818
+        └─ fastOn: 3.13324
+
+[Debug]   [LOCALE5]   matrixVectorProduct: 57.7747
+  ├─ localDiagonal: 0.164586
+  └─ localOffDiagonalNoQueue: 57.6049
+     ├─ initialization: 0.03652
+     ├─ Producer.run: 55.9833
+     │  ├─ BatchedOperator.computeOffDiag: 31.204
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456696
+     │  │  ├─ memcpy: 0.000744027
+     │  │  ├─ ls_hs_state_info: 29.8852
+     │  │  ├─ rescale coeffs: 0.223511
+     │  │  └─ localeIdxOf: 0.637334
+     │  ├─ localProcess: 0.476988
+     │  │  ├─ allocation: 0.00103879
+     │  │  ├─ ls_hs_state_index: 0.398115
+     │  │  └─ localAdd: 0.075863
+     │  ├─ radixOneStep: 0.192306
+     │  └─ submit: 24.1086
+     │     ├─ extra iterations per submit: 4.26741e+05
+     │     ├─ put: 2.40707
+     │     └─ fastOn: 0.713531
+     └─ Consumer.run: 57.5577
+        ├─ localProcess: 46.9849
+        │  ├─ allocation: 0.0625286
+        │  ├─ ls_hs_state_index: 40.312
+        │  └─ localAdd: 6.46939
+        └─ fastOn: 3.76497
+
+[Debug]   [LOCALE8]   matrixVectorProduct: 57.7742
+  ├─ localDiagonal: 0.171068
+  └─ localOffDiagonalNoQueue: 57.5983
+     ├─ initialization: 0.029956
+     ├─ Producer.run: 55.6394
+     │  ├─ BatchedOperator.computeOffDiag: 31.2084
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456109
+     │  │  ├─ memcpy: 0.000712286
+     │  │  ├─ ls_hs_state_info: 29.8904
+     │  │  ├─ rescale coeffs: 0.223486
+     │  │  └─ localeIdxOf: 0.637218
+     │  ├─ localProcess: 0.464739
+     │  │  ├─ allocation: 0.00103366
+     │  │  ├─ ls_hs_state_index: 0.390341
+     │  │  └─ localAdd: 0.0714084
+     │  ├─ radixOneStep: 0.193021
+     │  └─ submit: 23.7717
+     │     ├─ extra iterations per submit: 4.28333e+05
+     │     ├─ put: 2.36176
+     │     └─ fastOn: 0.689656
+     └─ Consumer.run: 57.5615
+        ├─ localProcess: 48.1482
+        │  ├─ allocation: 0.056773
+        │  ├─ ls_hs_state_index: 40.5643
+        │  └─ localAdd: 7.38818
+        └─ fastOn: 3.40896
+
+[Debug]   [LOCALE14]   matrixVectorProduct: 57.7734
+  ├─ localDiagonal: 0.171247
+  └─ localOffDiagonalNoQueue: 57.5971
+     ├─ initialization: 0.028735
+     ├─ Producer.run: 54.1909
+     │  ├─ BatchedOperator.computeOffDiag: 31.2086
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456167
+     │  │  ├─ memcpy: 0.000696116
+     │  │  ├─ ls_hs_state_info: 29.8907
+     │  │  ├─ rescale coeffs: 0.223401
+     │  │  └─ localeIdxOf: 0.637091
+     │  ├─ localProcess: 0.45664
+     │  │  ├─ allocation: 0.00105065
+     │  │  ├─ ls_hs_state_index: 0.381953
+     │  │  └─ localAdd: 0.0716935
+     │  ├─ radixOneStep: 0.191991
+     │  └─ submit: 22.3322
+     │     ├─ extra iterations per submit: 3.85623e+05
+     │     ├─ put: 1.71725
+     │     └─ fastOn: 0.627182
+     └─ Consumer.run: 57.5481
+        ├─ localProcess: 47.9698
+        │  ├─ allocation: 0.0621356
+        │  ├─ ls_hs_state_index: 40.3687
+        │  └─ localAdd: 7.40021
+        └─ fastOn: 3.21704
+
+[Debug]   [LOCALE6]   matrixVectorProduct: 57.7761
+  ├─ localDiagonal: 0.173645
+  └─ localOffDiagonalNoQueue: 57.5973
+     ├─ initialization: 0.028957
+     ├─ Producer.run: 55.2429
+     │  ├─ BatchedOperator.computeOffDiag: 31.2165
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456624
+     │  │  ├─ memcpy: 0.000730259
+     │  │  ├─ ls_hs_state_info: 29.8968
+     │  │  ├─ rescale coeffs: 0.223637
+     │  │  └─ localeIdxOf: 0.638132
+     │  ├─ localProcess: 0.481319
+     │  │  ├─ allocation: 0.00101936
+     │  │  ├─ ls_hs_state_index: 0.401692
+     │  │  └─ localAdd: 0.0766374
+     │  ├─ radixOneStep: 0.193109
+     │  └─ submit: 23.3505
+     │     ├─ extra iterations per submit: 4.21561e+05
+     │     ├─ put: 2.44693
+     │     └─ fastOn: 0.708609
+     └─ Consumer.run: 57.5456
+        ├─ localProcess: 47.6966
+        │  ├─ allocation: 0.0617919
+        │  ├─ ls_hs_state_index: 40.8907
+        │  └─ localAdd: 6.60361
+        └─ fastOn: 3.53826
+
+[Debug]   [LOCALE4]   matrixVectorProduct: 57.7774
+  ├─ localDiagonal: 0.165573
+  └─ localOffDiagonalNoQueue: 57.6068
+     ├─ initialization: 0.038427
+     ├─ Producer.run: 55.9177
+     │  ├─ BatchedOperator.computeOffDiag: 31.2176
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.45514
+     │  │  ├─ memcpy: 0.000681527
+     │  │  ├─ ls_hs_state_info: 29.8965
+     │  │  ├─ rescale coeffs: 0.223521
+     │  │  └─ localeIdxOf: 0.641324
+     │  ├─ localProcess: 0.474025
+     │  │  ├─ allocation: 0.000981696
+     │  │  ├─ ls_hs_state_index: 0.394103
+     │  │  └─ localAdd: 0.0770832
+     │  ├─ radixOneStep: 0.193502
+     │  └─ submit: 24.0311
+     │     ├─ extra iterations per submit: 4.16176e+05
+     │     ├─ put: 2.14432
+     │     └─ fastOn: 0.718292
+     └─ Consumer.run: 57.5458
+        ├─ localProcess: 47.5484
+        │  ├─ allocation: 0.0571896
+        │  ├─ ls_hs_state_index: 40.7011
+        │  └─ localAdd: 6.65209
+        └─ fastOn: 3.82249
+
+[Debug]   [LOCALE7]   matrixVectorProduct: 57.7706
+  ├─ localDiagonal: 0.169916
+  └─ localOffDiagonalNoQueue: 57.5955
+     ├─ initialization: 0.027087
+     ├─ Producer.run: 55.4571
+     │  ├─ BatchedOperator.computeOffDiag: 31.2161
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.455838
+     │  │  ├─ memcpy: 0.000739616
+     │  │  ├─ ls_hs_state_info: 29.8978
+     │  │  ├─ rescale coeffs: 0.223434
+     │  │  └─ localeIdxOf: 0.637712
+     │  ├─ localProcess: 0.476339
+     │  │  ├─ allocation: 0.00104906
+     │  │  ├─ ls_hs_state_index: 0.394686
+     │  │  └─ localAdd: 0.0786269
+     │  ├─ radixOneStep: 0.196922
+     │  └─ submit: 23.5662
+     │     ├─ extra iterations per submit: 4.17612e+05
+     │     ├─ put: 2.50855
+     │     └─ fastOn: 0.698067
+     └─ Consumer.run: 57.5458
+        ├─ localProcess: 48.0407
+        │  ├─ allocation: 0.0585912
+        │  ├─ ls_hs_state_index: 41.0007
+        │  └─ localAdd: 6.84125
+        └─ fastOn: 3.44525
+
+[Debug]   [LOCALE1]   matrixVectorProduct: 57.7766
+  ├─ localDiagonal: 0.169887
+  └─ localOffDiagonalNoQueue: 57.6015
+     ├─ initialization: 0.032984
+     ├─ Producer.run: 55.7438
+     │  ├─ BatchedOperator.computeOffDiag: 31.2617
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.455283
+     │  │  ├─ memcpy: 0.000715536
+     │  │  ├─ ls_hs_state_info: 29.943
+     │  │  ├─ rescale coeffs: 0.223733
+     │  │  └─ localeIdxOf: 0.638334
+     │  ├─ localProcess: 0.472658
+     │  │  ├─ allocation: 0.00108909
+     │  │  ├─ ls_hs_state_index: 0.39315
+     │  │  └─ localAdd: 0.0765646
+     │  ├─ radixOneStep: 0.192372
+     │  └─ submit: 23.8157
+     │     ├─ extra iterations per submit: 4.07794e+05
+     │     ├─ put: 1.59242
+     │     └─ fastOn: 1.41648
+     └─ Consumer.run: 57.5386
+        ├─ localProcess: 47.8536
+        │  ├─ allocation: 0.0610861
+        │  ├─ ls_hs_state_index: 40.8169
+        │  └─ localAdd: 6.84771
+        └─ fastOn: 6.31644
+
+[Debug]   [LOCALE9]   matrixVectorProduct: 57.7769
+  ├─ localDiagonal: 0.164863
+  └─ localOffDiagonalNoQueue: 57.607
+     ├─ initialization: 0.038589
+     ├─ Producer.run: 55.1223
+     │  ├─ BatchedOperator.computeOffDiag: 31.2188
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.456496
+     │  │  ├─ memcpy: 0.000705536
+     │  │  ├─ ls_hs_state_info: 29.9004
+     │  │  ├─ rescale coeffs: 0.2234
+     │  │  └─ localeIdxOf: 0.637297
+     │  ├─ localProcess: 0.477827
+     │  │  ├─ allocation: 0.00105345
+     │  │  ├─ ls_hs_state_index: 0.396643
+     │  │  └─ localAdd: 0.0781579
+     │  ├─ radixOneStep: 0.192557
+     │  └─ submit: 23.2317
+     │     ├─ extra iterations per submit: 4.17755e+05
+     │     ├─ put: 2.35445
+     │     └─ fastOn: 0.69944
+     └─ Consumer.run: 57.5464
+        ├─ localProcess: 47.6527
+        │  ├─ allocation: 0.0618156
+        │  ├─ ls_hs_state_index: 40.7865
+        │  └─ localAdd: 6.66371
+        └─ fastOn: 3.4136
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 28.942
+  ├─ counts: 0.016032
+  └─ distribute: 28.7262
+
+true
+58.0959
++ for numLocales in 16 20 24 28 32
++ srun --mpi=pmix -n 20 singularity exec ../result.sif TestMatrixVectorProduct -v --numLocales 20 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kNumConsumerTasks=16 --kRemoteBufferSize=50000
+srun: Warning: can't run 20 processes on 32 nodes, setting nnodes to 20
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn151.local.snellius.surf.nl:581545] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn225.local.snellius.surf.nl:2027634] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn233.local.snellius.surf.nl:1964099] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn204.local.snellius.surf.nl:2685706] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:2530449] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn67.local.snellius.surf.nl:2975194] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn91.local.snellius.surf.nl:2762509] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1431428] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:2141689] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn13.local.snellius.surf.nl:1616665] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn36.local.snellius.surf.nl:2989896] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn195.local.snellius.surf.nl:2017488] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn213.local.snellius.surf.nl:2322950] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn221.local.snellius.surf.nl:3921221] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn19.local.snellius.surf.nl:2988066] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn65.local.snellius.surf.nl:2537584] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn260.local.snellius.surf.nl:3247948] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn259.local.snellius.surf.nl:1248736] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn241.local.snellius.surf.nl:859110] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn262.local.snellius.surf.nl:819688] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 8 of 20 node(s): tcn160.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 19 of 20 node(s): tcn262.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 4 of 20 node(s): tcn67.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 12 of 20 node(s): tcn213.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 1 of 20 node(s): tcn19.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 6 of 20 node(s): tcn151.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 13 of 20 node(s): tcn221.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 2 of 20 node(s): tcn36.local.snellius.surf.nl
+oversubscribed = False
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 0 of 20 node(s): tcn13.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 7 of 20 node(s): tcn153.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 18 of 20 node(s): tcn260.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 5 of 20 node(s): tcn91.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 11 of 20 node(s): tcn204.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 16 of 20 node(s): tcn241.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 15 of 20 node(s): tcn233.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 17 of 20 node(s): tcn259.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 9 of 20 node(s): tcn164.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 3 of 20 node(s): tcn65.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 14 of 20 node(s): tcn225.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 10 of 20 node(s): tcn195.local.snellius.surf.nl
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 2.84802
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 14.9371
+  ├─ 1897.7 in _enumerateStates
+  ├─ 3.29225 in _enumStatesComputeMasksAndCounts
+  └─ 0.003014 in PUT
+     (parallel speedup: 127.267)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 22.2759
+  ├─ 1893.1 in _enumerateStates
+  ├─ 3.43006 in _enumStatesComputeMasksAndCounts
+  └─ 0.005125 in PUT
+     (parallel speedup: 85.1384)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 22.2831
+  ├─ 1891.93 in _enumerateStates
+  ├─ 3.50847 in _enumStatesComputeMasksAndCounts
+  └─ 0.004615 in PUT
+     (parallel speedup: 85.062)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 22.286
+  ├─ 1894.19 in _enumerateStates
+  ├─ 3.48251 in _enumStatesComputeMasksAndCounts
+  └─ 0.00489 in PUT
+     (parallel speedup: 85.1508)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 22.2903
+  ├─ 1892.07 in _enumerateStates
+  ├─ 3.43583 in _enumStatesComputeMasksAndCounts
+  └─ 0.004601 in PUT
+     (parallel speedup: 85.0371)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 22.2905
+  ├─ 1890.55 in _enumerateStates
+  ├─ 3.41873 in _enumStatesComputeMasksAndCounts
+  └─ 0.004523 in PUT
+     (parallel speedup: 84.9676)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 22.2922
+  ├─ 1896.7 in _enumerateStates
+  ├─ 3.54539 in _enumStatesComputeMasksAndCounts
+  └─ 0.004489 in PUT
+     (parallel speedup: 85.2428)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 22.2968
+  ├─ 1890.99 in _enumerateStates
+  ├─ 3.41118 in _enumStatesComputeMasksAndCounts
+  └─ 0.004601 in PUT
+     (parallel speedup: 84.9629)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 22.3009
+  ├─ 1889.21 in _enumerateStates
+  ├─ 3.36969 in _enumStatesComputeMasksAndCounts
+  └─ 0.00513 in PUT
+     (parallel speedup: 84.866)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 22.3311
+  ├─ 1908.3 in _enumerateStates
+  ├─ 3.59334 in _enumStatesComputeMasksAndCounts
+  └─ 0.004864 in PUT
+     (parallel speedup: 85.616)
+[Debug]   [LOCALE18]   _enumStatesComputeCounts: 22.333
+  ├─ 1898.29 in _enumerateStates
+  ├─ 3.33102 in _enumStatesComputeMasksAndCounts
+  └─ 0.00423 in PUT
+     (parallel speedup: 85.1485)
+[Debug]   [LOCALE16]   _enumStatesComputeCounts: 22.3339
+  ├─ 1900.2 in _enumerateStates
+  ├─ 3.3445 in _enumStatesComputeMasksAndCounts
+  └─ 0.004499 in PUT
+     (parallel speedup: 85.2313)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 22.3354
+  ├─ 1902.02 in _enumerateStates
+  ├─ 3.39978 in _enumStatesComputeMasksAndCounts
+  └─ 0.00411 in PUT
+     (parallel speedup: 85.3094)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 22.3358
+  ├─ 1905.37 in _enumerateStates
+  ├─ 3.46794 in _enumStatesComputeMasksAndCounts
+  └─ 0.005066 in PUT
+     (parallel speedup: 85.4611)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 22.3366
+  ├─ 1900.61 in _enumerateStates
+  ├─ 3.40309 in _enumStatesComputeMasksAndCounts
+  └─ 0.004833 in PUT
+     (parallel speedup: 85.2423)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 22.3375
+  ├─ 1895.03 in _enumerateStates
+  ├─ 3.30378 in _enumStatesComputeMasksAndCounts
+  └─ 0.004802 in PUT
+     (parallel speedup: 84.9846)
+[Debug]   [LOCALE17]   _enumStatesComputeCounts: 22.338
+  ├─ 1898.11 in _enumerateStates
+  ├─ 3.33633 in _enumStatesComputeMasksAndCounts
+  └─ 0.004675 in PUT
+     (parallel speedup: 85.1219)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 22.3408
+  ├─ 1906.23 in _enumerateStates
+  ├─ 3.45228 in _enumStatesComputeMasksAndCounts
+  └─ 0.004667 in PUT
+     (parallel speedup: 85.4799)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 22.3433
+  ├─ 1904.27 in _enumerateStates
+  ├─ 3.38221 in _enumStatesComputeMasksAndCounts
+  └─ 0.005339 in PUT
+     (parallel speedup: 85.3791)
+[Debug]   [LOCALE19]   _enumStatesComputeCounts: 22.3474
+  ├─ 1898.43 in _enumerateStates
+  ├─ 3.31131 in _enumStatesComputeMasksAndCounts
+  └─ 0.004249 in PUT
+     (parallel speedup: 85.0989)
+[Debug]   [LOCALE0]   enumerateStates: 26.747
+  ├─ 22.3526 in _enumStatesComputeCounts
+  └─ 2.10302 shuffling stuff around
+      ├─ 15.3496 16.5701 16.9158 17.0508 15.8253 16.9055 15.8135 16.0327 16.1076 15.5278 15.4112 14.6936 16.9571 16.9431 15.801 15.5271 15.5812 14.4307 23.1616 28.8126 copying states
+      └─ 2.4651 2.65454 2.94243 4.31892 2.44993 2.93475 2.43176 2.44758 3.48126 5.24725 4.33819 4.72348 3.05044 2.99015 5.11277 4.95854 4.35332 5.23219 4.72983 1.96782 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.31996
+  ├─ counts: 0.009019
+  ├─ makeDestArr: 0.026216
+  └─ distribute: 1.28472
+     └─ permute (mean over locales, sum over tasks): 101.655
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 49.1283
+  ├─ localDiagonal: 0.131418
+  └─ localOffDiagonalNoQueue: 48.9914
+     ├─ initialization: 0.559118
+     ├─ Producer.run: 48.3717
+     │  ├─ BatchedOperator.computeOffDiag: 24.9731
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367119
+     │  │  ├─ memcpy: 0.000596893
+     │  │  ├─ ls_hs_state_info: 23.9163
+     │  │  ├─ rescale coeffs: 0.178911
+     │  │  └─ localeIdxOf: 0.509692
+     │  ├─ localProcess: 0.294895
+     │  │  ├─ allocation: 0.00088183
+     │  │  ├─ ls_hs_state_index: 0.244623
+     │  │  └─ localAdd: 0.0477293
+     │  ├─ radixOneStep: 0.15472
+     │  └─ submit: 22.9478
+     │     ├─ extra iterations per submit: 4.21494e+05
+     │     ├─ put: 2.08753
+     │     └─ fastOn: 1.48661
+     └─ Consumer.run: 47.763
+        ├─ localProcess: 37.7625
+        │  ├─ allocation: 0.0609087
+        │  ├─ ls_hs_state_index: 31.6651
+        │  └─ localAdd: 5.90954
+        └─ fastOn: 6.24212
+
+[Debug]   [LOCALE17]   matrixVectorProduct: 49.0615
+  ├─ localDiagonal: 0.132046
+  └─ localOffDiagonalNoQueue: 48.9242
+     ├─ initialization: 0.49221
+     ├─ Producer.run: 45.0515
+     │  ├─ BatchedOperator.computeOffDiag: 24.9856
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.366607
+     │  │  ├─ memcpy: 0.00057067
+     │  │  ├─ ls_hs_state_info: 23.9287
+     │  │  ├─ rescale coeffs: 0.179007
+     │  │  └─ localeIdxOf: 0.510303
+     │  ├─ localProcess: 0.300165
+     │  │  ├─ allocation: 0.000846804
+     │  │  ├─ ls_hs_state_index: 0.251057
+     │  │  └─ localAdd: 0.0468032
+     │  ├─ radixOneStep: 0.154824
+     │  └─ submit: 19.6097
+     │     ├─ extra iterations per submit: 3.69754e+05
+     │     ├─ put: 2.89026
+     │     └─ fastOn: 0.662433
+     └─ Consumer.run: 48.4042
+        ├─ localProcess: 38.9437
+        │  ├─ allocation: 0.0614213
+        │  ├─ ls_hs_state_index: 32.7985
+        │  └─ localAdd: 5.96039
+        └─ fastOn: 3.21547
+
+[Debug]   [LOCALE19]   matrixVectorProduct: 49.0582
+  ├─ localDiagonal: 0.131558
+  └─ localOffDiagonalNoQueue: 48.9213
+     ├─ initialization: 0.489383
+     ├─ Producer.run: 44.773
+     │  ├─ BatchedOperator.computeOffDiag: 24.9821
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367808
+     │  │  ├─ memcpy: 0.000551321
+     │  │  ├─ ls_hs_state_info: 23.9245
+     │  │  ├─ rescale coeffs: 0.17891
+     │  │  └─ localeIdxOf: 0.509939
+     │  ├─ localProcess: 0.296254
+     │  │  ├─ allocation: 0.000890634
+     │  │  ├─ ls_hs_state_index: 0.247677
+     │  │  └─ localAdd: 0.0462307
+     │  ├─ radixOneStep: 0.154868
+     │  └─ submit: 19.3386
+     │     ├─ extra iterations per submit: 3.88047e+05
+     │     ├─ put: 2.01267
+     │     └─ fastOn: 0.623597
+     └─ Consumer.run: 48.4043
+        ├─ localProcess: 38.9199
+        │  ├─ allocation: 0.0622504
+        │  ├─ ls_hs_state_index: 32.7565
+        │  └─ localAdd: 5.9664
+        └─ fastOn: 3.10709
+
+[Debug]   [LOCALE3]   matrixVectorProduct: 49.0578
+  ├─ localDiagonal: 0.132886
+  └─ localOffDiagonalNoQueue: 48.9192
+     ├─ initialization: 0.487199
+     ├─ Producer.run: 46.7191
+     │  ├─ BatchedOperator.computeOffDiag: 24.9676
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.36673
+     │  │  ├─ memcpy: 0.000544205
+     │  │  ├─ ls_hs_state_info: 23.9111
+     │  │  ├─ rescale coeffs: 0.178656
+     │  │  └─ localeIdxOf: 0.51023
+     │  ├─ localProcess: 0.291837
+     │  │  ├─ allocation: 0.000847348
+     │  │  ├─ ls_hs_state_index: 0.243256
+     │  │  └─ localAdd: 0.0461324
+     │  ├─ radixOneStep: 0.15476
+     │  └─ submit: 21.3037
+     │     ├─ extra iterations per submit: 3.93027e+05
+     │     ├─ put: 3.12327
+     │     └─ fastOn: 0.667763
+     └─ Consumer.run: 48.4308
+        ├─ localProcess: 38.7644
+        │  ├─ allocation: 0.057145
+        │  ├─ ls_hs_state_index: 32.5452
+        │  └─ localAdd: 6.02089
+        └─ fastOn: 3.45393
+
+[Debug]   [LOCALE16]   matrixVectorProduct: 49.0578
+  ├─ localDiagonal: 0.131666
+  └─ localOffDiagonalNoQueue: 48.9204
+     ├─ initialization: 0.488461
+     ├─ Producer.run: 44.9768
+     │  ├─ BatchedOperator.computeOffDiag: 24.9777
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.36679
+     │  │  ├─ memcpy: 0.000541313
+     │  │  ├─ ls_hs_state_info: 23.9205
+     │  │  ├─ rescale coeffs: 0.179038
+     │  │  └─ localeIdxOf: 0.51045
+     │  ├─ localProcess: 0.295134
+     │  │  ├─ allocation: 0.00090592
+     │  │  ├─ ls_hs_state_index: 0.246733
+     │  │  └─ localAdd: 0.0459635
+     │  ├─ radixOneStep: 0.154661
+     │  └─ submit: 19.5481
+     │     ├─ extra iterations per submit: 3.86605e+05
+     │     ├─ put: 2.58347
+     │     └─ fastOn: 0.66677
+     └─ Consumer.run: 48.4041
+        ├─ localProcess: 39.1706
+        │  ├─ allocation: 0.0610293
+        │  ├─ ls_hs_state_index: 32.9301
+        │  └─ localAdd: 6.04294
+        └─ fastOn: 2.95141
+
+[Debug]   [LOCALE1]   matrixVectorProduct: 49.0552
+  ├─ localDiagonal: 0.182897
+  └─ localOffDiagonalNoQueue: 48.8666
+     ├─ initialization: 0.434242
+     ├─ Producer.run: 47.7335
+     │  ├─ BatchedOperator.computeOffDiag: 24.9727
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367108
+     │  │  ├─ memcpy: 0.000617402
+     │  │  ├─ ls_hs_state_info: 23.9157
+     │  │  ├─ rescale coeffs: 0.178821
+     │  │  └─ localeIdxOf: 0.509991
+     │  ├─ localProcess: 0.307926
+     │  │  ├─ allocation: 0.000854509
+     │  │  ├─ ls_hs_state_index: 0.248294
+     │  │  └─ localAdd: 0.0572114
+     │  ├─ radixOneStep: 0.154899
+     │  └─ submit: 22.2968
+     │     ├─ extra iterations per submit: 4.22066e+05
+     │     ├─ put: 2.18331
+     │     └─ fastOn: 1.26716
+     └─ Consumer.run: 48.4033
+        ├─ localProcess: 37.1587
+        │  ├─ allocation: 0.0625498
+        │  ├─ ls_hs_state_index: 31.8491
+        │  └─ localAdd: 5.11963
+        └─ fastOn: 5.60828
+
+[Debug]   [LOCALE6]   matrixVectorProduct: 49.0561
+  ├─ localDiagonal: 0.164966
+  └─ localOffDiagonalNoQueue: 48.8852
+     ├─ initialization: 0.453256
+     ├─ Producer.run: 44.4723
+     │  ├─ BatchedOperator.computeOffDiag: 24.9878
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367059
+     │  │  ├─ memcpy: 0.000537429
+     │  │  ├─ ls_hs_state_info: 23.931
+     │  │  ├─ rescale coeffs: 0.178913
+     │  │  └─ localeIdxOf: 0.509881
+     │  ├─ localProcess: 0.296697
+     │  │  ├─ allocation: 0.000822187
+     │  │  ├─ ls_hs_state_index: 0.248795
+     │  │  └─ localAdd: 0.0455849
+     │  ├─ radixOneStep: 0.154992
+     │  └─ submit: 19.0317
+     │     ├─ extra iterations per submit: 3.73184e+05
+     │     ├─ put: 2.11615
+     │     └─ fastOn: 0.633381
+     └─ Consumer.run: 48.4036
+        ├─ localProcess: 38.7238
+        │  ├─ allocation: 0.0583317
+        │  ├─ ls_hs_state_index: 32.5716
+        │  └─ localAdd: 5.95548
+        └─ fastOn: 3.2258
+
+[Debug]   [LOCALE2]   matrixVectorProduct: 49.0561
+  ├─ localDiagonal: 0.131823
+  └─ localOffDiagonalNoQueue: 48.9181
+     ├─ initialization: 0.485852
+     ├─ Producer.run: 46.8074
+     │  ├─ BatchedOperator.computeOffDiag: 24.9816
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.368227
+     │  │  ├─ memcpy: 0.000574687
+     │  │  ├─ ls_hs_state_info: 23.9177
+     │  │  ├─ rescale coeffs: 0.179169
+     │  │  └─ localeIdxOf: 0.515443
+     │  ├─ localProcess: 0.307067
+     │  │  ├─ allocation: 0.000894571
+     │  │  ├─ ls_hs_state_index: 0.253353
+     │  │  └─ localAdd: 0.051261
+     │  ├─ radixOneStep: 0.15588
+     │  └─ submit: 21.3617
+     │     ├─ extra iterations per submit: 3.93067e+05
+     │     ├─ put: 2.55139
+     │     └─ fastOn: 1.12805
+     └─ Consumer.run: 48.4032
+        ├─ localProcess: 38.2134
+        │  ├─ allocation: 0.0602587
+        │  ├─ ls_hs_state_index: 32.6299
+        │  └─ localAdd: 5.39855
+        └─ fastOn: 5.42893
+
+[Debug]   [LOCALE14]   matrixVectorProduct: 49.0557
+  ├─ localDiagonal: 0.131335
+  └─ localOffDiagonalNoQueue: 48.9189
+     ├─ initialization: 0.486456
+     ├─ Producer.run: 45.5676
+     │  ├─ BatchedOperator.computeOffDiag: 24.9775
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367746
+     │  │  ├─ memcpy: 0.000561321
+     │  │  ├─ ls_hs_state_info: 23.9198
+     │  │  ├─ rescale coeffs: 0.17892
+     │  │  └─ localeIdxOf: 0.509982
+     │  ├─ localProcess: 0.293214
+     │  │  ├─ allocation: 0.000847839
+     │  │  ├─ ls_hs_state_index: 0.244797
+     │  │  └─ localAdd: 0.0460421
+     │  ├─ radixOneStep: 0.159038
+     │  └─ submit: 20.1367
+     │     ├─ extra iterations per submit: 4.08541e+05
+     │     ├─ put: 1.86845
+     │     └─ fastOn: 0.597232
+     └─ Consumer.run: 48.404
+        ├─ localProcess: 38.7135
+        │  ├─ allocation: 0.0590758
+        │  ├─ ls_hs_state_index: 32.5259
+        │  └─ localAdd: 5.99222
+        └─ fastOn: 2.89865
+
+[Debug]   [LOCALE11]   matrixVectorProduct: 49.0546
+  ├─ localDiagonal: 0.152412
+  └─ localOffDiagonalNoQueue: 48.8963
+     ├─ initialization: 0.464331
+     ├─ Producer.run: 46.7469
+     │  ├─ BatchedOperator.computeOffDiag: 24.9754
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.366522
+     │  │  ├─ memcpy: 0.00055517
+     │  │  ├─ ls_hs_state_info: 23.919
+     │  │  ├─ rescale coeffs: 0.178816
+     │  │  └─ localeIdxOf: 0.510087
+     │  ├─ localProcess: 0.297424
+     │  │  ├─ allocation: 0.00092133
+     │  │  ├─ ls_hs_state_index: 0.248686
+     │  │  └─ localAdd: 0.0462289
+     │  ├─ radixOneStep: 0.155239
+     │  └─ submit: 21.3176
+     │     ├─ extra iterations per submit: 4.11613e+05
+     │     ├─ put: 2.90893
+     │     └─ fastOn: 0.710943
+     └─ Consumer.run: 48.4038
+        ├─ localProcess: 38.5277
+        │  ├─ allocation: 0.0625604
+        │  ├─ ls_hs_state_index: 32.3888
+        │  └─ localAdd: 5.9425
+        └─ fastOn: 3.45399
+
+[Debug]   [LOCALE5]   matrixVectorProduct: 49.0543
+  ├─ localDiagonal: 0.132165
+  └─ localOffDiagonalNoQueue: 48.916
+     ├─ initialization: 0.48409
+     ├─ Producer.run: 46.4181
+     │  ├─ BatchedOperator.computeOffDiag: 24.9812
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367228
+     │  │  ├─ memcpy: 0.000543795
+     │  │  ├─ ls_hs_state_info: 23.9241
+     │  │  ├─ rescale coeffs: 0.178782
+     │  │  └─ localeIdxOf: 0.51012
+     │  ├─ localProcess: 0.293382
+     │  │  ├─ allocation: 0.000872125
+     │  │  ├─ ls_hs_state_index: 0.245195
+     │  │  └─ localAdd: 0.0457813
+     │  ├─ radixOneStep: 0.154741
+     │  └─ submit: 20.9875
+     │     ├─ extra iterations per submit: 4.16563e+05
+     │     ├─ put: 2.70076
+     │     └─ fastOn: 0.65675
+     └─ Consumer.run: 48.4035
+        ├─ localProcess: 38.6231
+        │  ├─ allocation: 0.0572254
+        │  ├─ ls_hs_state_index: 32.4343
+        │  └─ localAdd: 6.00872
+        └─ fastOn: 3.36457
+
+[Debug]   [LOCALE10]   matrixVectorProduct: 49.0537
+  ├─ localDiagonal: 0.131813
+  └─ localOffDiagonalNoQueue: 48.9157
+     ├─ initialization: 0.483812
+     ├─ Producer.run: 46.4351
+     │  ├─ BatchedOperator.computeOffDiag: 24.9805
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367068
+     │  │  ├─ memcpy: 0.000617196
+     │  │  ├─ ls_hs_state_info: 23.9232
+     │  │  ├─ rescale coeffs: 0.179109
+     │  │  └─ localeIdxOf: 0.51012
+     │  ├─ localProcess: 0.301941
+     │  │  ├─ allocation: 0.000865304
+     │  │  ├─ ls_hs_state_index: 0.252413
+     │  │  └─ localAdd: 0.0470123
+     │  ├─ radixOneStep: 0.156105
+     │  └─ submit: 20.9952
+     │     ├─ extra iterations per submit: 3.79718e+05
+     │     ├─ put: 3.53576
+     │     └─ fastOn: 0.70189
+     └─ Consumer.run: 48.421
+        ├─ localProcess: 39.0724
+        │  ├─ allocation: 0.0573232
+        │  ├─ ls_hs_state_index: 32.8508
+        │  └─ localAdd: 6.02894
+        └─ fastOn: 3.55562
+
+[Debug]   [LOCALE8]   matrixVectorProduct: 49.0609
+  ├─ localDiagonal: 0.135091
+  └─ localOffDiagonalNoQueue: 48.9202
+     ├─ initialization: 0.487792
+     ├─ Producer.run: 45.242
+     │  ├─ BatchedOperator.computeOffDiag: 25.0033
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367139
+     │  │  ├─ memcpy: 0.000548196
+     │  │  ├─ ls_hs_state_info: 23.9444
+     │  │  ├─ rescale coeffs: 0.18028
+     │  │  └─ localeIdxOf: 0.510567
+     │  ├─ localProcess: 0.293019
+     │  │  ├─ allocation: 0.000930134
+     │  │  ├─ ls_hs_state_index: 0.244936
+     │  │  └─ localAdd: 0.045608
+     │  ├─ radixOneStep: 0.154832
+     │  └─ submit: 19.7896
+     │     ├─ extra iterations per submit: 3.71104e+05
+     │     ├─ put: 2.24606
+     │     └─ fastOn: 0.622642
+     └─ Consumer.run: 48.4036
+        ├─ localProcess: 38.7258
+        │  ├─ allocation: 0.0617151
+        │  ├─ ls_hs_state_index: 32.4921
+        │  └─ localAdd: 6.0421
+        └─ fastOn: 3.13734
+
+[Debug]   [LOCALE13]   matrixVectorProduct: 49.0405
+  ├─ localDiagonal: 0.131832
+  └─ localOffDiagonalNoQueue: 48.9026
+     ├─ initialization: 0.470612
+     ├─ Producer.run: 45.0844
+     │  ├─ BatchedOperator.computeOffDiag: 25.0008
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367148
+     │  │  ├─ memcpy: 0.00056475
+     │  │  ├─ ls_hs_state_info: 23.9434
+     │  │  ├─ rescale coeffs: 0.179024
+     │  │  └─ localeIdxOf: 0.510223
+     │  ├─ localProcess: 0.29989
+     │  │  ├─ allocation: 0.000900286
+     │  │  ├─ ls_hs_state_index: 0.248731
+     │  │  └─ localAdd: 0.0486961
+     │  ├─ radixOneStep: 0.154748
+     │  └─ submit: 19.6277
+     │     ├─ extra iterations per submit: 3.62752e+05
+     │     ├─ put: 1.94132
+     │     └─ fastOn: 0.74881
+     └─ Consumer.run: 48.4039
+        ├─ localProcess: 40.0879
+        │  ├─ allocation: 0.0628667
+        │  ├─ ls_hs_state_index: 34.6949
+        │  └─ localAdd: 5.1986
+        └─ fastOn: 3.94275
+
+[Debug]   [LOCALE7]   matrixVectorProduct: 49.0532
+  ├─ localDiagonal: 0.132231
+  └─ localOffDiagonalNoQueue: 48.9148
+     ├─ initialization: 0.482829
+     ├─ Producer.run: 44.4932
+     │  ├─ BatchedOperator.computeOffDiag: 24.9805
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.366852
+     │  │  ├─ memcpy: 0.000566902
+     │  │  ├─ ls_hs_state_info: 23.9237
+     │  │  ├─ rescale coeffs: 0.178837
+     │  │  └─ localeIdxOf: 0.5101
+     │  ├─ localProcess: 0.300006
+     │  │  ├─ allocation: 0.000880571
+     │  │  ├─ ls_hs_state_index: 0.247798
+     │  │  └─ localAdd: 0.0497442
+     │  ├─ radixOneStep: 0.158648
+     │  └─ submit: 19.053
+     │     ├─ extra iterations per submit: 3.5204e+05
+     │     ├─ put: 2.06979
+     │     └─ fastOn: 0.628504
+     └─ Consumer.run: 48.4036
+        ├─ localProcess: 38.3723
+        │  ├─ allocation: 0.0640042
+        │  ├─ ls_hs_state_index: 32.8283
+        │  └─ localAdd: 5.34114
+        └─ fastOn: 3.13343
+
+[Debug]   [LOCALE15]   matrixVectorProduct: 49.0554
+  ├─ localDiagonal: 0.131703
+  └─ localOffDiagonalNoQueue: 48.9181
+     ├─ initialization: 0.486126
+     ├─ Producer.run: 44.9959
+     │  ├─ BatchedOperator.computeOffDiag: 24.9872
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367089
+     │  │  ├─ memcpy: 0.000541714
+     │  │  ├─ ls_hs_state_info: 23.9299
+     │  │  ├─ rescale coeffs: 0.178898
+     │  │  └─ localeIdxOf: 0.510292
+     │  ├─ localProcess: 0.292857
+     │  │  ├─ allocation: 0.000818071
+     │  │  ├─ ls_hs_state_index: 0.2447
+     │  │  └─ localAdd: 0.0457857
+     │  ├─ radixOneStep: 0.154948
+     │  └─ submit: 19.5598
+     │     ├─ extra iterations per submit: 3.91894e+05
+     │     ├─ put: 2.39206
+     │     └─ fastOn: 0.608374
+     └─ Consumer.run: 48.404
+        ├─ localProcess: 39.1695
+        │  ├─ allocation: 0.0563472
+        │  ├─ ls_hs_state_index: 32.9247
+        │  └─ localAdd: 6.06696
+        └─ fastOn: 2.93448
+
+[Debug]   [LOCALE9]   matrixVectorProduct: 49.0569
+  ├─ localDiagonal: 0.132939
+  └─ localOffDiagonalNoQueue: 48.9182
+     ├─ initialization: 0.486307
+     ├─ Producer.run: 45.9042
+     │  ├─ BatchedOperator.computeOffDiag: 24.9923
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367024
+     │  │  ├─ memcpy: 0.00056025
+     │  │  ├─ ls_hs_state_info: 23.9347
+     │  │  ├─ rescale coeffs: 0.179016
+     │  │  └─ localeIdxOf: 0.510555
+     │  ├─ localProcess: 0.308736
+     │  │  ├─ allocation: 0.000887
+     │  │  ├─ ls_hs_state_index: 0.253012
+     │  │  └─ localAdd: 0.0532545
+     │  ├─ radixOneStep: 0.154755
+     │  └─ submit: 20.4473
+     │     ├─ extra iterations per submit: 3.8911e+05
+     │     ├─ put: 2.56828
+     │     └─ fastOn: 0.620213
+     └─ Consumer.run: 48.4037
+        ├─ localProcess: 38.3726
+        │  ├─ allocation: 0.0627911
+        │  ├─ ls_hs_state_index: 32.8825
+        │  └─ localAdd: 5.29103
+        └─ fastOn: 3.12596
+
+[Debug]   [LOCALE4]   matrixVectorProduct: 49.0461
+  ├─ localDiagonal: 0.131889
+  └─ localOffDiagonalNoQueue: 48.9081
+     ├─ initialization: 0.476142
+     ├─ Producer.run: 46.8817
+     │  ├─ BatchedOperator.computeOffDiag: 24.9815
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367193
+     │  │  ├─ memcpy: 0.000543795
+     │  │  ├─ ls_hs_state_info: 23.9242
+     │  │  ├─ rescale coeffs: 0.17896
+     │  │  └─ localeIdxOf: 0.510183
+     │  ├─ localProcess: 0.307958
+     │  │  ├─ allocation: 0.000857348
+     │  │  ├─ ls_hs_state_index: 0.25123
+     │  │  └─ localAdd: 0.0541981
+     │  ├─ radixOneStep: 0.155317
+     │  └─ submit: 21.4358
+     │     ├─ extra iterations per submit: 4.11195e+05
+     │     ├─ put: 3.09257
+     │     └─ fastOn: 0.689271
+     └─ Consumer.run: 48.4034
+        ├─ localProcess: 38.4043
+        │  ├─ allocation: 0.0621177
+        │  ├─ ls_hs_state_index: 32.8921
+        │  └─ localAdd: 5.31484
+        └─ fastOn: 3.46277
+
+[Debug]   [LOCALE18]   matrixVectorProduct: 49.0588
+  ├─ localDiagonal: 0.131939
+  └─ localOffDiagonalNoQueue: 48.9211
+     ├─ initialization: 0.488655
+     ├─ Producer.run: 44.7952
+     │  ├─ BatchedOperator.computeOffDiag: 24.9935
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.366465
+     │  │  ├─ memcpy: 0.000535688
+     │  │  ├─ ls_hs_state_info: 23.9368
+     │  │  ├─ rescale coeffs: 0.178834
+     │  │  └─ localeIdxOf: 0.510451
+     │  ├─ localProcess: 0.295835
+     │  │  ├─ allocation: 0.000830616
+     │  │  ├─ ls_hs_state_index: 0.247637
+     │  │  └─ localAdd: 0.0458672
+     │  ├─ radixOneStep: 0.155462
+     │  └─ submit: 19.3492
+     │     ├─ extra iterations per submit: 3.85663e+05
+     │     ├─ put: 2.2666
+     │     └─ fastOn: 0.635264
+     └─ Consumer.run: 48.4042
+        ├─ localProcess: 38.6929
+        │  ├─ allocation: 0.0563134
+        │  ├─ ls_hs_state_index: 32.5728
+        │  └─ localAdd: 5.93288
+        └─ fastOn: 3.1116
+
+[Debug]   [LOCALE12]   matrixVectorProduct: 49.0586
+  ├─ localDiagonal: 0.132393
+  └─ localOffDiagonalNoQueue: 48.9203
+     ├─ initialization: 0.488305
+     ├─ Producer.run: 46.4003
+     │  ├─ BatchedOperator.computeOffDiag: 24.9808
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.367306
+     │  │  ├─ memcpy: 0.000565884
+     │  │  ├─ ls_hs_state_info: 23.9232
+     │  │  ├─ rescale coeffs: 0.178896
+     │  │  └─ localeIdxOf: 0.51044
+     │  ├─ localProcess: 0.301549
+     │  │  ├─ allocation: 0.00084733
+     │  │  ├─ ls_hs_state_index: 0.246878
+     │  │  └─ localAdd: 0.0523027
+     │  ├─ radixOneStep: 0.155403
+     │  └─ submit: 20.9614
+     │     ├─ extra iterations per submit: 4.16199e+05
+     │     ├─ put: 2.5417
+     │     └─ fastOn: 0.687588
+     └─ Consumer.run: 48.4038
+        ├─ localProcess: 38.1371
+        │  ├─ allocation: 0.0643524
+        │  ├─ ls_hs_state_index: 32.4874
+        │  └─ localAdd: 5.46219
+        └─ fastOn: 3.39715
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 32.8206
+  ├─ counts: 0.009765
+  └─ distribute: 32.6162
+
+true
+49.3606
++ for numLocales in 16 20 24 28 32
++ srun --mpi=pmix -n 24 singularity exec ../result.sif TestMatrixVectorProduct -v --numLocales 24 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kNumConsumerTasks=16 --kRemoteBufferSize=50000
+srun: Warning: can't run 24 processes on 32 nodes, setting nnodes to 24
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn195.local.snellius.surf.nl:2018277] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1432192] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn13.local.snellius.surf.nl:1617747] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:582344] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn19.local.snellius.surf.nl:2989935] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn225.local.snellius.surf.nl:2028432] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn204.local.snellius.surf.nl:2686462] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn259.local.snellius.surf.nl:1249563] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn233.local.snellius.surf.nl:1967036] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn36.local.snellius.surf.nl:2990748] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn260.local.snellius.surf.nl:3248795] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn67.local.snellius.surf.nl:2975972] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn241.local.snellius.surf.nl:859872] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:2153035] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn221.local.snellius.surf.nl:3922537] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:2531265] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn213.local.snellius.surf.nl:2323753] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn91.local.snellius.surf.nl:2763311] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn65.local.snellius.surf.nl:2540661] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn262.local.snellius.surf.nl:820493] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn355.local.snellius.surf.nl:2886252] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn331.local.snellius.surf.nl:3040162] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn384.local.snellius.surf.nl:1249638] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn333.local.snellius.surf.nl:3397736] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 23 of 24 node(s): tcn384.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 19 of 24 node(s): tcn262.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 21 of 24 node(s): tcn333.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 22 of 24 node(s): tcn355.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 20 of 24 node(s): tcn331.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 6 of 24 node(s): tcn151.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 18 of 24 node(s): tcn260.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 17 of 24 node(s): tcn259.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 4 of 24 node(s): tcn67.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 14 of 24 node(s): tcn225.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 3 of 24 node(s): tcn65.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 7 of 24 node(s): tcn153.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 9 of 24 node(s): tcn164.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 1 of 24 node(s): tcn19.local.snellius.surf.nl
+oversubscribed = False
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 0 of 24 node(s): tcn13.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 2 of 24 node(s): tcn36.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 11 of 24 node(s): tcn204.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 16 of 24 node(s): tcn241.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 15 of 24 node(s): tcn233.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 13 of 24 node(s): tcn221.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 5 of 24 node(s): tcn91.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 10 of 24 node(s): tcn195.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 8 of 24 node(s): tcn160.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 12 of 24 node(s): tcn213.local.snellius.surf.nl
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 3.47377
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 12.4409
+  ├─ 1581.07 in _enumerateStates
+  ├─ 2.7452 in _enumStatesComputeMasksAndCounts
+  └─ 0.004208 in PUT
+     (parallel speedup: 127.307)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 19.9819
+  ├─ 1577.07 in _enumerateStates
+  ├─ 2.83621 in _enumStatesComputeMasksAndCounts
+  └─ 0.005385 in PUT
+     (parallel speedup: 79.067)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 19.9871
+  ├─ 1579.93 in _enumerateStates
+  ├─ 2.94954 in _enumStatesComputeMasksAndCounts
+  └─ 0.004177 in PUT
+     (parallel speedup: 79.1951)
+[Debug]   [LOCALE20]   _enumStatesComputeCounts: 19.9943
+  ├─ 1574.84 in _enumerateStates
+  ├─ 2.74557 in _enumStatesComputeMasksAndCounts
+  └─ 0.004025 in PUT
+     (parallel speedup: 78.9018)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 19.9975
+  ├─ 1580.94 in _enumerateStates
+  ├─ 2.9545 in _enumStatesComputeMasksAndCounts
+  └─ 0.004439 in PUT
+     (parallel speedup: 79.2048)
+[Debug]   [LOCALE22]   _enumStatesComputeCounts: 20.0008
+  ├─ 1573.74 in _enumerateStates
+  ├─ 2.77295 in _enumStatesComputeMasksAndCounts
+  └─ 0.004114 in PUT
+     (parallel speedup: 78.8227)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 20.0008
+  ├─ 1576.25 in _enumerateStates
+  ├─ 2.81888 in _enumStatesComputeMasksAndCounts
+  └─ 0.004244 in PUT
+     (parallel speedup: 78.9505)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 20.0044
+  ├─ 1579.56 in _enumerateStates
+  ├─ 2.91427 in _enumStatesComputeMasksAndCounts
+  └─ 0.004066 in PUT
+     (parallel speedup: 79.1066)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 20.0088
+  ├─ 1577.26 in _enumerateStates
+  ├─ 2.86874 in _enumStatesComputeMasksAndCounts
+  └─ 0.0053 in PUT
+     (parallel speedup: 78.9716)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 20.011
+  ├─ 1578.68 in _enumerateStates
+  ├─ 2.9626 in _enumStatesComputeMasksAndCounts
+  └─ 0.005143 in PUT
+     (parallel speedup: 79.0389)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 20.028
+  ├─ 1578.9 in _enumerateStates
+  ├─ 2.82109 in _enumStatesComputeMasksAndCounts
+  └─ 0.004788 in PUT
+     (parallel speedup: 78.9757)
+[Debug]   [LOCALE19]   _enumStatesComputeCounts: 20.0376
+  ├─ 1582.64 in _enumerateStates
+  ├─ 2.77569 in _enumStatesComputeMasksAndCounts
+  └─ 0.004391 in PUT
+     (parallel speedup: 79.122)
+[Debug]   [LOCALE16]   _enumStatesComputeCounts: 20.0388
+  ├─ 1584.17 in _enumerateStates
+  ├─ 2.83316 in _enumStatesComputeMasksAndCounts
+  └─ 0.004181 in PUT
+     (parallel speedup: 79.1967)
+[Debug]   [LOCALE23]   _enumStatesComputeCounts: 20.0387
+  ├─ 1581.45 in _enumerateStates
+  ├─ 2.76695 in _enumStatesComputeMasksAndCounts
+  └─ 0.004096 in PUT
+     (parallel speedup: 79.0579)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 20.0394
+  ├─ 1586.22 in _enumerateStates
+  ├─ 2.86828 in _enumStatesComputeMasksAndCounts
+  └─ 0.004724 in PUT
+     (parallel speedup: 79.2985)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 20.04
+  ├─ 1586.25 in _enumerateStates
+  ├─ 2.81949 in _enumStatesComputeMasksAndCounts
+  └─ 0.004089 in PUT
+     (parallel speedup: 79.2952)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 20.0389
+  ├─ 1591.07 in _enumerateStates
+  ├─ 3.00242 in _enumStatesComputeMasksAndCounts
+  └─ 0.004424 in PUT
+     (parallel speedup: 79.5492)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 20.043
+  ├─ 1586.81 in _enumerateStates
+  ├─ 2.89156 in _enumStatesComputeMasksAndCounts
+  └─ 0.004495 in PUT
+     (parallel speedup: 79.3146)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 20.0432
+  ├─ 1585.4 in _enumerateStates
+  ├─ 2.87602 in _enumStatesComputeMasksAndCounts
+  └─ 0.005154 in PUT
+     (parallel speedup: 79.2428)
+[Debug]   [LOCALE17]   _enumStatesComputeCounts: 20.0476
+  ├─ 1585.79 in _enumerateStates
+  ├─ 2.82509 in _enumStatesComputeMasksAndCounts
+  └─ 0.004349 in PUT
+     (parallel speedup: 79.2425)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 20.0492
+  ├─ 1583.9 in _enumerateStates
+  ├─ 2.83481 in _enumStatesComputeMasksAndCounts
+  └─ 0.003984 in PUT
+     (parallel speedup: 79.1421)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 20.0513
+  ├─ 1587.14 in _enumerateStates
+  ├─ 2.87892 in _enumStatesComputeMasksAndCounts
+  └─ 0.004031 in PUT
+     (parallel speedup: 79.2974)
+[Debug]   [LOCALE18]   _enumStatesComputeCounts: 20.0538
+  ├─ 1579.75 in _enumerateStates
+  ├─ 2.75685 in _enumStatesComputeMasksAndCounts
+  └─ 0.004472 in PUT
+     (parallel speedup: 78.9134)
+[Debug]   [LOCALE21]   _enumStatesComputeCounts: 20.0561
+  ├─ 1582.2 in _enumerateStates
+  ├─ 2.76182 in _enumStatesComputeMasksAndCounts
+  └─ 0.004893 in PUT
+     (parallel speedup: 79.0267)
+[Debug]   [LOCALE0]   enumerateStates: 25.8657
+  ├─ 20.0616 in _enumStatesComputeCounts
+  └─ 2.68006 shuffling stuff around
+      ├─ 16.2218 18.7958 21.3252 20.7163 21.218 19.7705 22.2453 19.5607 18.8833 20.7787 21.877 21.5704 20.9879 18.8352 21.9143 22.374 21.9886 22.0898 22.2168 22.0031 22.3853 21.8426 21.8312 36.4002 copying states
+      └─ 2.89378 8.14738 3.48952 6.20671 5.26352 5.44846 4.15364 4.87659 6.51166 4.77763 3.5197 5.83739 3.26995 4.74037 5.02855 5.66571 5.17933 5.53567 3.79021 3.56663 3.46456 4.65999 3.68657 1.97501 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.42636
+  ├─ counts: 0.015727
+  ├─ makeDestArr: 0.065598
+  └─ distribute: 1.34503
+     └─ permute (mean over locales, sum over tasks): 112.157
+
+[Debug]   [LOCALE1]   matrixVectorProduct: 41.8209
+  ├─ localDiagonal: 0.109526
+  └─ localOffDiagonalNoQueue: 41.7054
+     ├─ initialization: 0.299272
+     ├─ Producer.run: 40.2565
+     │  ├─ BatchedOperator.computeOffDiag: 20.8245
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.30685
+     │  │  ├─ memcpy: 0.000547679
+     │  │  ├─ ls_hs_state_info: 19.9418
+     │  │  ├─ rescale coeffs: 0.149214
+     │  │  └─ localeIdxOf: 0.425704
+     │  ├─ localProcess: 0.218461
+     │  │  ├─ allocation: 0.000736777
+     │  │  ├─ ls_hs_state_index: 0.176031
+     │  │  └─ localAdd: 0.0403141
+     │  ├─ radixOneStep: 0.130192
+     │  └─ submit: 19.0823
+     │     ├─ extra iterations per submit: 3.40547e+05
+     │     ├─ put: 3.81372
+     │     └─ fastOn: 1.26286
+     └─ Consumer.run: 41.404
+        ├─ localProcess: 31.8922
+        │  ├─ allocation: 0.0626022
+        │  ├─ ls_hs_state_index: 27.4339
+        │  └─ localAdd: 4.26025
+        └─ fastOn: 5.5775
+
+[Debug]   [LOCALE19]   matrixVectorProduct: 41.816
+  ├─ localDiagonal: 0.110959
+  └─ localOffDiagonalNoQueue: 41.6986
+     ├─ initialization: 0.292437
+     ├─ Producer.run: 40.7513
+     │  ├─ BatchedOperator.computeOffDiag: 20.8296
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307681
+     │  │  ├─ memcpy: 0.000486375
+     │  │  ├─ ls_hs_state_info: 19.9461
+     │  │  ├─ rescale coeffs: 0.149346
+     │  │  └─ localeIdxOf: 0.425614
+     │  ├─ localProcess: 0.214385
+     │  │  ├─ allocation: 0.000768643
+     │  │  ├─ ls_hs_state_index: 0.176341
+     │  │  └─ localAdd: 0.0359353
+     │  ├─ radixOneStep: 0.129908
+     │  └─ submit: 19.5764
+     │     ├─ extra iterations per submit: 4.06047e+05
+     │     ├─ put: 3.3322
+     │     └─ fastOn: 0.651264
+     └─ Consumer.run: 41.405
+        ├─ localProcess: 31.483
+        │  ├─ allocation: 0.0622058
+        │  ├─ ls_hs_state_index: 27.1065
+        │  └─ localAdd: 4.18216
+        └─ fastOn: 3.06357
+
+[Debug]   [LOCALE8]   matrixVectorProduct: 41.819
+  ├─ localDiagonal: 0.117416
+  └─ localOffDiagonalNoQueue: 41.6952
+     ├─ initialization: 0.289056
+     ├─ Producer.run: 39.551
+     │  ├─ BatchedOperator.computeOffDiag: 20.8248
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307876
+     │  │  ├─ memcpy: 0.000496161
+     │  │  ├─ ls_hs_state_info: 19.9413
+     │  │  ├─ rescale coeffs: 0.14931
+     │  │  └─ localeIdxOf: 0.425437
+     │  ├─ localProcess: 0.213955
+     │  │  ├─ allocation: 0.000743054
+     │  │  ├─ ls_hs_state_index: 0.17459
+     │  │  └─ localAdd: 0.0372514
+     │  ├─ radixOneStep: 0.130586
+     │  └─ submit: 18.3806
+     │     ├─ extra iterations per submit: 3.6795e+05
+     │     ├─ put: 3.35148
+     │     └─ fastOn: 0.615148
+     └─ Consumer.run: 41.4045
+        ├─ localProcess: 31.9721
+        │  ├─ allocation: 0.0585851
+        │  ├─ ls_hs_state_index: 27.341
+        │  └─ localAdd: 4.44197
+        └─ fastOn: 3.01724
+
+[Debug]   [LOCALE2]   matrixVectorProduct: 41.8108
+  ├─ localDiagonal: 0.109927
+  └─ localOffDiagonalNoQueue: 41.6943
+     ├─ initialization: 0.28811
+     ├─ Producer.run: 39.3219
+     │  ├─ BatchedOperator.computeOffDiag: 20.8239
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307462
+     │  │  ├─ memcpy: 0.000454232
+     │  │  ├─ ls_hs_state_info: 19.941
+     │  │  ├─ rescale coeffs: 0.149262
+     │  │  └─ localeIdxOf: 0.425382
+     │  ├─ localProcess: 0.209581
+     │  │  ├─ allocation: 0.000731813
+     │  │  ├─ ls_hs_state_index: 0.169842
+     │  │  └─ localAdd: 0.0376443
+     │  ├─ radixOneStep: 0.130234
+     │  └─ submit: 18.1573
+     │     ├─ extra iterations per submit: 3.4886e+05
+     │     ├─ put: 3.16971
+     │     └─ fastOn: 1.04485
+     └─ Consumer.run: 41.4041
+        ├─ localProcess: 32.8654
+        │  ├─ allocation: 0.0574638
+        │  ├─ ls_hs_state_index: 28.1046
+        │  └─ localAdd: 4.58077
+        └─ fastOn: 5.51885
+
+[Debug]   [LOCALE11]   matrixVectorProduct: 41.8187
+  ├─ localDiagonal: 0.110037
+  └─ localOffDiagonalNoQueue: 41.7022
+     ├─ initialization: 0.296067
+     ├─ Producer.run: 38.6086
+     │  ├─ BatchedOperator.computeOffDiag: 20.8228
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.306694
+     │  │  ├─ memcpy: 0.000499768
+     │  │  ├─ ls_hs_state_info: 19.9408
+     │  │  ├─ rescale coeffs: 0.149125
+     │  │  └─ localeIdxOf: 0.425347
+     │  ├─ localProcess: 0.210102
+     │  │  ├─ allocation: 0.000763893
+     │  │  ├─ ls_hs_state_index: 0.171413
+     │  │  └─ localAdd: 0.0366008
+     │  ├─ radixOneStep: 0.12982
+     │  └─ submit: 17.4449
+     │     ├─ extra iterations per submit: 3.03719e+05
+     │     ├─ put: 3.88653
+     │     └─ fastOn: 0.706157
+     └─ Consumer.run: 41.4046
+        ├─ localProcess: 32.1371
+        │  ├─ allocation: 0.0583397
+        │  ├─ ls_hs_state_index: 27.4875
+        │  └─ localAdd: 4.46019
+        └─ fastOn: 3.48621
+
+[Debug]   [LOCALE20]   matrixVectorProduct: 41.8222
+  ├─ localDiagonal: 0.110534
+  └─ localOffDiagonalNoQueue: 41.7051
+     ├─ initialization: 0.298867
+     ├─ Producer.run: 39.3631
+     │  ├─ BatchedOperator.computeOffDiag: 20.7987
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307091
+     │  │  ├─ memcpy: 0.000446616
+     │  │  ├─ ls_hs_state_info: 19.9175
+     │  │  ├─ rescale coeffs: 0.148744
+     │  │  └─ localeIdxOf: 0.424601
+     │  ├─ localProcess: 0.203568
+     │  │  ├─ allocation: 0.000722768
+     │  │  ├─ ls_hs_state_index: 0.169738
+     │  │  └─ localAdd: 0.0318286
+     │  ├─ radixOneStep: 0.129539
+     │  └─ submit: 18.2303
+     │     ├─ extra iterations per submit: 3.92836e+05
+     │     ├─ put: 2.27345
+     │     └─ fastOn: 0.581934
+     └─ Consumer.run: 41.405
+        ├─ localProcess: 32.4803
+        │  ├─ allocation: 0.0575536
+        │  ├─ ls_hs_state_index: 27.2598
+        │  └─ localAdd: 5.03529
+        └─ fastOn: 2.90027
+
+[Debug]   [LOCALE13]   matrixVectorProduct: 41.8196
+  ├─ localDiagonal: 0.269261
+  └─ localOffDiagonalNoQueue: 41.5434
+     ├─ initialization: 0.137254
+     ├─ Producer.run: 38.1025
+     │  ├─ BatchedOperator.computeOffDiag: 20.8698
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307387
+     │  │  ├─ memcpy: 0.000463312
+     │  │  ├─ ls_hs_state_info: 19.9864
+     │  │  ├─ rescale coeffs: 0.149295
+     │  │  └─ localeIdxOf: 0.425932
+     │  ├─ localProcess: 0.209635
+     │  │  ├─ allocation: 0.000767098
+     │  │  ├─ ls_hs_state_index: 0.172399
+     │  │  └─ localAdd: 0.0351398
+     │  ├─ radixOneStep: 0.130494
+     │  └─ submit: 16.8916
+     │     ├─ extra iterations per submit: 3.37495e+05
+     │     ├─ put: 2.5657
+     │     └─ fastOn: 0.71742
+     └─ Consumer.run: 41.4047
+        ├─ localProcess: 32.1765
+        │  ├─ allocation: 0.0635307
+        │  ├─ ls_hs_state_index: 27.4778
+        │  └─ localAdd: 4.50866
+        └─ fastOn: 3.45075
+
+[Debug]   [LOCALE3]   matrixVectorProduct: 41.8071
+  ├─ localDiagonal: 0.111628
+  └─ localOffDiagonalNoQueue: 41.6885
+     ├─ initialization: 0.282359
+     ├─ Producer.run: 38.7066
+     │  ├─ BatchedOperator.computeOffDiag: 20.7972
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307364
+     │  │  ├─ memcpy: 0.000493714
+     │  │  ├─ ls_hs_state_info: 19.9157
+     │  │  ├─ rescale coeffs: 0.148949
+     │  │  └─ localeIdxOf: 0.42429
+     │  ├─ localProcess: 0.208629
+     │  │  ├─ allocation: 0.00076033
+     │  │  ├─ ls_hs_state_index: 0.171514
+     │  │  └─ localAdd: 0.0350345
+     │  ├─ radixOneStep: 0.129659
+     │  └─ submit: 17.5702
+     │     ├─ extra iterations per submit: 3.44436e+05
+     │     ├─ put: 3.17269
+     │     └─ fastOn: 0.658609
+     └─ Consumer.run: 41.4041
+        ├─ localProcess: 33.29
+        │  ├─ allocation: 0.0620026
+        │  ├─ ls_hs_state_index: 28.9108
+        │  └─ localAdd: 4.18656
+        └─ fastOn: 3.30126
+
+[Debug]   [LOCALE23]   matrixVectorProduct: 41.8259
+  ├─ localDiagonal: 0.109715
+  └─ localOffDiagonalNoQueue: 41.7101
+     ├─ initialization: 0.303916
+     ├─ Producer.run: 38.1319
+     │  ├─ BatchedOperator.computeOffDiag: 20.8336
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307471
+     │  │  ├─ memcpy: 0.000463688
+     │  │  ├─ ls_hs_state_info: 19.9506
+     │  │  ├─ rescale coeffs: 0.149189
+     │  │  └─ localeIdxOf: 0.425502
+     │  ├─ localProcess: 0.214465
+     │  │  ├─ allocation: 0.000728527
+     │  │  ├─ ls_hs_state_index: 0.172012
+     │  │  └─ localAdd: 0.0404857
+     │  ├─ radixOneStep: 0.129688
+     │  └─ submit: 16.9532
+     │     ├─ extra iterations per submit: 3.53488e+05
+     │     ├─ put: 2.25358
+     │     └─ fastOn: 0.59339
+     └─ Consumer.run: 41.4057
+        ├─ localProcess: 33.0734
+        │  ├─ allocation: 0.0639615
+        │  ├─ ls_hs_state_index: 28.3145
+        │  └─ localAdd: 4.57275
+        └─ fastOn: 2.86073
+
+[Debug]   [LOCALE15]   matrixVectorProduct: 41.8165
+  ├─ localDiagonal: 0.13032
+  └─ localOffDiagonalNoQueue: 41.6801
+     ├─ initialization: 0.27392
+     ├─ Producer.run: 38.9568
+     │  ├─ BatchedOperator.computeOffDiag: 20.8376
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307194
+     │  │  ├─ memcpy: 0.000503821
+     │  │  ├─ ls_hs_state_info: 19.952
+     │  │  ├─ rescale coeffs: 0.149306
+     │  │  └─ localeIdxOf: 0.42829
+     │  ├─ localProcess: 0.217226
+     │  │  ├─ allocation: 0.000756848
+     │  │  ├─ ls_hs_state_index: 0.174767
+     │  │  └─ localAdd: 0.0403445
+     │  ├─ radixOneStep: 0.129885
+     │  └─ submit: 17.771
+     │     ├─ extra iterations per submit: 3.40585e+05
+     │     ├─ put: 3.76999
+     │     └─ fastOn: 0.622971
+     └─ Consumer.run: 41.4049
+        ├─ localProcess: 32.5104
+        │  ├─ allocation: 0.0610435
+        │  ├─ ls_hs_state_index: 27.6829
+        │  └─ localAdd: 4.63031
+        └─ fastOn: 2.97131
+
+[Debug]   [LOCALE6]   matrixVectorProduct: 41.8128
+  ├─ localDiagonal: 0.110607
+  └─ localOffDiagonalNoQueue: 41.6957
+     ├─ initialization: 0.289564
+     ├─ Producer.run: 39.4795
+     │  ├─ BatchedOperator.computeOffDiag: 20.8232
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307045
+     │  │  ├─ memcpy: 0.00046742
+     │  │  ├─ ls_hs_state_info: 19.941
+     │  │  ├─ rescale coeffs: 0.149098
+     │  │  └─ localeIdxOf: 0.425275
+     │  ├─ localProcess: 0.211359
+     │  │  ├─ allocation: 0.0007315
+     │  │  ├─ ls_hs_state_index: 0.174914
+     │  │  └─ localAdd: 0.0344408
+     │  ├─ radixOneStep: 0.130051
+     │  └─ submit: 18.314
+     │     ├─ extra iterations per submit: 3.77207e+05
+     │     ├─ put: 2.82054
+     │     └─ fastOn: 0.630513
+     └─ Consumer.run: 41.4044
+        ├─ localProcess: 32.3994
+        │  ├─ allocation: 0.0612123
+        │  ├─ ls_hs_state_index: 27.9489
+        │  └─ localAdd: 4.26569
+        └─ fastOn: 3.16155
+
+[Debug]   [LOCALE16]   matrixVectorProduct: 41.8109
+  ├─ localDiagonal: 0.110011
+  └─ localOffDiagonalNoQueue: 41.6944
+     ├─ initialization: 0.288212
+     ├─ Producer.run: 39.6761
+     │  ├─ BatchedOperator.computeOffDiag: 20.831
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307577
+     │  │  ├─ memcpy: 0.000474411
+     │  │  ├─ ls_hs_state_info: 19.9478
+     │  │  ├─ rescale coeffs: 0.149231
+     │  │  └─ localeIdxOf: 0.42559
+     │  ├─ localProcess: 0.208408
+     │  │  ├─ allocation: 0.000737893
+     │  │  ├─ ls_hs_state_index: 0.171598
+     │  │  └─ localAdd: 0.0347686
+     │  ├─ radixOneStep: 0.129811
+     │  └─ submit: 18.5059
+     │     ├─ extra iterations per submit: 3.86477e+05
+     │     ├─ put: 2.74562
+     │     └─ fastOn: 0.617234
+     └─ Consumer.run: 41.4049
+        ├─ localProcess: 32.0919
+        │  ├─ allocation: 0.0628958
+        │  ├─ ls_hs_state_index: 27.6508
+        │  └─ localAdd: 4.24171
+        └─ fastOn: 2.83134
+
+[Debug]   [LOCALE14]   matrixVectorProduct: 41.8174
+  ├─ localDiagonal: 0.110049
+  └─ localOffDiagonalNoQueue: 41.7009
+     ├─ initialization: 0.294689
+     ├─ Producer.run: 38.0128
+     │  ├─ BatchedOperator.computeOffDiag: 20.8327
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307872
+     │  │  ├─ memcpy: 0.000480705
+     │  │  ├─ ls_hs_state_info: 19.9493
+     │  │  ├─ rescale coeffs: 0.149222
+     │  │  └─ localeIdxOf: 0.425579
+     │  ├─ localProcess: 0.205878
+     │  │  ├─ allocation: 0.000716375
+     │  │  ├─ ls_hs_state_index: 0.168792
+     │  │  └─ localAdd: 0.0350872
+     │  ├─ radixOneStep: 0.13041
+     │  └─ submit: 16.8428
+     │     ├─ extra iterations per submit: 3.48203e+05
+     │     ├─ put: 2.18422
+     │     └─ fastOn: 0.596983
+     └─ Consumer.run: 41.4048
+        ├─ localProcess: 32.1383
+        │  ├─ allocation: 0.0629296
+        │  ├─ ls_hs_state_index: 27.4652
+        │  └─ localAdd: 4.48549
+        └─ fastOn: 2.78471
+
+[Debug]   [LOCALE4]   matrixVectorProduct: 41.8168
+  ├─ localDiagonal: 0.110109
+  └─ localOffDiagonalNoQueue: 41.7002
+     ├─ initialization: 0.293962
+     ├─ Producer.run: 39.5124
+     │  ├─ BatchedOperator.computeOffDiag: 20.8277
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307313
+     │  │  ├─ memcpy: 0.000467955
+     │  │  ├─ ls_hs_state_info: 19.9452
+     │  │  ├─ rescale coeffs: 0.149198
+     │  │  └─ localeIdxOf: 0.425172
+     │  ├─ localProcess: 0.20773
+     │  │  ├─ allocation: 0.000721446
+     │  │  ├─ ls_hs_state_index: 0.169742
+     │  │  └─ localAdd: 0.0359411
+     │  ├─ radixOneStep: 0.129798
+     │  └─ submit: 18.3463
+     │     ├─ extra iterations per submit: 3.94045e+05
+     │     ├─ put: 2.78326
+     │     └─ fastOn: 0.636959
+     └─ Consumer.run: 41.4042
+        ├─ localProcess: 32.0054
+        │  ├─ allocation: 0.0596063
+        │  ├─ ls_hs_state_index: 27.3932
+        │  └─ localAdd: 4.42682
+        └─ fastOn: 3.26833
+
+[Debug]   [LOCALE10]   matrixVectorProduct: 41.8072
+  ├─ localDiagonal: 0.109861
+  └─ localOffDiagonalNoQueue: 41.6908
+     ├─ initialization: 0.284647
+     ├─ Producer.run: 38.5321
+     │  ├─ BatchedOperator.computeOffDiag: 20.8216
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307146
+     │  │  ├─ memcpy: 0.000468286
+     │  │  ├─ ls_hs_state_info: 19.9394
+     │  │  ├─ rescale coeffs: 0.14891
+     │  │  └─ localeIdxOf: 0.425309
+     │  ├─ localProcess: 0.211766
+     │  │  ├─ allocation: 0.000710375
+     │  │  ├─ ls_hs_state_index: 0.169903
+     │  │  └─ localAdd: 0.0398653
+     │  ├─ radixOneStep: 0.129595
+     │  └─ submit: 17.3683
+     │     ├─ extra iterations per submit: 3.36847e+05
+     │     ├─ put: 2.85509
+     │     └─ fastOn: 0.658524
+     └─ Consumer.run: 41.4045
+        ├─ localProcess: 32.4415
+        │  ├─ allocation: 0.0591202
+        │  ├─ ls_hs_state_index: 27.7425
+        │  └─ localAdd: 4.50905
+        └─ fastOn: 3.45899
+
+[Debug]   [LOCALE12]   matrixVectorProduct: 41.8111
+  ├─ localDiagonal: 0.111354
+  └─ localOffDiagonalNoQueue: 41.6932
+     ├─ initialization: 0.287021
+     ├─ Producer.run: 38.4668
+     │  ├─ BatchedOperator.computeOffDiag: 20.8092
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307218
+     │  │  ├─ memcpy: 0.000461946
+     │  │  ├─ ls_hs_state_info: 19.927
+     │  │  ├─ rescale coeffs: 0.149137
+     │  │  └─ localeIdxOf: 0.425086
+     │  ├─ localProcess: 0.20999
+     │  │  ├─ allocation: 0.000780893
+     │  │  ├─ ls_hs_state_index: 0.172983
+     │  │  └─ localAdd: 0.0349289
+     │  ├─ radixOneStep: 0.129839
+     │  └─ submit: 17.3168
+     │     ├─ extra iterations per submit: 3.09922e+05
+     │     ├─ put: 3.75861
+     │     └─ fastOn: 0.695245
+     └─ Consumer.run: 41.4046
+        ├─ localProcess: 32.7408
+        │  ├─ allocation: 0.0625111
+        │  ├─ ls_hs_state_index: 28.3039
+        │  └─ localAdd: 4.24232
+        └─ fastOn: 3.51289
+
+[Debug]   [LOCALE21]   matrixVectorProduct: 41.8295
+  ├─ localDiagonal: 0.109748
+  └─ localOffDiagonalNoQueue: 41.7139
+     ├─ initialization: 0.307705
+     ├─ Producer.run: 38.3309
+     │  ├─ BatchedOperator.computeOffDiag: 20.8259
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307887
+     │  │  ├─ memcpy: 0.000458866
+     │  │  ├─ ls_hs_state_info: 19.9429
+     │  │  ├─ rescale coeffs: 0.149175
+     │  │  └─ localeIdxOf: 0.425154
+     │  ├─ localProcess: 0.208362
+     │  │  ├─ allocation: 0.000704598
+     │  │  ├─ ls_hs_state_index: 0.170744
+     │  │  └─ localAdd: 0.0356031
+     │  ├─ radixOneStep: 0.129556
+     │  └─ submit: 17.166
+     │     ├─ extra iterations per submit: 3.38743e+05
+     │     ├─ put: 2.71516
+     │     └─ fastOn: 0.605054
+     └─ Consumer.run: 41.4051
+        ├─ localProcess: 33.0354
+        │  ├─ allocation: 0.0583822
+        │  ├─ ls_hs_state_index: 28.3531
+        │  └─ localAdd: 4.50163
+        └─ fastOn: 2.88775
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 41.8953
+  ├─ localDiagonal: 0.115641
+  └─ localOffDiagonalNoQueue: 41.7638
+     ├─ initialization: 0.357616
+     ├─ Producer.run: 40.7909
+     │  ├─ BatchedOperator.computeOffDiag: 20.8198
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307511
+     │  │  ├─ memcpy: 0.000466536
+     │  │  ├─ ls_hs_state_info: 19.9372
+     │  │  ├─ rescale coeffs: 0.149019
+     │  │  └─ localeIdxOf: 0.425304
+     │  ├─ localProcess: 0.205396
+     │  │  ├─ allocation: 0.000776277
+     │  │  ├─ ls_hs_state_index: 0.170442
+     │  │  └─ localAdd: 0.0329254
+     │  ├─ radixOneStep: 0.13062
+     │  └─ submit: 19.6341
+     │     ├─ extra iterations per submit: 3.8788e+05
+     │     ├─ put: 2.59504
+     │     └─ fastOn: 1.35319
+     └─ Consumer.run: 41.404
+        ├─ localProcess: 32.249
+        │  ├─ allocation: 0.0620804
+        │  ├─ ls_hs_state_index: 27.1238
+        │  └─ localAdd: 4.94142
+        └─ fastOn: 5.82063
+
+[Debug]   [LOCALE17]   matrixVectorProduct: 41.8148
+  ├─ localDiagonal: 0.11035
+  └─ localOffDiagonalNoQueue: 41.695
+     ├─ initialization: 0.288832
+     ├─ Producer.run: 41.2693
+     │  ├─ BatchedOperator.computeOffDiag: 20.8301
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.308103
+     │  │  ├─ memcpy: 0.000467812
+     │  │  ├─ ls_hs_state_info: 19.9462
+     │  │  ├─ rescale coeffs: 0.14924
+     │  │  └─ localeIdxOf: 0.425708
+     │  ├─ localProcess: 0.212404
+     │  │  ├─ allocation: 0.000756705
+     │  │  ├─ ls_hs_state_index: 0.173175
+     │  │  └─ localAdd: 0.0372012
+     │  ├─ radixOneStep: 0.130173
+     │  └─ submit: 20.0957
+     │     ├─ extra iterations per submit: 4.29985e+05
+     │     ├─ put: 1.99836
+     │     └─ fastOn: 0.587731
+     └─ Consumer.run: 41.4049
+        ├─ localProcess: 31.4485
+        │  ├─ allocation: 0.0591319
+        │  ├─ ls_hs_state_index: 27.2613
+        │  └─ localAdd: 3.99578
+        └─ fastOn: 3.01389
+
+[Debug]   [LOCALE22]   matrixVectorProduct: 41.5736
+  ├─ localDiagonal: 0.111193
+  └─ localOffDiagonalNoQueue: 41.4559
+     ├─ initialization: 0.049692
+     ├─ Producer.run: 38.2619
+     │  ├─ BatchedOperator.computeOffDiag: 20.8261
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307516
+     │  │  ├─ memcpy: 0.000470036
+     │  │  ├─ ls_hs_state_info: 19.9429
+     │  │  ├─ rescale coeffs: 0.149179
+     │  │  └─ localeIdxOf: 0.42567
+     │  ├─ localProcess: 0.21988
+     │  │  ├─ allocation: 0.000755018
+     │  │  ├─ ls_hs_state_index: 0.179271
+     │  │  └─ localAdd: 0.038562
+     │  ├─ radixOneStep: 0.130767
+     │  └─ submit: 17.0842
+     │     ├─ extra iterations per submit: 3.04461e+05
+     │     ├─ put: 3.96334
+     │     └─ fastOn: 0.62426
+     └─ Consumer.run: 41.4053
+        ├─ localProcess: 32.2608
+        │  ├─ allocation: 0.0605485
+        │  ├─ ls_hs_state_index: 27.7478
+        │  └─ localAdd: 4.32835
+        └─ fastOn: 2.88789
+
+[Debug]   [LOCALE7]   matrixVectorProduct: 41.818
+  ├─ localDiagonal: 0.111907
+  └─ localOffDiagonalNoQueue: 41.6994
+     ├─ initialization: 0.2932
+     ├─ Producer.run: 39.5469
+     │  ├─ BatchedOperator.computeOffDiag: 20.8189
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307702
+     │  │  ├─ memcpy: 0.000457607
+     │  │  ├─ ls_hs_state_info: 19.9361
+     │  │  ├─ rescale coeffs: 0.149149
+     │  │  └─ localeIdxOf: 0.425096
+     │  ├─ localProcess: 0.208277
+     │  │  ├─ allocation: 0.000725536
+     │  │  ├─ ls_hs_state_index: 0.170792
+     │  │  └─ localAdd: 0.0354497
+     │  ├─ radixOneStep: 0.13006
+     │  └─ submit: 18.3887
+     │     ├─ extra iterations per submit: 4.00973e+05
+     │     ├─ put: 2.63056
+     │     └─ fastOn: 0.628778
+     └─ Consumer.run: 41.4044
+        ├─ localProcess: 32.0433
+        │  ├─ allocation: 0.0644154
+        │  ├─ ls_hs_state_index: 27.4026
+        │  └─ localAdd: 4.45492
+        └─ fastOn: 2.99783
+
+[Debug]   [LOCALE18]   matrixVectorProduct: 41.812
+  ├─ localDiagonal: 0.110084
+  └─ localOffDiagonalNoQueue: 41.6958
+     ├─ initialization: 0.289669
+     ├─ Producer.run: 41.3685
+     │  ├─ BatchedOperator.computeOffDiag: 20.8235
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.308246
+     │  │  ├─ memcpy: 0.00045575
+     │  │  ├─ ls_hs_state_info: 19.9389
+     │  │  ├─ rescale coeffs: 0.149314
+     │  │  └─ localeIdxOf: 0.426224
+     │  ├─ localProcess: 0.2111
+     │  │  ├─ allocation: 0.00075742
+     │  │  ├─ ls_hs_state_index: 0.173622
+     │  │  └─ localAdd: 0.0354455
+     │  ├─ radixOneStep: 0.130275
+     │  └─ submit: 20.2027
+     │     ├─ extra iterations per submit: 4.35247e+05
+     │     ├─ put: 2.80616
+     │     └─ fastOn: 0.624384
+     └─ Consumer.run: 41.3098
+        ├─ localProcess: 31.9457
+        │  ├─ allocation: 0.0637624
+        │  ├─ ls_hs_state_index: 27.6647
+        │  └─ localAdd: 4.08432
+        └─ fastOn: 3.05778
+
+[Debug]   [LOCALE5]   matrixVectorProduct: 41.8165
+  ├─ localDiagonal: 0.110338
+  └─ localOffDiagonalNoQueue: 41.7
+     ├─ initialization: 0.293786
+     ├─ Producer.run: 39.7622
+     │  ├─ BatchedOperator.computeOffDiag: 20.8131
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307382
+     │  │  ├─ memcpy: 0.000478205
+     │  │  ├─ ls_hs_state_info: 19.9303
+     │  │  ├─ rescale coeffs: 0.149159
+     │  │  └─ localeIdxOf: 0.425449
+     │  ├─ localProcess: 0.216808
+     │  │  ├─ allocation: 0.000731554
+     │  │  ├─ ls_hs_state_index: 0.178503
+     │  │  └─ localAdd: 0.0362888
+     │  ├─ radixOneStep: 0.130093
+     │  └─ submit: 18.6012
+     │     ├─ extra iterations per submit: 3.34873e+05
+     │     ├─ put: 4.59787
+     │     └─ fastOn: 0.689194
+     └─ Consumer.run: 41.4043
+        ├─ localProcess: 31.7404
+        │  ├─ allocation: 0.0560375
+        │  ├─ ls_hs_state_index: 27.2923
+        │  └─ localAdd: 4.26815
+        └─ fastOn: 3.23081
+
+[Debug]   [LOCALE9]   matrixVectorProduct: 41.815
+  ├─ localDiagonal: 0.117431
+  └─ localOffDiagonalNoQueue: 41.6909
+     ├─ initialization: 0.284678
+     ├─ Producer.run: 39.0039
+     │  ├─ BatchedOperator.computeOffDiag: 20.831
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.307441
+     │  │  ├─ memcpy: 0.0005185
+     │  │  ├─ ls_hs_state_info: 19.9479
+     │  │  ├─ rescale coeffs: 0.149175
+     │  │  └─ localeIdxOf: 0.42561
+     │  ├─ localProcess: 0.217385
+     │  │  ├─ allocation: 0.000727116
+     │  │  ├─ ls_hs_state_index: 0.175824
+     │  │  └─ localAdd: 0.0394705
+     │  ├─ radixOneStep: 0.130121
+     │  └─ submit: 17.8244
+     │     ├─ extra iterations per submit: 3.36775e+05
+     │     ├─ put: 3.72057
+     │     └─ fastOn: 0.648509
+     └─ Consumer.run: 41.4045
+        ├─ localProcess: 32.1991
+        │  ├─ allocation: 0.0573812
+        │  ├─ ls_hs_state_index: 27.5309
+        │  └─ localAdd: 4.48928
+        └─ fastOn: 3.06628
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 38.7216
+  ├─ counts: 0.012095
+  └─ distribute: 38.5049
+
+true
+42.3376
++ for numLocales in 16 20 24 28 32
++ srun --mpi=pmix -n 28 singularity exec ../result.sif TestMatrixVectorProduct -v --numLocales 28 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kNumConsumerTasks=16 --kRemoteBufferSize=50000
+srun: Warning: can't run 28 processes on 32 nodes, setting nnodes to 28
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn195.local.snellius.surf.nl:2019060] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn204.local.snellius.surf.nl:2687285] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn91.local.snellius.surf.nl:2764122] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:2532070] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn333.local.snellius.surf.nl:3398520] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn19.local.snellius.surf.nl:2990743] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn36.local.snellius.surf.nl:2991550] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:583156] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn259.local.snellius.surf.nl:1260826] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn262.local.snellius.surf.nl:821373] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn260.local.snellius.surf.nl:3249538] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn221.local.snellius.surf.nl:3934521] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1433069] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn225.local.snellius.surf.nl:2029172] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn213.local.snellius.surf.nl:2324496] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn233.local.snellius.surf.nl:1977383] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn241.local.snellius.surf.nl:862568] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn13.local.snellius.surf.nl:1618688] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn384.local.snellius.surf.nl:1250427] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn65.local.snellius.surf.nl:2541423] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn67.local.snellius.surf.nl:2977925] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn355.local.snellius.surf.nl:2890397] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:2154986] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn331.local.snellius.surf.nl:3041077] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn428.local.snellius.surf.nl:3625892] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn411.local.snellius.surf.nl:2199555] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn407.local.snellius.surf.nl:2120102] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn404.local.snellius.surf.nl:451878] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 23 of 28 node(s): tcn384.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 4 of 28 node(s): tcn67.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 25 of 28 node(s): tcn407.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 10 of 28 node(s): tcn195.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 27 of 28 node(s): tcn428.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 22 of 28 node(s): tcn355.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 11 of 28 node(s): tcn204.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 24 of 28 node(s): tcn404.local.snellius.surf.nl
+oversubscribed = False
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 0 of 28 node(s): tcn13.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 26 of 28 node(s): tcn411.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 21 of 28 node(s): tcn333.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 19 of 28 node(s): tcn262.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 14 of 28 node(s): tcn225.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 12 of 28 node(s): tcn213.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 5 of 28 node(s): tcn91.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 6 of 28 node(s): tcn151.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 2 of 28 node(s): tcn36.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 8 of 28 node(s): tcn160.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 20 of 28 node(s): tcn331.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 15 of 28 node(s): tcn233.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 3 of 28 node(s): tcn65.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 1 of 28 node(s): tcn19.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 9 of 28 node(s): tcn164.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 18 of 28 node(s): tcn260.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 17 of 28 node(s): tcn259.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 13 of 28 node(s): tcn221.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 7 of 28 node(s): tcn153.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 16 of 28 node(s): tcn241.local.snellius.surf.nl
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 3.99201
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 10.6004
+  ├─ 1346.88 in _enumerateStates
+  ├─ 2.34178 in _enumStatesComputeMasksAndCounts
+  └─ 0.004578 in PUT
+     (parallel speedup: 127.281)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 17.8707
+  ├─ 1353.38 in _enumerateStates
+  ├─ 2.49067 in _enumStatesComputeMasksAndCounts
+  └─ 0.004333 in PUT
+     (parallel speedup: 75.8715)
+[Debug]   [LOCALE24]   _enumStatesComputeCounts: 17.8754
+  ├─ 1348.14 in _enumerateStates
+  ├─ 2.34574 in _enumStatesComputeMasksAndCounts
+  └─ 0.004246 in PUT
+     (parallel speedup: 75.5505)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 17.8785
+  ├─ 1350.22 in _enumerateStates
+  ├─ 2.3996 in _enumStatesComputeMasksAndCounts
+  └─ 0.004899 in PUT
+     (parallel speedup: 75.6564)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 17.8789
+  ├─ 1350.85 in _enumerateStates
+  ├─ 2.45498 in _enumStatesComputeMasksAndCounts
+  └─ 0.004569 in PUT
+     (parallel speedup: 75.6932)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 17.8812
+  ├─ 1351.23 in _enumerateStates
+  ├─ 2.42717 in _enumStatesComputeMasksAndCounts
+  └─ 0.004263 in PUT
+     (parallel speedup: 75.703)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 17.8811
+  ├─ 1352.3 in _enumerateStates
+  ├─ 2.44314 in _enumStatesComputeMasksAndCounts
+  └─ 0.004323 in PUT
+     (parallel speedup: 75.764)
+[Debug]   [LOCALE23]   _enumStatesComputeCounts: 17.8847
+  ├─ 1352.07 in _enumerateStates
+  ├─ 2.41835 in _enumStatesComputeMasksAndCounts
+  └─ 0.004728 in PUT
+     (parallel speedup: 75.7348)
+[Debug]   [LOCALE19]   _enumStatesComputeCounts: 17.8855
+  ├─ 1351.75 in _enumerateStates
+  ├─ 2.43202 in _enumStatesComputeMasksAndCounts
+  └─ 0.004201 in PUT
+     (parallel speedup: 75.7142)
+[Debug]   [LOCALE18]   _enumStatesComputeCounts: 17.8875
+  ├─ 1349.36 in _enumerateStates
+  ├─ 2.3945 in _enumStatesComputeMasksAndCounts
+  └─ 0.004557 in PUT
+     (parallel speedup: 75.5699)
+[Debug]   [LOCALE20]   _enumStatesComputeCounts: 17.888
+  ├─ 1352.03 in _enumerateStates
+  ├─ 2.42336 in _enumStatesComputeMasksAndCounts
+  └─ 0.004295 in PUT
+     (parallel speedup: 75.7186)
+[Debug]   [LOCALE25]   _enumStatesComputeCounts: 17.8878
+  ├─ 1349.94 in _enumerateStates
+  ├─ 2.38091 in _enumStatesComputeMasksAndCounts
+  └─ 0.004334 in PUT
+     (parallel speedup: 75.6003)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 17.8948
+  ├─ 1354.03 in _enumerateStates
+  ├─ 2.46332 in _enumStatesComputeMasksAndCounts
+  └─ 0.004681 in PUT
+     (parallel speedup: 75.8043)
+[Debug]   [LOCALE16]   _enumStatesComputeCounts: 17.8959
+  ├─ 1354.84 in _enumerateStates
+  ├─ 2.49849 in _enumStatesComputeMasksAndCounts
+  └─ 0.004568 in PUT
+     (parallel speedup: 75.8463)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 17.8987
+  ├─ 1353.6 in _enumerateStates
+  ├─ 2.48927 in _enumStatesComputeMasksAndCounts
+  └─ 0.004554 in PUT
+     (parallel speedup: 75.7649)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 17.8989
+  ├─ 1354.94 in _enumerateStates
+  ├─ 2.49418 in _enumStatesComputeMasksAndCounts
+  └─ 0.004382 in PUT
+     (parallel speedup: 75.8396)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 17.9018
+  ├─ 1352.76 in _enumerateStates
+  ├─ 2.415 in _enumStatesComputeMasksAndCounts
+  └─ 0.004485 in PUT
+     (parallel speedup: 75.7008)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 17.9076
+  ├─ 1356.34 in _enumerateStates
+  ├─ 2.58031 in _enumStatesComputeMasksAndCounts
+  └─ 0.004114 in PUT
+     (parallel speedup: 75.8857)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 17.9373
+  ├─ 1361.11 in _enumerateStates
+  ├─ 2.54739 in _enumStatesComputeMasksAndCounts
+  └─ 0.004715 in PUT
+     (parallel speedup: 76.0241)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 17.9394
+  ├─ 1361.61 in _enumerateStates
+  ├─ 2.49815 in _enumStatesComputeMasksAndCounts
+  └─ 0.004426 in PUT
+     (parallel speedup: 76.0396)
+[Debug]   [LOCALE26]   _enumStatesComputeCounts: 17.9411
+  ├─ 1357.8 in _enumerateStates
+  ├─ 2.37095 in _enumStatesComputeMasksAndCounts
+  └─ 0.004669 in PUT
+     (parallel speedup: 75.8135)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 17.9412
+  ├─ 1359.59 in _enumerateStates
+  ├─ 2.42115 in _enumStatesComputeMasksAndCounts
+  └─ 0.004701 in PUT
+     (parallel speedup: 75.9156)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 17.9427
+  ├─ 1363.4 in _enumerateStates
+  ├─ 2.54093 in _enumStatesComputeMasksAndCounts
+  └─ 0.004744 in PUT
+     (parallel speedup: 76.1281)
+[Debug]   [LOCALE21]   _enumStatesComputeCounts: 17.9434
+  ├─ 1354.26 in _enumerateStates
+  ├─ 2.38272 in _enumStatesComputeMasksAndCounts
+  └─ 0.00473 in PUT
+     (parallel speedup: 75.6067)
+[Debug]   [LOCALE22]   _enumStatesComputeCounts: 17.9437
+  ├─ 1358.74 in _enumerateStates
+  ├─ 2.38493 in _enumStatesComputeMasksAndCounts
+  └─ 0.004675 in PUT
+     (parallel speedup: 75.8556)
+[Debug]   [LOCALE27]   _enumStatesComputeCounts: 17.9425
+  ├─ 1356.27 in _enumerateStates
+  ├─ 2.37258 in _enumStatesComputeMasksAndCounts
+  └─ 0.004125 in PUT
+     (parallel speedup: 75.7224)
+[Debug]   [LOCALE17]   _enumStatesComputeCounts: 17.9449
+  ├─ 1359.67 in _enumerateStates
+  ├─ 2.43831 in _enumStatesComputeMasksAndCounts
+  └─ 0.004424 in PUT
+     (parallel speedup: 75.9053)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 17.955
+  ├─ 1362.24 in _enumerateStates
+  ├─ 2.4894 in _enumStatesComputeMasksAndCounts
+  └─ 0.00448 in PUT
+     (parallel speedup: 76.0088)
+[Debug]   [LOCALE0]   enumerateStates: 23.8717
+  ├─ 17.9611 in _enumStatesComputeCounts
+  └─ 2.16162 shuffling stuff around
+      ├─ 14.1026 16.5374 16.2417 17.1455 16.5294 16.246 14.7041 16.0174 16.5352 14.9735 15.0996 16.0483 17.0559 17.4464 15.1649 14.6129 16.2192 16.4484 16.0639 16.3777 15.9456 15.4743 14.8283 16.6889 14.7641 16.3232 24.2887 25.8065 copying states
+      └─ 0.757465 2.15601 2.19385 2.76013 2.2341 3.72848 4.38847 1.96518 2.47171 1.88133 5.02974 1.98424 2.72324 2.37803 1.61982 4.54234 3.05629 2.83311 2.07779 4.994 3.8754 4.1655 3.6568 2.3578 5.11838 2.20235 3.26022 1.98258 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.09398
+  ├─ counts: 0.010813
+  ├─ makeDestArr: 0.028832
+  └─ distribute: 1.05433
+     └─ permute (mean over locales, sum over tasks): 90.3542
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 37.0894
+  ├─ localDiagonal: 0.09909
+  └─ localOffDiagonalNoQueue: 36.983
+     ├─ initialization: 0.366954
+     ├─ Producer.run: 36.5813
+     │  ├─ BatchedOperator.computeOffDiag: 17.854
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264396
+     │  │  ├─ memcpy: 0.00041167
+     │  │  ├─ ls_hs_state_info: 17.0961
+     │  │  ├─ rescale coeffs: 0.127907
+     │  │  └─ localeIdxOf: 0.364844
+     │  ├─ localProcess: 0.154461
+     │  │  ├─ allocation: 0.000673446
+     │  │  ├─ ls_hs_state_index: 0.127195
+     │  │  └─ localAdd: 0.0254291
+     │  ├─ radixOneStep: 0.111946
+     │  └─ submit: 18.46
+     │     ├─ extra iterations per submit: 3.42264e+05
+     │     ├─ put: 3.73388
+     │     └─ fastOn: 1.46122
+     └─ Consumer.run: 36.0569
+        ├─ localProcess: 27.2743
+        │  ├─ allocation: 0.0618462
+        │  ├─ ls_hs_state_index: 22.7593
+        │  └─ localAdd: 4.33393
+        └─ fastOn: 5.75359
+
+[Debug]   [LOCALE15]   matrixVectorProduct: 37.0245
+  ├─ localDiagonal: 0.095567
+  └─ localOffDiagonalNoQueue: 36.9222
+     ├─ initialization: 0.306101
+     ├─ Producer.run: 34.1783
+     │  ├─ BatchedOperator.computeOffDiag: 17.8717
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264952
+     │  │  ├─ memcpy: 0.000395107
+     │  │  ├─ ls_hs_state_info: 17.1129
+     │  │  ├─ rescale coeffs: 0.128033
+     │  │  └─ localeIdxOf: 0.36509
+     │  ├─ localProcess: 0.16045
+     │  │  ├─ allocation: 0.00065742
+     │  │  ├─ ls_hs_state_index: 0.126525
+     │  │  └─ localAdd: 0.0321218
+     │  ├─ radixOneStep: 0.111943
+     │  └─ submit: 16.0334
+     │     ├─ extra iterations per submit: 3.1838e+05
+     │     ├─ put: 3.20785
+     │     └─ fastOn: 0.605961
+     └─ Consumer.run: 36.6143
+        ├─ localProcess: 28.448
+        │  ├─ allocation: 0.0641074
+        │  ├─ ls_hs_state_index: 24.4622
+        │  └─ localAdd: 3.79914
+        └─ fastOn: 2.9522
+
+[Debug]   [LOCALE25]   matrixVectorProduct: 37.024
+  ├─ localDiagonal: 0.09458
+  └─ localOffDiagonalNoQueue: 36.9226
+     ├─ initialization: 0.306568
+     ├─ Producer.run: 34.7506
+     │  ├─ BatchedOperator.computeOffDiag: 17.8506
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264841
+     │  │  ├─ memcpy: 0.000403312
+     │  │  ├─ ls_hs_state_info: 17.0924
+     │  │  ├─ rescale coeffs: 0.127883
+     │  │  └─ localeIdxOf: 0.364744
+     │  ├─ localProcess: 0.155607
+     │  │  ├─ allocation: 0.00064325
+     │  │  ├─ ls_hs_state_index: 0.12698
+     │  │  └─ localAdd: 0.0267702
+     │  ├─ radixOneStep: 0.112202
+     │  └─ submit: 16.6314
+     │     ├─ extra iterations per submit: 3.31973e+05
+     │     ├─ put: 3.654
+     │     └─ fastOn: 0.764294
+     └─ Consumer.run: 36.6153
+        ├─ localProcess: 27.3042
+        │  ├─ allocation: 0.0639357
+        │  ├─ ls_hs_state_index: 23.2797
+        │  └─ localAdd: 3.83743
+        └─ fastOn: 3.27057
+
+[Debug]   [LOCALE26]   matrixVectorProduct: 37.0252
+  ├─ localDiagonal: 0.094379
+  └─ localOffDiagonalNoQueue: 36.924
+     ├─ initialization: 0.307888
+     ├─ Producer.run: 35.1665
+     │  ├─ BatchedOperator.computeOffDiag: 17.8524
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264938
+     │  │  ├─ memcpy: 0.000454277
+     │  │  ├─ ls_hs_state_info: 17.0938
+     │  │  ├─ rescale coeffs: 0.127989
+     │  │  └─ localeIdxOf: 0.364971
+     │  ├─ localProcess: 0.160182
+     │  │  ├─ allocation: 0.000716161
+     │  │  ├─ ls_hs_state_index: 0.130582
+     │  │  └─ localAdd: 0.0276506
+     │  ├─ radixOneStep: 0.112418
+     │  └─ submit: 17.0406
+     │     ├─ extra iterations per submit: 2.91597e+05
+     │     ├─ put: 5.02871
+     │     └─ fastOn: 0.771554
+     └─ Consumer.run: 36.6154
+        ├─ localProcess: 26.7556
+        │  ├─ allocation: 0.0636518
+        │  ├─ ls_hs_state_index: 22.9527
+        │  └─ localAdd: 3.60742
+        └─ fastOn: 3.2656
+
+[Debug]   [LOCALE19]   matrixVectorProduct: 37.0119
+  ├─ localDiagonal: 0.094841
+  └─ localOffDiagonalNoQueue: 36.91
+     ├─ initialization: 0.293889
+     ├─ Producer.run: 33.388
+     │  ├─ BatchedOperator.computeOffDiag: 17.8579
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264717
+     │  │  ├─ memcpy: 0.000416134
+     │  │  ├─ ls_hs_state_info: 17.0998
+     │  │  ├─ rescale coeffs: 0.127812
+     │  │  └─ localeIdxOf: 0.364846
+     │  ├─ localProcess: 0.154429
+     │  │  ├─ allocation: 0.000670366
+     │  │  ├─ ls_hs_state_index: 0.126657
+     │  │  └─ localAdd: 0.0259665
+     │  ├─ radixOneStep: 0.111867
+     │  └─ submit: 15.263
+     │     ├─ extra iterations per submit: 2.59342e+05
+     │     ├─ put: 4.43359
+     │     └─ fastOn: 0.741346
+     └─ Consumer.run: 36.6147
+        ├─ localProcess: 28.6302
+        │  ├─ allocation: 0.0582806
+        │  ├─ ls_hs_state_index: 24.4757
+        │  └─ localAdd: 3.97423
+        └─ fastOn: 3.43465
+
+[Debug]   [LOCALE8]   matrixVectorProduct: 37.022
+  ├─ localDiagonal: 0.247121
+  └─ localOffDiagonalNoQueue: 36.7678
+     ├─ initialization: 0.151753
+     ├─ Producer.run: 34.3819
+     │  ├─ BatchedOperator.computeOffDiag: 17.8503
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264337
+     │  │  ├─ memcpy: 0.000433518
+     │  │  ├─ ls_hs_state_info: 17.0928
+     │  │  ├─ rescale coeffs: 0.127819
+     │  │  └─ localeIdxOf: 0.36455
+     │  ├─ localProcess: 0.15897
+     │  │  ├─ allocation: 0.000669884
+     │  │  ├─ ls_hs_state_index: 0.129958
+     │  │  └─ localAdd: 0.0272078
+     │  ├─ radixOneStep: 0.112082
+     │  └─ submit: 16.2597
+     │     ├─ extra iterations per submit: 3.138e+05
+     │     ├─ put: 3.64166
+     │     └─ fastOn: 0.722032
+     └─ Consumer.run: 36.6131
+        ├─ localProcess: 27.1748
+        │  ├─ allocation: 0.0615915
+        │  ├─ ls_hs_state_index: 23.2381
+        │  └─ localAdd: 3.73973
+        └─ fastOn: 3.13805
+
+[Debug]   [LOCALE20]   matrixVectorProduct: 36.8098
+  ├─ localDiagonal: 0.096107
+  └─ localOffDiagonalNoQueue: 36.7065
+     ├─ initialization: 0.090448
+     ├─ Producer.run: 33.3965
+     │  ├─ BatchedOperator.computeOffDiag: 17.8317
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264384
+     │  │  ├─ memcpy: 0.000392196
+     │  │  ├─ ls_hs_state_info: 17.075
+     │  │  ├─ rescale coeffs: 0.127566
+     │  │  └─ localeIdxOf: 0.364112
+     │  ├─ localProcess: 0.158334
+     │  │  ├─ allocation: 0.000671188
+     │  │  ├─ ls_hs_state_index: 0.129302
+     │  │  └─ localAdd: 0.0272216
+     │  ├─ radixOneStep: 0.113526
+     │  └─ submit: 15.2921
+     │     ├─ extra iterations per submit: 3.03591e+05
+     │     ├─ put: 2.88048
+     │     └─ fastOn: 0.697325
+     └─ Consumer.run: 36.6147
+        ├─ localProcess: 27.5525
+        │  ├─ allocation: 0.0648482
+        │  ├─ ls_hs_state_index: 23.3877
+        │  └─ localAdd: 3.9712
+        └─ fastOn: 2.88851
+
+[Debug]   [LOCALE18]   matrixVectorProduct: 37.0216
+  ├─ localDiagonal: 0.094544
+  └─ localOffDiagonalNoQueue: 36.92
+     ├─ initialization: 0.303976
+     ├─ Producer.run: 33.627
+     │  ├─ BatchedOperator.computeOffDiag: 17.8602
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264515
+     │  │  ├─ memcpy: 0.000423759
+     │  │  ├─ ls_hs_state_info: 17.1021
+     │  │  ├─ rescale coeffs: 0.127968
+     │  │  └─ localeIdxOf: 0.364958
+     │  ├─ localProcess: 0.160396
+     │  │  ├─ allocation: 0.000705866
+     │  │  ├─ ls_hs_state_index: 0.131213
+     │  │  └─ localAdd: 0.0272524
+     │  ├─ radixOneStep: 0.112394
+     │  └─ submit: 15.4932
+     │     ├─ extra iterations per submit: 2.67712e+05
+     │     ├─ put: 3.96481
+     │     └─ fastOn: 0.759327
+     └─ Consumer.run: 36.6147
+        ├─ localProcess: 27.8067
+        │  ├─ allocation: 0.0630454
+        │  ├─ ls_hs_state_index: 23.5687
+        │  └─ localAdd: 4.04032
+        └─ fastOn: 3.21359
+
+[Debug]   [LOCALE2]   matrixVectorProduct: 37.0212
+  ├─ localDiagonal: 0.094094
+  └─ localOffDiagonalNoQueue: 36.9196
+     ├─ initialization: 0.30358
+     ├─ Producer.run: 34.7337
+     │  ├─ BatchedOperator.computeOffDiag: 17.8533
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264778
+     │  │  ├─ memcpy: 0.000435018
+     │  │  ├─ ls_hs_state_info: 17.0952
+     │  │  ├─ rescale coeffs: 0.127938
+     │  │  └─ localeIdxOf: 0.364651
+     │  ├─ localProcess: 0.158778
+     │  │  ├─ allocation: 0.000665875
+     │  │  ├─ ls_hs_state_index: 0.13002
+     │  │  └─ localAdd: 0.0269613
+     │  ├─ radixOneStep: 0.112385
+     │  └─ submit: 16.6083
+     │     ├─ extra iterations per submit: 2.77178e+05
+     │     ├─ put: 4.26846
+     │     └─ fastOn: 1.17778
+     └─ Consumer.run: 36.6119
+        ├─ localProcess: 27.7253
+        │  ├─ allocation: 0.0629261
+        │  ├─ ls_hs_state_index: 23.7161
+        │  └─ localAdd: 3.8252
+        └─ fastOn: 5.53628
+
+[Debug]   [LOCALE13]   matrixVectorProduct: 37.0177
+  ├─ localDiagonal: 0.09437
+  └─ localOffDiagonalNoQueue: 36.9164
+     ├─ initialization: 0.30028
+     ├─ Producer.run: 33.8079
+     │  ├─ BatchedOperator.computeOffDiag: 17.8635
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.265002
+     │  │  ├─ memcpy: 0.000441786
+     │  │  ├─ ls_hs_state_info: 17.1048
+     │  │  ├─ rescale coeffs: 0.1279
+     │  │  └─ localeIdxOf: 0.365069
+     │  ├─ localProcess: 0.161812
+     │  │  ├─ allocation: 0.000640866
+     │  │  ├─ ls_hs_state_index: 0.132523
+     │  │  └─ localAdd: 0.0274511
+     │  ├─ radixOneStep: 0.112375
+     │  └─ submit: 15.6693
+     │     ├─ extra iterations per submit: 2.72435e+05
+     │     ├─ put: 4.00845
+     │     └─ fastOn: 0.932054
+     └─ Consumer.run: 36.6138
+        ├─ localProcess: 28.0943
+        │  ├─ allocation: 0.0579313
+        │  ├─ ls_hs_state_index: 23.9234
+        │  └─ localAdd: 3.99132
+        └─ fastOn: 3.95322
+
+[Debug]   [LOCALE24]   matrixVectorProduct: 37.0196
+  ├─ localDiagonal: 0.094586
+  └─ localOffDiagonalNoQueue: 36.918
+     ├─ initialization: 0.301932
+     ├─ Producer.run: 34.2741
+     │  ├─ BatchedOperator.computeOffDiag: 17.8616
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264577
+     │  │  ├─ memcpy: 0.000416063
+     │  │  ├─ ls_hs_state_info: 17.1032
+     │  │  ├─ rescale coeffs: 0.127962
+     │  │  └─ localeIdxOf: 0.36515
+     │  ├─ localProcess: 0.156264
+     │  │  ├─ allocation: 0.000677857
+     │  │  ├─ ls_hs_state_index: 0.127426
+     │  │  └─ localAdd: 0.0269772
+     │  ├─ radixOneStep: 0.112158
+     │  └─ submit: 16.1433
+     │     ├─ extra iterations per submit: 2.72534e+05
+     │     ├─ put: 5.16282
+     │     └─ fastOn: 0.780036
+     └─ Consumer.run: 36.6151
+        ├─ localProcess: 27.7853
+        │  ├─ allocation: 0.0635375
+        │  ├─ ls_hs_state_index: 23.7653
+        │  └─ localAdd: 3.82707
+        └─ fastOn: 3.34608
+
+[Debug]   [LOCALE12]   matrixVectorProduct: 37.0244
+  ├─ localDiagonal: 0.096149
+  └─ localOffDiagonalNoQueue: 36.9212
+     ├─ initialization: 0.305165
+     ├─ Producer.run: 33.9194
+     │  ├─ BatchedOperator.computeOffDiag: 17.8438
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.265119
+     │  │  ├─ memcpy: 0.000460339
+     │  │  ├─ ls_hs_state_info: 17.0855
+     │  │  ├─ rescale coeffs: 0.12793
+     │  │  └─ localeIdxOf: 0.364534
+     │  ├─ localProcess: 0.162349
+     │  │  ├─ allocation: 0.00068742
+     │  │  ├─ ls_hs_state_index: 0.131068
+     │  │  └─ localAdd: 0.0293814
+     │  ├─ radixOneStep: 0.112264
+     │  └─ submit: 15.8
+     │     ├─ extra iterations per submit: 2.66271e+05
+     │     ├─ put: 4.50565
+     │     └─ fastOn: 0.82497
+     └─ Consumer.run: 36.6137
+        ├─ localProcess: 27.6389
+        │  ├─ allocation: 0.0582674
+        │  ├─ ls_hs_state_index: 23.5358
+        │  └─ localAdd: 3.9173
+        └─ fastOn: 3.70557
+
+[Debug]   [LOCALE27]   matrixVectorProduct: 37.0244
+  ├─ localDiagonal: 0.094269
+  └─ localOffDiagonalNoQueue: 36.9232
+     ├─ initialization: 0.307095
+     ├─ Producer.run: 35.4033
+     │  ├─ BatchedOperator.computeOffDiag: 17.8693
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264689
+     │  │  ├─ memcpy: 0.000417812
+     │  │  ├─ ls_hs_state_info: 17.1111
+     │  │  ├─ rescale coeffs: 0.127989
+     │  │  └─ localeIdxOf: 0.364797
+     │  ├─ localProcess: 0.153684
+     │  │  ├─ allocation: 0.000683143
+     │  │  ├─ ls_hs_state_index: 0.124555
+     │  │  └─ localAdd: 0.0272859
+     │  ├─ radixOneStep: 0.112101
+     │  └─ submit: 17.2675
+     │     ├─ extra iterations per submit: 3.33561e+05
+     │     ├─ put: 3.81756
+     │     └─ fastOn: 0.840628
+     └─ Consumer.run: 36.6155
+        ├─ localProcess: 26.8682
+        │  ├─ allocation: 0.0649249
+        │  ├─ ls_hs_state_index: 23.012
+        │  └─ localAdd: 3.6633
+        └─ fastOn: 3.66348
+
+[Debug]   [LOCALE22]   matrixVectorProduct: 37.0255
+  ├─ localDiagonal: 0.09506
+  └─ localOffDiagonalNoQueue: 36.923
+     ├─ initialization: 0.306879
+     ├─ Producer.run: 33.6327
+     │  ├─ BatchedOperator.computeOffDiag: 17.8706
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.266763
+     │  │  ├─ memcpy: 0.000425839
+     │  │  ├─ ls_hs_state_info: 17.1101
+     │  │  ├─ rescale coeffs: 0.127973
+     │  │  └─ localeIdxOf: 0.365019
+     │  ├─ localProcess: 0.171881
+     │  │  ├─ allocation: 0.000680554
+     │  │  ├─ ls_hs_state_index: 0.127305
+     │  │  └─ localAdd: 0.0427221
+     │  ├─ radixOneStep: 0.112305
+     │  └─ submit: 15.477
+     │     ├─ extra iterations per submit: 2.98519e+05
+     │     ├─ put: 3.47178
+     │     └─ fastOn: 0.684991
+     └─ Consumer.run: 36.6149
+        ├─ localProcess: 27.614
+        │  ├─ allocation: 0.0583647
+        │  ├─ ls_hs_state_index: 23.5187
+        │  └─ localAdd: 3.90835
+        └─ fastOn: 3.02233
+
+[Debug]   [LOCALE9]   matrixVectorProduct: 37.0154
+  ├─ localDiagonal: 0.095224
+  └─ localOffDiagonalNoQueue: 36.9126
+     ├─ initialization: 0.296575
+     ├─ Producer.run: 33.5606
+     │  ├─ BatchedOperator.computeOffDiag: 17.8669
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264484
+     │  │  ├─ memcpy: 0.000397768
+     │  │  ├─ ls_hs_state_info: 17.1088
+     │  │  ├─ rescale coeffs: 0.1279
+     │  │  └─ localeIdxOf: 0.364943
+     │  ├─ localProcess: 0.159662
+     │  │  ├─ allocation: 0.000689429
+     │  │  ├─ ls_hs_state_index: 0.130155
+     │  │  └─ localAdd: 0.027616
+     │  ├─ radixOneStep: 0.11244
+     │  └─ submit: 15.4208
+     │     ├─ extra iterations per submit: 2.53879e+05
+     │     ├─ put: 4.77505
+     │     └─ fastOn: 0.764057
+     └─ Consumer.run: 36.6132
+        ├─ localProcess: 28.1054
+        │  ├─ allocation: 0.063544
+        │  ├─ ls_hs_state_index: 23.9689
+        │  └─ localAdd: 3.93985
+        └─ fastOn: 3.24315
+
+[Debug]   [LOCALE17]   matrixVectorProduct: 37.0193
+  ├─ localDiagonal: 0.095266
+  └─ localOffDiagonalNoQueue: 36.9166
+     ├─ initialization: 0.300512
+     ├─ Producer.run: 33.6346
+     │  ├─ BatchedOperator.computeOffDiag: 17.8533
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264736
+     │  │  ├─ memcpy: 0.000403804
+     │  │  ├─ ls_hs_state_info: 17.0954
+     │  │  ├─ rescale coeffs: 0.127856
+     │  │  └─ localeIdxOf: 0.364592
+     │  ├─ localProcess: 0.155464
+     │  │  ├─ allocation: 0.000672286
+     │  │  ├─ ls_hs_state_index: 0.126727
+     │  │  └─ localAdd: 0.0268516
+     │  ├─ radixOneStep: 0.112101
+     │  └─ submit: 15.5129
+     │     ├─ extra iterations per submit: 2.97941e+05
+     │     ├─ put: 3.73726
+     │     └─ fastOn: 0.67507
+     └─ Consumer.run: 36.6145
+        ├─ localProcess: 27.763
+        │  ├─ allocation: 0.0640339
+        │  ├─ ls_hs_state_index: 23.8392
+        │  └─ localAdd: 3.72657
+        └─ fastOn: 3.26778
+
+[Debug]   [LOCALE6]   matrixVectorProduct: 37.0212
+  ├─ localDiagonal: 0.094466
+  └─ localOffDiagonalNoQueue: 36.9195
+     ├─ initialization: 0.303472
+     ├─ Producer.run: 34.8856
+     │  ├─ BatchedOperator.computeOffDiag: 17.853
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264641
+     │  │  ├─ memcpy: 0.000428875
+     │  │  ├─ ls_hs_state_info: 17.0951
+     │  │  ├─ rescale coeffs: 0.127937
+     │  │  └─ localeIdxOf: 0.364642
+     │  ├─ localProcess: 0.161229
+     │  │  ├─ allocation: 0.000662268
+     │  │  ├─ ls_hs_state_index: 0.129798
+     │  │  └─ localAdd: 0.0295435
+     │  ├─ radixOneStep: 0.112313
+     │  └─ submit: 16.7582
+     │     ├─ extra iterations per submit: 3.25391e+05
+     │     ├─ put: 4.07917
+     │     └─ fastOn: 0.760714
+     └─ Consumer.run: 36.6128
+        ├─ localProcess: 27.2058
+        │  ├─ allocation: 0.0640939
+        │  ├─ ls_hs_state_index: 23.1839
+        │  └─ localAdd: 3.8198
+        └─ fastOn: 3.25749
+
+[Debug]   [LOCALE1]   matrixVectorProduct: 37.0152
+  ├─ localDiagonal: 0.10096
+  └─ localOffDiagonalNoQueue: 36.907
+     ├─ initialization: 0.290811
+     ├─ Producer.run: 36.0475
+     │  ├─ BatchedOperator.computeOffDiag: 17.8568
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264546
+     │  │  ├─ memcpy: 0.00040875
+     │  │  ├─ ls_hs_state_info: 17.0986
+     │  │  ├─ rescale coeffs: 0.128027
+     │  │  └─ localeIdxOf: 0.364973
+     │  ├─ localProcess: 0.156086
+     │  │  ├─ allocation: 0.00071175
+     │  │  ├─ ls_hs_state_index: 0.126458
+     │  │  └─ localAdd: 0.0277221
+     │  ├─ radixOneStep: 0.111825
+     │  └─ submit: 17.9219
+     │     ├─ extra iterations per submit: 2.90913e+05
+     │     ├─ put: 5.18585
+     │     └─ fastOn: 1.39049
+     └─ Consumer.run: 36.6118
+        ├─ localProcess: 27.1344
+        │  ├─ allocation: 0.0630812
+        │  ├─ ls_hs_state_index: 23.3487
+        │  └─ localAdd: 3.59661
+        └─ fastOn: 5.61733
+
+[Debug]   [LOCALE4]   matrixVectorProduct: 37.0212
+  ├─ localDiagonal: 0.099422
+  └─ localOffDiagonalNoQueue: 36.9143
+     ├─ initialization: 0.298184
+     ├─ Producer.run: 34.0957
+     │  ├─ BatchedOperator.computeOffDiag: 17.8794
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.265482
+     │  │  ├─ memcpy: 0.000402982
+     │  │  ├─ ls_hs_state_info: 17.1196
+     │  │  ├─ rescale coeffs: 0.128092
+     │  │  └─ localeIdxOf: 0.365491
+     │  ├─ localProcess: 0.161617
+     │  │  ├─ allocation: 0.000731607
+     │  │  ├─ ls_hs_state_index: 0.133262
+     │  │  └─ localAdd: 0.0264006
+     │  ├─ radixOneStep: 0.112111
+     │  └─ submit: 15.9417
+     │     ├─ extra iterations per submit: 2.85773e+05
+     │     ├─ put: 4.63197
+     │     └─ fastOn: 0.794394
+     └─ Consumer.run: 36.6124
+        ├─ localProcess: 27.4634
+        │  ├─ allocation: 0.0620146
+        │  ├─ ls_hs_state_index: 23.362
+        │  └─ localAdd: 3.91557
+        └─ fastOn: 3.58243
+
+[Debug]   [LOCALE14]   matrixVectorProduct: 37.0175
+  ├─ localDiagonal: 0.244828
+  └─ localOffDiagonalNoQueue: 36.7652
+     ├─ initialization: 0.149148
+     ├─ Producer.run: 34.1871
+     │  ├─ BatchedOperator.computeOffDiag: 17.8657
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.265035
+     │  │  ├─ memcpy: 0.000432839
+     │  │  ├─ ls_hs_state_info: 17.1043
+     │  │  ├─ rescale coeffs: 0.130727
+     │  │  └─ localeIdxOf: 0.364898
+     │  ├─ localProcess: 0.15968
+     │  │  ├─ allocation: 0.0007205
+     │  │  ├─ ls_hs_state_index: 0.129192
+     │  │  └─ localAdd: 0.028569
+     │  ├─ radixOneStep: 0.112342
+     │  └─ submit: 16.0486
+     │     ├─ extra iterations per submit: 2.82004e+05
+     │     ├─ put: 4.35082
+     │     └─ fastOn: 0.661163
+     └─ Consumer.run: 36.6142
+        ├─ localProcess: 27.6863
+        │  ├─ allocation: 0.0624697
+        │  ├─ ls_hs_state_index: 23.5374
+        │  └─ localAdd: 3.95902
+        └─ fastOn: 3.06039
+
+[Debug]   [LOCALE10]   matrixVectorProduct: 37.0156
+  ├─ localDiagonal: 0.095789
+  └─ localOffDiagonalNoQueue: 36.9129
+     ├─ initialization: 0.296865
+     ├─ Producer.run: 34.243
+     │  ├─ BatchedOperator.computeOffDiag: 17.8513
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264877
+     │  │  ├─ memcpy: 0.000402402
+     │  │  ├─ ls_hs_state_info: 17.0929
+     │  │  ├─ rescale coeffs: 0.127859
+     │  │  └─ localeIdxOf: 0.364886
+     │  ├─ localProcess: 0.158016
+     │  │  ├─ allocation: 0.000656795
+     │  │  ├─ ls_hs_state_index: 0.129332
+     │  │  └─ localAdd: 0.0269041
+     │  ├─ radixOneStep: 0.111894
+     │  └─ submit: 16.121
+     │     ├─ extra iterations per submit: 2.87706e+05
+     │     ├─ put: 4.57668
+     │     └─ fastOn: 0.801589
+     └─ Consumer.run: 36.6134
+        ├─ localProcess: 27.9916
+        │  ├─ allocation: 0.0581298
+        │  ├─ ls_hs_state_index: 23.9449
+        │  └─ localAdd: 3.85847
+        └─ fastOn: 3.73975
+
+[Debug]   [LOCALE5]   matrixVectorProduct: 37.019
+  ├─ localDiagonal: 0.101569
+  └─ localOffDiagonalNoQueue: 36.9106
+     ├─ initialization: 0.294492
+     ├─ Producer.run: 34.7054
+     │  ├─ BatchedOperator.computeOffDiag: 17.8517
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264982
+     │  │  ├─ memcpy: 0.00043058
+     │  │  ├─ ls_hs_state_info: 17.0936
+     │  │  ├─ rescale coeffs: 0.127904
+     │  │  └─ localeIdxOf: 0.364528
+     │  ├─ localProcess: 0.157556
+     │  │  ├─ allocation: 0.00067467
+     │  │  ├─ ls_hs_state_index: 0.129599
+     │  │  └─ localAdd: 0.0261719
+     │  ├─ radixOneStep: 0.11207
+     │  └─ submit: 16.5833
+     │     ├─ extra iterations per submit: 3.30713e+05
+     │     ├─ put: 3.72469
+     │     └─ fastOn: 0.767946
+     └─ Consumer.run: 36.6124
+        ├─ localProcess: 27.7357
+        │  ├─ allocation: 0.0637684
+        │  ├─ ls_hs_state_index: 23.7253
+        │  └─ localAdd: 3.82517
+        └─ fastOn: 3.31642
+
+[Debug]   [LOCALE21]   matrixVectorProduct: 37.0215
+  ├─ localDiagonal: 0.094292
+  └─ localOffDiagonalNoQueue: 36.9203
+     ├─ initialization: 0.304284
+     ├─ Producer.run: 33.7338
+     │  ├─ BatchedOperator.computeOffDiag: 17.8517
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264568
+     │  │  ├─ memcpy: 0.000421964
+     │  │  ├─ ls_hs_state_info: 17.0937
+     │  │  ├─ rescale coeffs: 0.127857
+     │  │  └─ localeIdxOf: 0.364864
+     │  ├─ localProcess: 0.158437
+     │  │  ├─ allocation: 0.000671375
+     │  │  ├─ ls_hs_state_index: 0.130142
+     │  │  └─ localAdd: 0.0264277
+     │  ├─ radixOneStep: 0.112233
+     │  └─ submit: 15.6106
+     │     ├─ extra iterations per submit: 2.88737e+05
+     │     ├─ put: 4.19455
+     │     └─ fastOn: 0.725604
+     └─ Consumer.run: 36.6148
+        ├─ localProcess: 27.5267
+        │  ├─ allocation: 0.0623243
+        │  ├─ ls_hs_state_index: 23.4533
+        │  └─ localAdd: 3.88924
+        └─ fastOn: 2.95693
+
+[Debug]   [LOCALE23]   matrixVectorProduct: 37.016
+  ├─ localDiagonal: 0.094183
+  └─ localOffDiagonalNoQueue: 36.9149
+     ├─ initialization: 0.298864
+     ├─ Producer.run: 33.6657
+     │  ├─ BatchedOperator.computeOffDiag: 17.876
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264999
+     │  │  ├─ memcpy: 0.000398554
+     │  │  ├─ ls_hs_state_info: 17.1171
+     │  │  ├─ rescale coeffs: 0.12816
+     │  │  └─ localeIdxOf: 0.365061
+     │  ├─ localProcess: 0.157343
+     │  │  ├─ allocation: 0.000654696
+     │  │  ├─ ls_hs_state_index: 0.128889
+     │  │  └─ localAdd: 0.0266336
+     │  ├─ radixOneStep: 0.112663
+     │  └─ submit: 15.519
+     │     ├─ extra iterations per submit: 3.1002e+05
+     │     ├─ put: 3.10147
+     │     └─ fastOn: 0.705835
+     └─ Consumer.run: 36.6149
+        ├─ localProcess: 27.8502
+        │  ├─ allocation: 0.0591573
+        │  ├─ ls_hs_state_index: 23.8602
+        │  └─ localAdd: 3.8087
+        └─ fastOn: 2.97654
+
+[Debug]   [LOCALE11]   matrixVectorProduct: 37.0231
+  ├─ localDiagonal: 0.094945
+  └─ localOffDiagonalNoQueue: 36.9209
+     ├─ initialization: 0.304862
+     ├─ Producer.run: 34.535
+     │  ├─ BatchedOperator.computeOffDiag: 17.8596
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264881
+     │  │  ├─ memcpy: 0.000420027
+     │  │  ├─ ls_hs_state_info: 17.1013
+     │  │  ├─ rescale coeffs: 0.127877
+     │  │  └─ localeIdxOf: 0.36478
+     │  ├─ localProcess: 0.160415
+     │  │  ├─ allocation: 0.000706429
+     │  │  ├─ ls_hs_state_index: 0.132635
+     │  │  └─ localAdd: 0.0258826
+     │  ├─ radixOneStep: 0.112733
+     │  └─ submit: 16.4015
+     │     ├─ extra iterations per submit: 2.78454e+05
+     │     ├─ put: 4.92537
+     │     └─ fastOn: 0.823665
+     └─ Consumer.run: 36.6136
+        ├─ localProcess: 27.4649
+        │  ├─ allocation: 0.0627858
+        │  ├─ ls_hs_state_index: 23.5039
+        │  └─ localAdd: 3.77041
+        └─ fastOn: 3.70022
+
+[Debug]   [LOCALE7]   matrixVectorProduct: 37.0154
+  ├─ localDiagonal: 0.101616
+  └─ localOffDiagonalNoQueue: 36.9064
+     ├─ initialization: 0.290315
+     ├─ Producer.run: 34.7986
+     │  ├─ BatchedOperator.computeOffDiag: 17.8635
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.265727
+     │  │  ├─ memcpy: 0.000431
+     │  │  ├─ ls_hs_state_info: 17.1039
+     │  │  ├─ rescale coeffs: 0.128067
+     │  │  └─ localeIdxOf: 0.36503
+     │  ├─ localProcess: 0.157877
+     │  │  ├─ allocation: 0.00068975
+     │  │  ├─ ls_hs_state_index: 0.12852
+     │  │  └─ localAdd: 0.0275528
+     │  ├─ radixOneStep: 0.11253
+     │  └─ submit: 16.6639
+     │     ├─ extra iterations per submit: 3.05889e+05
+     │     ├─ put: 4.68225
+     │     └─ fastOn: 0.792218
+     └─ Consumer.run: 36.613
+        ├─ localProcess: 27.2044
+        │  ├─ allocation: 0.0638337
+        │  ├─ ls_hs_state_index: 23.2303
+        │  └─ localAdd: 3.78684
+        └─ fastOn: 3.236
+
+[Debug]   [LOCALE3]   matrixVectorProduct: 37.0225
+  ├─ localDiagonal: 0.09438
+  └─ localOffDiagonalNoQueue: 36.9114
+     ├─ initialization: 0.295335
+     ├─ Producer.run: 34.6354
+     │  ├─ BatchedOperator.computeOffDiag: 17.8264
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264633
+     │  │  ├─ memcpy: 0.000382589
+     │  │  ├─ ls_hs_state_info: 17.0695
+     │  │  ├─ rescale coeffs: 0.127808
+     │  │  └─ localeIdxOf: 0.363809
+     │  ├─ localProcess: 0.152739
+     │  │  ├─ allocation: 0.000652696
+     │  │  ├─ ls_hs_state_index: 0.12449
+     │  │  └─ localAdd: 0.026481
+     │  ├─ radixOneStep: 0.111449
+     │  └─ submit: 16.5439
+     │     ├─ extra iterations per submit: 2.98824e+05
+     │     ├─ put: 4.73848
+     │     └─ fastOn: 0.718471
+     └─ Consumer.run: 36.6119
+        ├─ localProcess: 27.6564
+        │  ├─ allocation: 0.0583979
+        │  ├─ ls_hs_state_index: 23.5354
+        │  └─ localAdd: 3.93044
+        └─ fastOn: 3.46759
+
+[Debug]   [LOCALE16]   matrixVectorProduct: 37.0283
+  ├─ localDiagonal: 0.136
+  └─ localOffDiagonalNoQueue: 36.8799
+     ├─ initialization: 0.263844
+     ├─ Producer.run: 33.6412
+     │  ├─ BatchedOperator.computeOffDiag: 17.866
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.264437
+     │  │  ├─ memcpy: 0.00040942
+     │  │  ├─ ls_hs_state_info: 17.108
+     │  │  ├─ rescale coeffs: 0.127963
+     │  │  └─ localeIdxOf: 0.364904
+     │  ├─ localProcess: 0.157305
+     │  │  ├─ allocation: 0.000683643
+     │  │  ├─ ls_hs_state_index: 0.128619
+     │  │  └─ localAdd: 0.0267531
+     │  ├─ radixOneStep: 0.112531
+     │  └─ submit: 15.5045
+     │     ├─ extra iterations per submit: 2.81936e+05
+     │     ├─ put: 4.14708
+     │     └─ fastOn: 0.624621
+     └─ Consumer.run: 36.6144
+        ├─ localProcess: 27.9609
+        │  ├─ allocation: 0.0586226
+        │  ├─ ls_hs_state_index: 23.9032
+        │  └─ localAdd: 3.87141
+        └─ fastOn: 3.10634
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 43.7632
+  ├─ counts: 0.011696
+  └─ distribute: 43.2796
+
+true
+37.5173
++ for numLocales in 16 20 24 28 32
++ srun --mpi=pmix -n 32 singularity exec ../result.sif TestMatrixVectorProduct -v --numLocales 32 --kHamiltonian data/heisenberg_chain_42_symm.yaml --kVectors /home/twest/project/distributed-matvec/heisenberg_chain_42_symm.h5 --kDisplayTimings=true --kNumConsumerTasks=16 --kRemoteBufferSize=50000
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn204.local.snellius.surf.nl:2688019] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn91.local.snellius.surf.nl:2764925] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn19.local.snellius.surf.nl:2991624] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn225.local.snellius.surf.nl:2030008] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn195.local.snellius.surf.nl:2019932] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn221.local.snellius.surf.nl:3935389] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn164.local.snellius.surf.nl:2532869] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn13.local.snellius.surf.nl:1619677] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn233.local.snellius.surf.nl:1978165] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn241.local.snellius.surf.nl:873150] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn407.local.snellius.surf.nl:2120859] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn259.local.snellius.surf.nl:1262892] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn160.local.snellius.surf.nl:2155767] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn355.local.snellius.surf.nl:2899482] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn260.local.snellius.surf.nl:3250329] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn36.local.snellius.surf.nl:2992334] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn151.local.snellius.surf.nl:594826] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn213.local.snellius.surf.nl:2325317] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn153.local.snellius.surf.nl:1433880] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn404.local.snellius.surf.nl:452636] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn428.local.snellius.surf.nl:3626638] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn67.local.snellius.surf.nl:2989456] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn333.local.snellius.surf.nl:3407099] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn411.local.snellius.surf.nl:2200304] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn384.local.snellius.surf.nl:1251178] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn262.local.snellius.surf.nl:824451] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn65.local.snellius.surf.nl:2542274] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn331.local.snellius.surf.nl:3041862] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: passwd file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+WARNING: group file doesn't exist in container, not updating
+[tcn457.local.snellius.surf.nl:2021789] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn435.local.snellius.surf.nl:1828686] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn447.local.snellius.surf.nl:484968] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+[tcn494.local.snellius.surf.nl:1954491] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 168
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 29 of 32 node(s): tcn447.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 28 of 32 node(s): tcn435.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 31 of 32 node(s): tcn494.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 27 of 32 node(s): tcn428.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 12 of 32 node(s): tcn213.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 24 of 32 node(s): tcn404.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 2 of 32 node(s): tcn36.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 6 of 32 node(s): tcn151.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 4 of 32 node(s): tcn67.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 16 of 32 node(s): tcn241.local.snellius.surf.nl
+oversubscribed = False
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 0 of 32 node(s): tcn13.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 17 of 32 node(s): tcn259.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 25 of 32 node(s): tcn407.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 3 of 32 node(s): tcn65.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 30 of 32 node(s): tcn457.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 8 of 32 node(s): tcn160.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 14 of 32 node(s): tcn225.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 18 of 32 node(s): tcn260.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 23 of 32 node(s): tcn384.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 21 of 32 node(s): tcn333.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 19 of 32 node(s): tcn262.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 10 of 32 node(s): tcn195.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 9 of 32 node(s): tcn164.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 13 of 32 node(s): tcn221.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 20 of 32 node(s): tcn331.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 1 of 32 node(s): tcn19.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 15 of 32 node(s): tcn233.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 5 of 32 node(s): tcn91.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 26 of 32 node(s): tcn411.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 11 of 32 node(s): tcn204.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 22 of 32 node(s): tcn355.local.snellius.surf.nl
+QTHREADS: Using 128 Shepherds
+QTHREADS: Using 1 Workers per Shepherd
+QTHREADS: Using 8384512 byte stack size.
+executing on node 7 of 32 node(s): tcn153.local.snellius.surf.nl
+[Debug]   [LOCALE0]   determineEnumerationRanges(2097151..2199022206976) took 4.56367
+[Debug]   [LOCALE0]   _enumStatesComputeCounts: 9.32016
+  ├─ 1183.92 in _enumerateStates
+  ├─ 2.0367 in _enumStatesComputeMasksAndCounts
+  └─ 0.006624 in PUT
+     (parallel speedup: 127.248)
+[Debug]   [LOCALE13]   _enumStatesComputeCounts: 16.344
+  ├─ 1180.57 in _enumerateStates
+  ├─ 2.11605 in _enumStatesComputeMasksAndCounts
+  └─ 0.003802 in PUT
+     (parallel speedup: 72.3625)
+[Debug]   [LOCALE1]   _enumStatesComputeCounts: 16.3463
+  ├─ 1182.04 in _enumerateStates
+  ├─ 2.10135 in _enumStatesComputeMasksAndCounts
+  └─ 0.003696 in PUT
+     (parallel speedup: 72.4412)
+[Debug]   [LOCALE31]   _enumStatesComputeCounts: 16.3531
+  ├─ 1179.65 in _enumerateStates
+  ├─ 2.06904 in _enumStatesComputeMasksAndCounts
+  └─ 0.003599 in PUT
+     (parallel speedup: 72.2627)
+[Debug]   [LOCALE12]   _enumStatesComputeCounts: 16.3557
+  ├─ 1184.18 in _enumerateStates
+  ├─ 2.14445 in _enumStatesComputeMasksAndCounts
+  └─ 0.004281 in PUT
+     (parallel speedup: 72.5333)
+[Debug]   [LOCALE15]   _enumStatesComputeCounts: 16.3569
+  ├─ 1186.2 in _enumerateStates
+  ├─ 2.2085 in _enumStatesComputeMasksAndCounts
+  └─ 0.004312 in PUT
+     (parallel speedup: 72.6553)
+[Debug]   [LOCALE18]   _enumStatesComputeCounts: 16.3573
+  ├─ 1184.21 in _enumerateStates
+  ├─ 2.13903 in _enumStatesComputeMasksAndCounts
+  └─ 0.004524 in PUT
+     (parallel speedup: 72.5276)
+[Debug]   [LOCALE28]   _enumStatesComputeCounts: 16.3572
+  ├─ 1180.22 in _enumerateStates
+  ├─ 2.05856 in _enumStatesComputeMasksAndCounts
+  └─ 0.003967 in PUT
+     (parallel speedup: 72.2794)
+[Debug]   [LOCALE26]   _enumStatesComputeCounts: 16.3647
+  ├─ 1181.79 in _enumerateStates
+  ├─ 2.09034 in _enumStatesComputeMasksAndCounts
+  └─ 0.004139 in PUT
+     (parallel speedup: 72.3437)
+[Debug]   [LOCALE24]   _enumStatesComputeCounts: 16.3651
+  ├─ 1179.08 in _enumerateStates
+  ├─ 2.05538 in _enumStatesComputeMasksAndCounts
+  └─ 0.003683 in PUT
+     (parallel speedup: 72.1743)
+[Debug]   [LOCALE14]   _enumStatesComputeCounts: 16.3688
+  ├─ 1185.14 in _enumerateStates
+  ├─ 2.18687 in _enumStatesComputeMasksAndCounts
+  └─ 0.004289 in PUT
+     (parallel speedup: 72.5364)
+[Debug]   [LOCALE25]   _enumStatesComputeCounts: 16.3703
+  ├─ 1180.21 in _enumerateStates
+  ├─ 2.0556 in _enumStatesComputeMasksAndCounts
+  └─ 0.004076 in PUT
+     (parallel speedup: 72.2206)
+[Debug]   [LOCALE29]   _enumStatesComputeCounts: 16.3715
+  ├─ 1181.09 in _enumerateStates
+  ├─ 2.07711 in _enumStatesComputeMasksAndCounts
+  └─ 0.003966 in PUT
+     (parallel speedup: 72.2701)
+[Debug]   [LOCALE16]   _enumStatesComputeCounts: 16.3723
+  ├─ 1186.4 in _enumerateStates
+  ├─ 2.18226 in _enumStatesComputeMasksAndCounts
+  └─ 0.003691 in PUT
+     (parallel speedup: 72.5973)
+[Debug]   [LOCALE6]   _enumStatesComputeCounts: 16.3747
+  ├─ 1183.7 in _enumerateStates
+  ├─ 2.16714 in _enumStatesComputeMasksAndCounts
+  └─ 0.004187 in PUT
+     (parallel speedup: 72.4209)
+[Debug]   [LOCALE17]   _enumStatesComputeCounts: 16.3953
+  ├─ 1187.26 in _enumerateStates
+  ├─ 2.08326 in _enumStatesComputeMasksAndCounts
+  └─ 0.003805 in PUT
+     (parallel speedup: 72.5423)
+[Debug]   [LOCALE2]   _enumStatesComputeCounts: 16.403
+  ├─ 1190.48 in _enumerateStates
+  ├─ 2.14169 in _enumStatesComputeMasksAndCounts
+  └─ 0.004257 in PUT
+     (parallel speedup: 72.7077)
+[Debug]   [LOCALE27]   _enumStatesComputeCounts: 16.4043
+  ├─ 1187.57 in _enumerateStates
+  ├─ 2.06932 in _enumStatesComputeMasksAndCounts
+  └─ 0.003967 in PUT
+     (parallel speedup: 72.5203)
+[Debug]   [LOCALE5]   _enumStatesComputeCounts: 16.4047
+  ├─ 1187.55 in _enumerateStates
+  ├─ 2.10303 in _enumStatesComputeMasksAndCounts
+  └─ 0.003473 in PUT
+     (parallel speedup: 72.5193)
+[Debug]   [LOCALE11]   _enumStatesComputeCounts: 16.4079
+  ├─ 1194.63 in _enumerateStates
+  ├─ 2.18933 in _enumStatesComputeMasksAndCounts
+  └─ 0.004254 in PUT
+     (parallel speedup: 72.9416)
+[Debug]   [LOCALE7]   _enumStatesComputeCounts: 16.4082
+  ├─ 1190.52 in _enumerateStates
+  ├─ 2.19393 in _enumStatesComputeMasksAndCounts
+  └─ 0.003712 in PUT
+     (parallel speedup: 72.6904)
+[Debug]   [LOCALE21]   _enumStatesComputeCounts: 16.4093
+  ├─ 1190.29 in _enumerateStates
+  ├─ 2.09758 in _enumStatesComputeMasksAndCounts
+  └─ 0.004356 in PUT
+     (parallel speedup: 72.6654)
+[Debug]   [LOCALE9]   _enumStatesComputeCounts: 16.4093
+  ├─ 1193.01 in _enumerateStates
+  ├─ 2.18918 in _enumStatesComputeMasksAndCounts
+  └─ 0.003977 in PUT
+     (parallel speedup: 72.8366)
+[Debug]   [LOCALE8]   _enumStatesComputeCounts: 16.4095
+  ├─ 1192.94 in _enumerateStates
+  ├─ 2.25589 in _enumStatesComputeMasksAndCounts
+  └─ 0.004061 in PUT
+     (parallel speedup: 72.8358)
+[Debug]   [LOCALE3]   _enumStatesComputeCounts: 16.4097
+  ├─ 1191.08 in _enumerateStates
+  ├─ 2.13105 in _enumStatesComputeMasksAndCounts
+  └─ 0.003834 in PUT
+     (parallel speedup: 72.7139)
+[Debug]   [LOCALE20]   _enumStatesComputeCounts: 16.4162
+  ├─ 1189.17 in _enumerateStates
+  ├─ 2.09137 in _enumStatesComputeMasksAndCounts
+  └─ 0.003941 in PUT
+     (parallel speedup: 72.5667)
+[Debug]   [LOCALE10]   _enumStatesComputeCounts: 16.4175
+  ├─ 1191.1 in _enumerateStates
+  ├─ 2.14046 in _enumStatesComputeMasksAndCounts
+  └─ 0.003916 in PUT
+     (parallel speedup: 72.6815)
+[Debug]   [LOCALE30]   _enumStatesComputeCounts: 16.4182
+  ├─ 1187.32 in _enumerateStates
+  ├─ 2.05921 in _enumStatesComputeMasksAndCounts
+  └─ 0.003971 in PUT
+     (parallel speedup: 72.4434)
+[Debug]   [LOCALE23]   _enumStatesComputeCounts: 16.4215
+  ├─ 1190.76 in _enumerateStates
+  ├─ 2.16997 in _enumStatesComputeMasksAndCounts
+  └─ 0.003896 in PUT
+     (parallel speedup: 72.6444)
+[Debug]   [LOCALE22]   _enumStatesComputeCounts: 16.4239
+  ├─ 1190.76 in _enumerateStates
+  ├─ 2.10602 in _enumStatesComputeMasksAndCounts
+  └─ 0.003945 in PUT
+     (parallel speedup: 72.6301)
+[Debug]   [LOCALE4]   _enumStatesComputeCounts: 16.4283
+  ├─ 1190.51 in _enumerateStates
+  ├─ 2.12838 in _enumStatesComputeMasksAndCounts
+  └─ 0.003928 in PUT
+     (parallel speedup: 72.5969)
+[Debug]   [LOCALE19]   _enumStatesComputeCounts: 16.4351
+  ├─ 1191.95 in _enumerateStates
+  ├─ 2.15121 in _enumStatesComputeMasksAndCounts
+  └─ 0.004253 in PUT
+     (parallel speedup: 72.656)
+[Debug]   [LOCALE0]   enumerateStates: 23.7914
+  ├─ 16.441 in _enumStatesComputeCounts
+  └─ 2.51866 shuffling stuff around
+      ├─ 15.7404 18.5969 17.8574 17.0714 17.9953 19.7948 18.7732 18.1601 18.293 16.9644 17.8081 17.1734 16.9151 18.0645 17.295 19.1514 17.9016 17.875 18.2821 18.938 18.3685 16.9629 16.5856 17.8134 18.7297 18.0271 16.6891 18.5936 16.9922 18.3363 23.9913 27.9176 copying states
+      └─ 0.596249 2.33046 3.10257 3.8782 4.2242 3.73103 2.26166 2.09365 2.52423 4.38902 1.73718 3.68966 4.4579 1.90703 3.97642 2.40964 2.50742 3.54513 2.6682 2.89791 2.49979 5.09822 6.03069 3.79893 2.68769 2.59881 3.95313 2.14503 3.06621 1.94307 3.72057 1.04854 copying masks
+[Debug]   [LOCALE0]   arrFromBlockToHashed: 1.07199
+  ├─ counts: 0.011857
+  ├─ makeDestArr: 0.05796
+  └─ distribute: 1.00217
+     └─ permute (mean over locales, sum over tasks): 82.2491
+
+[Debug]   [LOCALE0]   matrixVectorProduct: 32.6927
+  ├─ localDiagonal: 0.082339
+  └─ localOffDiagonalNoQueue: 32.6026
+     ├─ initialization: 0.383028
+     ├─ Producer.run: 31.6762
+     │  ├─ BatchedOperator.computeOffDiag: 15.6363
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232761
+     │  │  ├─ memcpy: 0.000391116
+     │  │  ├─ ls_hs_state_info: 14.9737
+     │  │  ├─ rescale coeffs: 0.111987
+     │  │  └─ localeIdxOf: 0.317164
+     │  ├─ localProcess: 0.12334
+     │  │  ├─ allocation: 0.000592045
+     │  │  ├─ ls_hs_state_index: 0.101615
+     │  │  └─ localAdd: 0.020082
+     │  ├─ radixOneStep: 0.0988899
+     │  └─ submit: 15.8169
+     │     ├─ extra iterations per submit: 2.25603e+05
+     │     ├─ put: 6.36354
+     │     └─ fastOn: 1.23403
+     └─ Consumer.run: 32.2172
+        ├─ localProcess: 24.5813
+        │  ├─ allocation: 0.0563791
+        │  ├─ ls_hs_state_index: 20.4393
+        │  └─ localAdd: 3.96686
+        └─ fastOn: 5.62867
+
+[Debug]   [LOCALE13]   matrixVectorProduct: 32.6193
+  ├─ localDiagonal: 0.082309
+  └─ localOffDiagonalNoQueue: 32.5298
+     ├─ initialization: 0.310156
+     ├─ Producer.run: 30.6291
+     │  ├─ BatchedOperator.computeOffDiag: 15.633
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.237367
+     │  │  ├─ memcpy: 0.00038075
+     │  │  ├─ ls_hs_state_info: 14.9662
+     │  │  ├─ rescale coeffs: 0.111957
+     │  │  └─ localeIdxOf: 0.316798
+     │  ├─ localProcess: 0.123915
+     │  │  ├─ allocation: 0.000605384
+     │  │  ├─ ls_hs_state_index: 0.102328
+     │  │  └─ localAdd: 0.0199375
+     │  ├─ radixOneStep: 0.0991155
+     │  └─ submit: 14.7723
+     │     ├─ extra iterations per submit: 2.31459e+05
+     │     ├─ put: 5.35926
+     │     └─ fastOn: 1.02026
+     └─ Consumer.run: 32.2179
+        ├─ localProcess: 24.1905
+        │  ├─ allocation: 0.0648823
+        │  ├─ ls_hs_state_index: 20.6154
+        │  └─ localAdd: 3.37595
+        └─ fastOn: 4.22554
+
+[Debug]   [LOCALE23]   matrixVectorProduct: 32.6226
+  ├─ localDiagonal: 0.082828
+  └─ localOffDiagonalNoQueue: 32.5324
+     ├─ initialization: 0.312814
+     ├─ Producer.run: 31.174
+     │  ├─ BatchedOperator.computeOffDiag: 15.6323
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232604
+     │  │  ├─ memcpy: 0.000395259
+     │  │  ├─ ls_hs_state_info: 14.97
+     │  │  ├─ rescale coeffs: 0.112025
+     │  │  └─ localeIdxOf: 0.317026
+     │  ├─ localProcess: 0.121536
+     │  │  ├─ allocation: 0.000630152
+     │  │  ├─ ls_hs_state_index: 0.100627
+     │  │  └─ localAdd: 0.0191954
+     │  ├─ radixOneStep: 0.0985723
+     │  └─ submit: 15.3208
+     │     ├─ extra iterations per submit: 2.84366e+05
+     │     ├─ put: 4.55663
+     │     └─ fastOn: 0.67115
+     └─ Consumer.run: 32.2185
+        ├─ localProcess: 23.8351
+        │  ├─ allocation: 0.0656416
+        │  ├─ ls_hs_state_index: 20.3594
+        │  └─ localAdd: 3.28972
+        └─ fastOn: 3.11259
+
+[Debug]   [LOCALE6]   matrixVectorProduct: 32.6185
+  ├─ localDiagonal: 0.082599
+  └─ localOffDiagonalNoQueue: 32.5286
+     ├─ initialization: 0.309016
+     ├─ Producer.run: 31.3825
+     │  ├─ BatchedOperator.computeOffDiag: 15.6251
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.233577
+     │  │  ├─ memcpy: 0.000402857
+     │  │  ├─ ls_hs_state_info: 14.9578
+     │  │  ├─ rescale coeffs: 0.112124
+     │  │  └─ localeIdxOf: 0.320901
+     │  ├─ localProcess: 0.123539
+     │  │  ├─ allocation: 0.000633223
+     │  │  ├─ ls_hs_state_index: 0.100187
+     │  │  └─ localAdd: 0.0216341
+     │  ├─ radixOneStep: 0.0988409
+     │  └─ submit: 15.5342
+     │     ├─ extra iterations per submit: 2.36114e+05
+     │     ├─ put: 6.379
+     │     └─ fastOn: 0.750354
+     └─ Consumer.run: 32.2176
+        ├─ localProcess: 24.2706
+        │  ├─ allocation: 0.0663051
+        │  ├─ ls_hs_state_index: 20.5351
+        │  └─ localAdd: 3.53704
+        └─ fastOn: 3.49475
+
+[Debug]   [LOCALE9]   matrixVectorProduct: 32.6196
+  ├─ localDiagonal: 0.08355
+  └─ localOffDiagonalNoQueue: 32.5283
+     ├─ initialization: 0.30868
+     ├─ Producer.run: 30.6463
+     │  ├─ BatchedOperator.computeOffDiag: 15.6359
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232729
+     │  │  ├─ memcpy: 0.000419696
+     │  │  ├─ ls_hs_state_info: 14.9734
+     │  │  ├─ rescale coeffs: 0.112116
+     │  │  └─ localeIdxOf: 0.316972
+     │  ├─ localProcess: 0.123323
+     │  │  ├─ allocation: 0.000630277
+     │  │  ├─ ls_hs_state_index: 0.101198
+     │  │  └─ localAdd: 0.0203731
+     │  ├─ radixOneStep: 0.0987146
+     │  └─ submit: 14.7877
+     │     ├─ extra iterations per submit: 2.395e+05
+     │     ├─ put: 5.7059
+     │     └─ fastOn: 0.712821
+     └─ Consumer.run: 32.2178
+        ├─ localProcess: 23.9683
+        │  ├─ allocation: 0.0610033
+        │  ├─ ls_hs_state_index: 20.4961
+        │  └─ localAdd: 3.27973
+        └─ fastOn: 3.35302
+
+[Debug]   [LOCALE31]   matrixVectorProduct: 32.6207
+  ├─ localDiagonal: 0.093054
+  └─ localOffDiagonalNoQueue: 32.5202
+     ├─ initialization: 0.300552
+     ├─ Producer.run: 31.0495
+     │  ├─ BatchedOperator.computeOffDiag: 15.6201
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232776
+     │  │  ├─ memcpy: 0.000392259
+     │  │  ├─ ls_hs_state_info: 14.9579
+     │  │  ├─ rescale coeffs: 0.111926
+     │  │  └─ localeIdxOf: 0.316793
+     │  ├─ localProcess: 0.117989
+     │  │  ├─ allocation: 0.000645205
+     │  │  ├─ ls_hs_state_index: 0.0953557
+     │  │  └─ localAdd: 0.0209558
+     │  ├─ radixOneStep: 0.0982708
+     │  └─ submit: 15.2124
+     │     ├─ extra iterations per submit: 2.73862e+05
+     │     ├─ put: 4.88942
+     │     └─ fastOn: 0.641416
+     └─ Consumer.run: 32.219
+        ├─ localProcess: 24.0721
+        │  ├─ allocation: 0.0671022
+        │  ├─ ls_hs_state_index: 20.5697
+        │  └─ localAdd: 3.31475
+        └─ fastOn: 3.03353
+
+[Debug]   [LOCALE22]   matrixVectorProduct: 32.6222
+  ├─ localDiagonal: 0.083055
+  └─ localOffDiagonalNoQueue: 32.5318
+     ├─ initialization: 0.31217
+     ├─ Producer.run: 31.4275
+     │  ├─ BatchedOperator.computeOffDiag: 15.6308
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232871
+     │  │  ├─ memcpy: 0.000450598
+     │  │  ├─ ls_hs_state_info: 14.968
+     │  │  ├─ rescale coeffs: 0.112129
+     │  │  └─ localeIdxOf: 0.317022
+     │  ├─ localProcess: 0.129962
+     │  │  ├─ allocation: 0.000660973
+     │  │  ├─ ls_hs_state_index: 0.103964
+     │  │  └─ localAdd: 0.0242519
+     │  ├─ radixOneStep: 0.0993339
+     │  └─ submit: 15.5667
+     │     ├─ extra iterations per submit: 2.38573e+05
+     │     ├─ put: 6.66629
+     │     └─ fastOn: 0.703199
+     └─ Consumer.run: 32.2184
+        ├─ localProcess: 23.6879
+        │  ├─ allocation: 0.0624104
+        │  ├─ ls_hs_state_index: 20.1815
+        │  └─ localAdd: 3.3223
+        └─ fastOn: 3.22861
+
+[Debug]   [LOCALE21]   matrixVectorProduct: 32.6188
+  ├─ localDiagonal: 0.08261
+  └─ localOffDiagonalNoQueue: 32.5286
+     ├─ initialization: 0.30891
+     ├─ Producer.run: 31.6038
+     │  ├─ BatchedOperator.computeOffDiag: 15.6227
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232076
+     │  │  ├─ memcpy: 0.000341482
+     │  │  ├─ ls_hs_state_info: 14.9613
+     │  │  ├─ rescale coeffs: 0.111977
+     │  │  └─ localeIdxOf: 0.316739
+     │  ├─ localProcess: 0.11868
+     │  │  ├─ allocation: 0.000563411
+     │  │  ├─ ls_hs_state_index: 0.0975217
+     │  │  └─ localAdd: 0.0195584
+     │  ├─ radixOneStep: 0.0987958
+     │  └─ submit: 15.7629
+     │     ├─ extra iterations per submit: 3.17999e+05
+     │     ├─ put: 4.11044
+     │     └─ fastOn: 0.623558
+     └─ Consumer.run: 32.2185
+        ├─ localProcess: 23.6203
+        │  ├─ allocation: 0.0635769
+        │  ├─ ls_hs_state_index: 20.1842
+        │  └─ localAdd: 3.25093
+        └─ fastOn: 3.03543
+
+[Debug]   [LOCALE2]   matrixVectorProduct: 32.6215
+  ├─ localDiagonal: 0.082457
+  └─ localOffDiagonalNoQueue: 32.5314
+     ├─ initialization: 0.311803
+     ├─ Producer.run: 30.4548
+     │  ├─ BatchedOperator.computeOffDiag: 15.6467
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232453
+     │  │  ├─ memcpy: 0.000340027
+     │  │  ├─ ls_hs_state_info: 14.9838
+     │  │  ├─ rescale coeffs: 0.112163
+     │  │  └─ localeIdxOf: 0.317655
+     │  ├─ localProcess: 0.119627
+     │  │  ├─ allocation: 0.000606089
+     │  │  ├─ ls_hs_state_index: 0.0974319
+     │  │  └─ localAdd: 0.0205206
+     │  ├─ radixOneStep: 0.0985244
+     │  └─ submit: 14.5892
+     │     ├─ extra iterations per submit: 2.00483e+05
+     │     ├─ put: 6.00405
+     │     └─ fastOn: 1.17441
+     └─ Consumer.run: 32.2173
+        ├─ localProcess: 24.0881
+        │  ├─ allocation: 0.059661
+        │  ├─ ls_hs_state_index: 20.3883
+        │  └─ localAdd: 3.5118
+        └─ fastOn: 5.43282
+
+[Debug]   [LOCALE8]   matrixVectorProduct: 32.6206
+  ├─ localDiagonal: 0.090414
+  └─ localOffDiagonalNoQueue: 32.5195
+     ├─ initialization: 0.299879
+     ├─ Producer.run: 31.9447
+     │  ├─ BatchedOperator.computeOffDiag: 15.6267
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232691
+     │  │  ├─ memcpy: 0.000398946
+     │  │  ├─ ls_hs_state_info: 14.9645
+     │  │  ├─ rescale coeffs: 0.112023
+     │  │  └─ localeIdxOf: 0.316846
+     │  ├─ localProcess: 0.124602
+     │  │  ├─ allocation: 0.000606723
+     │  │  ├─ ls_hs_state_index: 0.100552
+     │  │  └─ localAdd: 0.0222712
+     │  ├─ radixOneStep: 0.0988319
+     │  └─ submit: 16.0938
+     │     ├─ extra iterations per submit: 2.58821e+05
+     │     ├─ put: 6.1036
+     │     └─ fastOn: 0.736913
+     └─ Consumer.run: 32.2178
+        ├─ localProcess: 23.5614
+        │  ├─ allocation: 0.0646418
+        │  ├─ ls_hs_state_index: 20.1361
+        │  └─ localAdd: 3.22646
+        └─ fastOn: 3.39538
+
+[Debug]   [LOCALE4]   matrixVectorProduct: 32.6202
+  ├─ localDiagonal: 0.090065
+  └─ localOffDiagonalNoQueue: 32.5219
+     ├─ initialization: 0.302277
+     ├─ Producer.run: 31.4629
+     │  ├─ BatchedOperator.computeOffDiag: 15.6296
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232627
+     │  │  ├─ memcpy: 0.000403384
+     │  │  ├─ ls_hs_state_info: 14.9673
+     │  │  ├─ rescale coeffs: 0.112083
+     │  │  └─ localeIdxOf: 0.316827
+     │  ├─ localProcess: 0.123273
+     │  │  ├─ allocation: 0.000618991
+     │  │  ├─ ls_hs_state_index: 0.10139
+     │  │  └─ localAdd: 0.0201869
+     │  ├─ radixOneStep: 0.0989102
+     │  └─ submit: 15.6103
+     │     ├─ extra iterations per submit: 2.54729e+05
+     │     ├─ put: 5.85781
+     │     └─ fastOn: 0.76013
+     └─ Consumer.run: 32.2174
+        ├─ localProcess: 23.7585
+        │  ├─ allocation: 0.0576899
+        │  ├─ ls_hs_state_index: 20.3496
+        │  └─ localAdd: 3.22809
+        └─ fastOn: 3.66473
+
+[Debug]   [LOCALE5]   matrixVectorProduct: 32.6153
+  ├─ localDiagonal: 0.082695
+  └─ localOffDiagonalNoQueue: 32.5243
+     ├─ initialization: 0.304696
+     ├─ Producer.run: 31.159
+     │  ├─ BatchedOperator.computeOffDiag: 15.6264
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232876
+     │  │  ├─ memcpy: 0.000406705
+     │  │  ├─ ls_hs_state_info: 14.9636
+     │  │  ├─ rescale coeffs: 0.112201
+     │  │  └─ localeIdxOf: 0.316999
+     │  ├─ localProcess: 0.123944
+     │  │  ├─ allocation: 0.000595536
+     │  │  ├─ ls_hs_state_index: 0.10113
+     │  │  └─ localAdd: 0.0211689
+     │  ├─ radixOneStep: 0.0986994
+     │  └─ submit: 15.3093
+     │     ├─ extra iterations per submit: 2.41795e+05
+     │     ├─ put: 6.11627
+     │     └─ fastOn: 0.773275
+     └─ Consumer.run: 32.2175
+        ├─ localProcess: 24.3856
+        │  ├─ allocation: 0.0578286
+        │  ├─ ls_hs_state_index: 20.9413
+        │  └─ localAdd: 3.26517
+        └─ fastOn: 3.57895
+
+[Debug]   [LOCALE17]   matrixVectorProduct: 32.612
+  ├─ localDiagonal: 0.091809
+  └─ localOffDiagonalNoQueue: 32.5124
+     ├─ initialization: 0.29281
+     ├─ Producer.run: 30.8235
+     │  ├─ BatchedOperator.computeOffDiag: 15.6176
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232404
+     │  │  ├─ memcpy: 0.000414036
+     │  │  ├─ ls_hs_state_info: 14.9556
+     │  │  ├─ rescale coeffs: 0.112007
+     │  │  └─ localeIdxOf: 0.316956
+     │  ├─ localProcess: 0.125458
+     │  │  ├─ allocation: 0.000584125
+     │  │  ├─ ls_hs_state_index: 0.101333
+     │  │  └─ localAdd: 0.0224322
+     │  ├─ radixOneStep: 0.098861
+     │  └─ submit: 14.9808
+     │     ├─ extra iterations per submit: 2.5606e+05
+     │     ├─ put: 5.19532
+     │     └─ fastOn: 0.705844
+     └─ Consumer.run: 32.2182
+        ├─ localProcess: 24.753
+        │  ├─ allocation: 0.0597757
+        │  ├─ ls_hs_state_index: 21.2708
+        │  └─ localAdd: 3.30175
+        └─ fastOn: 3.40867
+
+[Debug]   [LOCALE29]   matrixVectorProduct: 32.6208
+  ├─ localDiagonal: 0.082972
+  └─ localOffDiagonalNoQueue: 32.5297
+     ├─ initialization: 0.310143
+     ├─ Producer.run: 31.217
+     │  ├─ BatchedOperator.computeOffDiag: 15.6317
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232375
+     │  │  ├─ memcpy: 0.000384625
+     │  │  ├─ ls_hs_state_info: 14.9695
+     │  │  ├─ rescale coeffs: 0.112076
+     │  │  └─ localeIdxOf: 0.317067
+     │  ├─ localProcess: 0.11918
+     │  │  ├─ allocation: 0.000566884
+     │  │  ├─ ls_hs_state_index: 0.0971945
+     │  │  └─ localAdd: 0.0203615
+     │  ├─ radixOneStep: 0.0984472
+     │  └─ submit: 15.367
+     │     ├─ extra iterations per submit: 2.59866e+05
+     │     ├─ put: 5.30729
+     │     └─ fastOn: 0.773883
+     └─ Consumer.run: 32.2188
+        ├─ localProcess: 23.7837
+        │  ├─ allocation: 0.062714
+        │  ├─ ls_hs_state_index: 20.266
+        │  └─ localAdd: 3.33074
+        └─ fastOn: 3.47092
+
+[Debug]   [LOCALE15]   matrixVectorProduct: 32.6209
+  ├─ localDiagonal: 0.083253
+  └─ localOffDiagonalNoQueue: 32.5295
+     ├─ initialization: 0.309882
+     ├─ Producer.run: 30.6554
+     │  ├─ BatchedOperator.computeOffDiag: 15.6385
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232753
+     │  │  ├─ memcpy: 0.00038683
+     │  │  ├─ ls_hs_state_info: 14.9756
+     │  │  ├─ rescale coeffs: 0.112285
+     │  │  └─ localeIdxOf: 0.317227
+     │  ├─ localProcess: 0.121053
+     │  │  ├─ allocation: 0.000568161
+     │  │  ├─ ls_hs_state_index: 0.0992015
+     │  │  └─ localAdd: 0.0202331
+     │  ├─ radixOneStep: 0.0987797
+     │  └─ submit: 14.7964
+     │     ├─ extra iterations per submit: 2.39871e+05
+     │     ├─ put: 5.34903
+     │     └─ fastOn: 0.649854
+     └─ Consumer.run: 32.218
+        ├─ localProcess: 24.0556
+        │  ├─ allocation: 0.0588341
+        │  ├─ ls_hs_state_index: 20.5262
+        │  └─ localAdd: 3.34826
+        └─ fastOn: 3.21545
+
+[Debug]   [LOCALE27]   matrixVectorProduct: 32.6243
+  ├─ localDiagonal: 0.082888
+  └─ localOffDiagonalNoQueue: 32.5332
+     ├─ initialization: 0.313591
+     ├─ Producer.run: 30.6598
+     │  ├─ BatchedOperator.computeOffDiag: 15.6281
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232038
+     │  │  ├─ memcpy: 0.00036558
+     │  │  ├─ ls_hs_state_info: 14.9668
+     │  │  ├─ rescale coeffs: 0.111892
+     │  │  └─ localeIdxOf: 0.316725
+     │  ├─ localProcess: 0.118843
+     │  │  ├─ allocation: 0.00056842
+     │  │  ├─ ls_hs_state_index: 0.0960464
+     │  │  └─ localAdd: 0.0212048
+     │  ├─ radixOneStep: 0.0984266
+     │  └─ submit: 14.8137
+     │     ├─ extra iterations per submit: 2.54975e+05
+     │     ├─ put: 4.83479
+     │     └─ fastOn: 0.869504
+     └─ Consumer.run: 32.2186
+        ├─ localProcess: 23.9183
+        │  ├─ allocation: 0.0588418
+        │  ├─ ls_hs_state_index: 20.3914
+        │  └─ localAdd: 3.34056
+        └─ fastOn: 3.95863
+
+[Debug]   [LOCALE24]   matrixVectorProduct: 32.6219
+  ├─ localDiagonal: 0.083225
+  └─ localOffDiagonalNoQueue: 32.5305
+     ├─ initialization: 0.310831
+     ├─ Producer.run: 31.8772
+     │  ├─ BatchedOperator.computeOffDiag: 15.6266
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.233197
+     │  │  ├─ memcpy: 0.000375893
+     │  │  ├─ ls_hs_state_info: 14.9638
+     │  │  ├─ rescale coeffs: 0.112021
+     │  │  └─ localeIdxOf: 0.3169
+     │  ├─ localProcess: 0.120031
+     │  │  ├─ allocation: 0.000598598
+     │  │  ├─ ls_hs_state_index: 0.0980147
+     │  │  └─ localAdd: 0.0204028
+     │  ├─ radixOneStep: 0.0991
+     │  └─ submit: 16.0307
+     │     ├─ extra iterations per submit: 2.79502e+05
+     │     ├─ put: 5.24347
+     │     └─ fastOn: 0.704789
+     └─ Consumer.run: 32.2185
+        ├─ localProcess: 23.4973
+        │  ├─ allocation: 0.0639289
+        │  ├─ ls_hs_state_index: 20.1183
+        │  └─ localAdd: 3.18939
+        └─ fastOn: 3.3551
+
+[Debug]   [LOCALE11]   matrixVectorProduct: 32.6188
+  ├─ localDiagonal: 0.105935
+  └─ localOffDiagonalNoQueue: 32.5047
+     ├─ initialization: 0.285135
+     ├─ Producer.run: 31.2751
+     │  ├─ BatchedOperator.computeOffDiag: 15.6424
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232883
+     │  │  ├─ memcpy: 0.000416679
+     │  │  ├─ ls_hs_state_info: 14.9795
+     │  │  ├─ rescale coeffs: 0.112117
+     │  │  └─ localeIdxOf: 0.317261
+     │  ├─ localProcess: 0.124868
+     │  │  ├─ allocation: 0.000633964
+     │  │  ├─ ls_hs_state_index: 0.102158
+     │  │  └─ localAdd: 0.020958
+     │  ├─ radixOneStep: 0.0994722
+     │  └─ submit: 15.4076
+     │     ├─ extra iterations per submit: 2.25768e+05
+     │     ├─ put: 6.65307
+     │     └─ fastOn: 0.796891
+     └─ Consumer.run: 32.2179
+        ├─ localProcess: 23.863
+        │  ├─ allocation: 0.0589613
+        │  ├─ ls_hs_state_index: 20.3859
+        │  └─ localAdd: 3.29494
+        └─ fastOn: 3.87209
+
+[Debug]   [LOCALE26]   matrixVectorProduct: 32.6223
+  ├─ localDiagonal: 0.083787
+  └─ localOffDiagonalNoQueue: 32.5303
+     ├─ initialization: 0.310743
+     ├─ Producer.run: 30.9591
+     │  ├─ BatchedOperator.computeOffDiag: 15.6195
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232381
+     │  │  ├─ memcpy: 0.000348429
+     │  │  ├─ ls_hs_state_info: 14.9582
+     │  │  ├─ rescale coeffs: 0.111828
+     │  │  └─ localeIdxOf: 0.316556
+     │  ├─ localProcess: 0.120018
+     │  │  ├─ allocation: 0.000601598
+     │  │  ├─ ls_hs_state_index: 0.0975463
+     │  │  └─ localAdd: 0.0208745
+     │  ├─ radixOneStep: 0.0987154
+     │  └─ submit: 15.1202
+     │     ├─ extra iterations per submit: 2.63873e+05
+     │     ├─ put: 4.97383
+     │     └─ fastOn: 0.666171
+     └─ Consumer.run: 32.2186
+        ├─ localProcess: 24.1745
+        │  ├─ allocation: 0.0602802
+        │  ├─ ls_hs_state_index: 20.5939
+        │  └─ localAdd: 3.38538
+        └─ fastOn: 3.38436
+
+[Debug]   [LOCALE20]   matrixVectorProduct: 32.6209
+  ├─ localDiagonal: 0.083579
+  └─ localOffDiagonalNoQueue: 32.529
+     ├─ initialization: 0.309392
+     ├─ Producer.run: 31.7245
+     │  ├─ BatchedOperator.computeOffDiag: 15.6038
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.231944
+     │  │  ├─ memcpy: 0.000390125
+     │  │  ├─ ls_hs_state_info: 14.9433
+     │  │  ├─ rescale coeffs: 0.1118
+     │  │  └─ localeIdxOf: 0.316077
+     │  ├─ localProcess: 0.122922
+     │  │  ├─ allocation: 0.000579339
+     │  │  ├─ ls_hs_state_index: 0.0993848
+     │  │  └─ localAdd: 0.021886
+     │  ├─ radixOneStep: 0.0983321
+     │  └─ submit: 15.8987
+     │     ├─ extra iterations per submit: 2.82581e+05
+     │     ├─ put: 5.38113
+     │     └─ fastOn: 0.640356
+     └─ Consumer.run: 32.218
+        ├─ localProcess: 23.7047
+        │  ├─ allocation: 0.0634911
+        │  ├─ ls_hs_state_index: 20.2254
+        │  └─ localAdd: 3.28039
+        └─ fastOn: 3.12584
+
+[Debug]   [LOCALE30]   matrixVectorProduct: 32.6234
+  ├─ localDiagonal: 0.089559
+  └─ localOffDiagonalNoQueue: 32.5262
+     ├─ initialization: 0.306584
+     ├─ Producer.run: 31.17
+     │  ├─ BatchedOperator.computeOffDiag: 15.6234
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232846
+     │  │  ├─ memcpy: 0.00039792
+     │  │  ├─ ls_hs_state_info: 14.9611
+     │  │  ├─ rescale coeffs: 0.111962
+     │  │  └─ localeIdxOf: 0.31685
+     │  ├─ localProcess: 0.122353
+     │  │  ├─ allocation: 0.000622134
+     │  │  ├─ ls_hs_state_index: 0.0998816
+     │  │  └─ localAdd: 0.0208005
+     │  ├─ radixOneStep: 0.0987863
+     │  └─ submit: 15.3247
+     │     ├─ extra iterations per submit: 2.62516e+05
+     │     ├─ put: 5.52978
+     │     └─ fastOn: 0.779483
+     └─ Consumer.run: 32.219
+        ├─ localProcess: 23.9057
+        │  ├─ allocation: 0.0638631
+        │  ├─ ls_hs_state_index: 20.3792
+        │  └─ localAdd: 3.33462
+        └─ fastOn: 3.5256
+
+[Debug]   [LOCALE14]   matrixVectorProduct: 32.6193
+  ├─ localDiagonal: 0.090361
+  └─ localOffDiagonalNoQueue: 32.5212
+     ├─ initialization: 0.301596
+     ├─ Producer.run: 30.5286
+     │  ├─ BatchedOperator.computeOffDiag: 15.6532
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.23317
+     │  │  ├─ memcpy: 0.000419393
+     │  │  ├─ ls_hs_state_info: 14.99
+     │  │  ├─ rescale coeffs: 0.112158
+     │  │  └─ localeIdxOf: 0.317182
+     │  ├─ localProcess: 0.125081
+     │  │  ├─ allocation: 0.000650277
+     │  │  ├─ ls_hs_state_index: 0.101759
+     │  │  └─ localAdd: 0.0215429
+     │  ├─ radixOneStep: 0.0988491
+     │  └─ submit: 14.6506
+     │     ├─ extra iterations per submit: 2.35128e+05
+     │     ├─ put: 5.55326
+     │     └─ fastOn: 0.674398
+     └─ Consumer.run: 32.218
+        ├─ localProcess: 24.0782
+        │  ├─ allocation: 0.0646617
+        │  ├─ ls_hs_state_index: 20.5513
+        │  └─ localAdd: 3.33415
+        └─ fastOn: 3.23012
+
+[Debug]   [LOCALE18]   matrixVectorProduct: 32.6212
+  ├─ localDiagonal: 0.188412
+  └─ localOffDiagonalNoQueue: 32.4249
+     ├─ initialization: 0.205311
+     ├─ Producer.run: 30.8968
+     │  ├─ BatchedOperator.computeOffDiag: 15.6438
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232845
+     │  │  ├─ memcpy: 0.000418696
+     │  │  ├─ ls_hs_state_info: 14.9806
+     │  │  ├─ rescale coeffs: 0.112256
+     │  │  └─ localeIdxOf: 0.317382
+     │  ├─ localProcess: 0.1237
+     │  │  ├─ allocation: 0.000615143
+     │  │  ├─ ls_hs_state_index: 0.100476
+     │  │  └─ localAdd: 0.0214251
+     │  ├─ radixOneStep: 0.0988474
+     │  └─ submit: 15.0297
+     │     ├─ extra iterations per submit: 2.20282e+05
+     │     ├─ put: 6.09293
+     │     └─ fastOn: 0.730266
+     └─ Consumer.run: 32.2182
+        ├─ localProcess: 24.0354
+        │  ├─ allocation: 0.064004
+        │  ├─ ls_hs_state_index: 20.4723
+        │  └─ localAdd: 3.36524
+        └─ fastOn: 3.38961
+
+[Debug]   [LOCALE25]   matrixVectorProduct: 32.62
+  ├─ localDiagonal: 0.082456
+  └─ localOffDiagonalNoQueue: 32.5298
+     ├─ initialization: 0.310147
+     ├─ Producer.run: 32.1797
+     │  ├─ BatchedOperator.computeOffDiag: 15.6244
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232554
+     │  │  ├─ memcpy: 0.000353813
+     │  │  ├─ ls_hs_state_info: 14.9626
+     │  │  ├─ rescale coeffs: 0.111962
+     │  │  └─ localeIdxOf: 0.316677
+     │  ├─ localProcess: 0.120964
+     │  │  ├─ allocation: 0.000574366
+     │  │  ├─ ls_hs_state_index: 0.0991961
+     │  │  └─ localAdd: 0.0201748
+     │  ├─ radixOneStep: 0.0985631
+     │  └─ submit: 16.3351
+     │     ├─ extra iterations per submit: 3.24406e+05
+     │     ├─ put: 4.39757
+     │     └─ fastOn: 0.713856
+     └─ Consumer.run: 32.063
+        ├─ localProcess: 23.1647
+        │  ├─ allocation: 0.0631662
+        │  ├─ ls_hs_state_index: 19.9109
+        │  └─ localAdd: 3.06809
+        └─ fastOn: 3.25261
+
+[Debug]   [LOCALE3]   matrixVectorProduct: 32.6185
+  ├─ localDiagonal: 0.083291
+  └─ localOffDiagonalNoQueue: 32.5276
+     ├─ initialization: 0.307964
+     ├─ Producer.run: 31.8143
+     │  ├─ BatchedOperator.computeOffDiag: 15.6043
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232666
+     │  │  ├─ memcpy: 0.000386321
+     │  │  ├─ ls_hs_state_info: 14.9431
+     │  │  ├─ rescale coeffs: 0.111795
+     │  │  └─ localeIdxOf: 0.316069
+     │  ├─ localProcess: 0.123351
+     │  │  ├─ allocation: 0.000578268
+     │  │  ├─ ls_hs_state_index: 0.0989074
+     │  │  └─ localAdd: 0.0228943
+     │  ├─ radixOneStep: 0.0985883
+     │  └─ submit: 15.9874
+     │     ├─ extra iterations per submit: 2.55597e+05
+     │     ├─ put: 6.05988
+     │     └─ fastOn: 0.765661
+     └─ Consumer.run: 32.2173
+        ├─ localProcess: 23.4484
+        │  ├─ allocation: 0.0643133
+        │  ├─ ls_hs_state_index: 19.9984
+        │  └─ localAdd: 3.26289
+        └─ fastOn: 3.68791
+
+[Debug]   [LOCALE19]   matrixVectorProduct: 32.6262
+  ├─ localDiagonal: 0.128298
+  └─ localOffDiagonalNoQueue: 32.4836
+     ├─ initialization: 0.264006
+     ├─ Producer.run: 31.142
+     │  ├─ BatchedOperator.computeOffDiag: 15.6544
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232027
+     │  │  ├─ memcpy: 0.00035325
+     │  │  ├─ ls_hs_state_info: 14.9916
+     │  │  ├─ rescale coeffs: 0.112335
+     │  │  └─ localeIdxOf: 0.317804
+     │  ├─ localProcess: 0.119395
+     │  │  ├─ allocation: 0.000581679
+     │  │  ├─ ls_hs_state_index: 0.0975771
+     │  │  └─ localAdd: 0.0201724
+     │  ├─ radixOneStep: 0.098377
+     │  └─ submit: 15.2691
+     │     ├─ extra iterations per submit: 2.51864e+05
+     │     ├─ put: 5.33771
+     │     └─ fastOn: 0.671942
+     └─ Consumer.run: 32.2183
+        ├─ localProcess: 24.2427
+        │  ├─ allocation: 0.0585276
+        │  ├─ ls_hs_state_index: 20.5417
+        │  └─ localAdd: 3.52068
+        └─ fastOn: 3.44449
+
+[Debug]   [LOCALE7]   matrixVectorProduct: 32.631
+  ├─ localDiagonal: 0.082653
+  └─ localOffDiagonalNoQueue: 32.5259
+     ├─ initialization: 0.30632
+     ├─ Producer.run: 32.0249
+     │  ├─ BatchedOperator.computeOffDiag: 15.6273
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232581
+     │  │  ├─ memcpy: 0.000406018
+     │  │  ├─ ls_hs_state_info: 14.9652
+     │  │  ├─ rescale coeffs: 0.111942
+     │  │  └─ localeIdxOf: 0.316808
+     │  ├─ localProcess: 0.122456
+     │  │  ├─ allocation: 0.000661866
+     │  │  ├─ ls_hs_state_index: 0.0999125
+     │  │  └─ localAdd: 0.0208261
+     │  ├─ radixOneStep: 0.0991943
+     │  └─ submit: 16.1752
+     │     ├─ extra iterations per submit: 2.81653e+05
+     │     ├─ put: 5.39045
+     │     └─ fastOn: 0.724772
+     └─ Consumer.run: 32.2176
+        ├─ localProcess: 23.8026
+        │  ├─ allocation: 0.0645193
+        │  ├─ ls_hs_state_index: 20.3419
+        │  └─ localAdd: 3.27102
+        └─ fastOn: 3.39576
+
+[Debug]   [LOCALE16]   matrixVectorProduct: 32.6211
+  ├─ localDiagonal: 0.082513
+  └─ localOffDiagonalNoQueue: 32.531
+     ├─ initialization: 0.311397
+     ├─ Producer.run: 30.5462
+     │  ├─ BatchedOperator.computeOffDiag: 15.622
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.233035
+     │  │  ├─ memcpy: 0.000402804
+     │  │  ├─ ls_hs_state_info: 14.9595
+     │  │  ├─ rescale coeffs: 0.112009
+     │  │  └─ localeIdxOf: 0.316742
+     │  ├─ localProcess: 0.126733
+     │  │  ├─ allocation: 0.000608259
+     │  │  ├─ ls_hs_state_index: 0.102862
+     │  │  └─ localAdd: 0.0221871
+     │  ├─ radixOneStep: 0.0988623
+     │  └─ submit: 14.6979
+     │     ├─ extra iterations per submit: 2.39733e+05
+     │     ├─ put: 5.12758
+     │     └─ fastOn: 0.650763
+     └─ Consumer.run: 32.2181
+        ├─ localProcess: 24.0467
+        │  ├─ allocation: 0.062149
+        │  ├─ ls_hs_state_index: 20.5236
+        │  └─ localAdd: 3.33223
+        └─ fastOn: 3.07216
+
+[Debug]   [LOCALE10]   matrixVectorProduct: 32.6143
+  ├─ localDiagonal: 0.082649
+  └─ localOffDiagonalNoQueue: 32.5234
+     ├─ initialization: 0.303847
+     ├─ Producer.run: 30.7258
+     │  ├─ BatchedOperator.computeOffDiag: 15.6314
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.233027
+     │  │  ├─ memcpy: 0.000399187
+     │  │  ├─ ls_hs_state_info: 14.9682
+     │  │  ├─ rescale coeffs: 0.11203
+     │  │  └─ localeIdxOf: 0.317477
+     │  ├─ localProcess: 0.124843
+     │  │  ├─ allocation: 0.000617161
+     │  │  ├─ ls_hs_state_index: 0.102697
+     │  │  └─ localAdd: 0.0204152
+     │  ├─ radixOneStep: 0.0988241
+     │  └─ submit: 14.87
+     │     ├─ extra iterations per submit: 2.02534e+05
+     │     ├─ put: 6.87911
+     │     └─ fastOn: 0.824933
+     └─ Consumer.run: 32.2178
+        ├─ localProcess: 23.8386
+        │  ├─ allocation: 0.0643574
+        │  ├─ ls_hs_state_index: 20.4259
+        │  └─ localAdd: 3.21437
+        └─ fastOn: 3.86912
+
+[Debug]   [LOCALE12]   matrixVectorProduct: 32.6172
+  ├─ localDiagonal: 0.082879
+  └─ localOffDiagonalNoQueue: 32.527
+     ├─ initialization: 0.307422
+     ├─ Producer.run: 31.1399
+     │  ├─ BatchedOperator.computeOffDiag: 15.6223
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.233027
+     │  │  ├─ memcpy: 0.000432437
+     │  │  ├─ ls_hs_state_info: 14.9599
+     │  │  ├─ rescale coeffs: 0.111974
+     │  │  └─ localeIdxOf: 0.316739
+     │  ├─ localProcess: 0.123226
+     │  │  ├─ allocation: 0.000596411
+     │  │  ├─ ls_hs_state_index: 0.101184
+     │  │  └─ localAdd: 0.0203727
+     │  ├─ radixOneStep: 0.0987439
+     │  └─ submit: 15.2949
+     │     ├─ extra iterations per submit: 2.0785e+05
+     │     ├─ put: 6.93301
+     │     └─ fastOn: 0.818721
+     └─ Consumer.run: 32.2179
+        ├─ localProcess: 24.1659
+        │  ├─ allocation: 0.0622755
+        │  ├─ ls_hs_state_index: 20.8582
+        │  └─ localAdd: 3.12399
+        └─ fastOn: 3.81821
+
+[Debug]   [LOCALE1]   matrixVectorProduct: 32.6207
+  ├─ localDiagonal: 0.082122
+  └─ localOffDiagonalNoQueue: 32.5316
+     ├─ initialization: 0.311934
+     ├─ Producer.run: 31.5324
+     │  ├─ BatchedOperator.computeOffDiag: 15.6317
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.23283
+     │  │  ├─ memcpy: 0.000405339
+     │  │  ├─ ls_hs_state_info: 14.9689
+     │  │  ├─ rescale coeffs: 0.112057
+     │  │  └─ localeIdxOf: 0.317237
+     │  ├─ localProcess: 0.128434
+     │  │  ├─ allocation: 0.000605616
+     │  │  ├─ ls_hs_state_index: 0.100601
+     │  │  └─ localAdd: 0.0261984
+     │  ├─ radixOneStep: 0.0988226
+     │  └─ submit: 15.6727
+     │     ├─ extra iterations per submit: 2.04041e+05
+     │     ├─ put: 6.9251
+     │     └─ fastOn: 1.3287
+     └─ Consumer.run: 32.2173
+        ├─ localProcess: 24.117
+        │  ├─ allocation: 0.0600294
+        │  ├─ ls_hs_state_index: 20.456
+        │  └─ localAdd: 3.48017
+        └─ fastOn: 5.67896
+
+[Debug]   [LOCALE28]   matrixVectorProduct: 32.6251
+  ├─ localDiagonal: 0.083255
+  └─ localOffDiagonalNoQueue: 32.5331
+     ├─ initialization: 0.313491
+     ├─ Producer.run: 31.3211
+     │  ├─ BatchedOperator.computeOffDiag: 15.6314
+     │  │  ├─ ls_internal_operator_apply_off_diag_x1: 0.232403
+     │  │  ├─ memcpy: 0.000402018
+     │  │  ├─ ls_hs_state_info: 14.9693
+     │  │  ├─ rescale coeffs: 0.112073
+     │  │  └─ localeIdxOf: 0.31698
+     │  ├─ localProcess: 0.123807
+     │  │  ├─ allocation: 0.000627795
+     │  │  ├─ ls_hs_state_index: 0.100663
+     │  │  └─ localAdd: 0.0214029
+     │  ├─ radixOneStep: 0.0988423
+     │  └─ submit: 15.4663
+     │     ├─ extra iterations per submit: 2.4149e+05
+     │     ├─ put: 6.13831
+     │     └─ fastOn: 0.800008
+     └─ Consumer.run: 32.2187
+        ├─ localProcess: 23.7988
+        │  ├─ allocation: 0.0640881
+        │  ├─ ls_hs_state_index: 20.2855
+        │  └─ localAdd: 3.32087
+        └─ fastOn: 3.64557
+
+[Debug]   [LOCALE0]   arrFromHashedToBlock: 43.5637
+  ├─ counts: 0.010126
+  └─ distribute: 43.3378
+
+true
+33.1194
+
+JOB STATISTICS
+==============
+Job ID: 3025507
+Cluster: snellius
+User/Group: twest/twest
+State: RUNNING
+Nodes: 32
+Cores per node: 128
+CPU Utilized: 13-08:10:28
+CPU Efficiency: 44.53% of 29-23:04:32 core-walltime
+Job Wall-clock time: 00:10:32
+Memory Utilized: 966.95 GB (estimated maximum)
+Memory Efficiency: 13.49% of 7.00 TB (1.75 GB/core)
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
