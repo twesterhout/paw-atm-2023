@@ -1,0 +1,38 @@
+diff --git a/../../original/spinpack/src/spins.c b/spins.c
+index 944dc9a..29ac08b 100644
+--- a/../../original/spinpack/src/spins.c
++++ b/spins.c
+@@ -25,6 +25,7 @@
+ 
+ #include <string.h>
+ #include <unistd.h> /* gethostname */
++#include <sys/time.h>
+ #include "block.h"
+ #include "spins.h"
+ #include "tbase.h"
+@@ -2262,6 +2263,10 @@ if (block==0) {
+  */
+ /* v1=H*v0+v1, return <v0|H|v0> ToDo: rename to SpMV = SparseMatrix-Vector-Mult */
+ double hamilton(scplx *v0, scplx *v1, thbuf *hbuf[B_NUM]){ // SpMV
++  struct timeval tick;
++  struct timeval tock;
++  MPI_Barrier(MPI_COMM_WORLD);
++  gettimeofday(&tick, NULL);
+   // ULong i;
+   int block;
+   /* thbuf * (hbuf)[B_NUM];  */
+@@ -2301,6 +2306,14 @@ double hamilton(scplx *v0, scplx *v1, thbuf *hbuf[B_NUM]){ // SpMV
+     MPI_Allreduce(&add, &sum, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
+     r2=sum; }
+ #endif
++  MPI_Barrier(MPI_COMM_WORLD);
++  gettimeofday(&tock, NULL);
++  int rank;
++  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
++  if (rank == 0) {
++    double const delta = (double)tock.tv_sec - (double)tick.tv_sec + 1e-6 * ((double)tock.tv_usec - (double)tick.tv_usec);
++    fprintf(stderr, "[TIMINGS] hamilton: %f\n", delta);
++  }
+   return r2;
+ } // double hamilton(scplx *v0, scplx *v1, thbuf *hbuf[B_NUM])
+ 

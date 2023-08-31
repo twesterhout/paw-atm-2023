@@ -29,6 +29,7 @@
               prettierd
               python3Packages.black
               python3Packages.grip
+              util-linux
             ];
             shellHook = ''
               export PROMPT_COMMAND=""

@@ -95,6 +95,7 @@ build artifacts. To ease the subsequent running of the containers, we copy the
 images to the `chapel/` folder of the lattice-symmetries package. For instance,
 
 ```sh
+cd /path/to/cloned/lattice-symmetries/chapel
 nix build .\#distributed.ibv.BenchmarkMatrixVectorProduct
 # If you installed Nix properly
 cp "$(readlink ./result)" BenchmarkMatrixVectorProduct.sif
@@ -143,11 +144,13 @@ commands may be run within one Slurm job.
 
 ### Post-processing the results
 
-There is a `crawl.py` script that may be used to collect results from various
-Slurm output files into a `timings.csv` file. `analyze.py` file may then be
-used to extract the relevant data for the plotting scripts.
+There is a [`crawl.py`](./crawl.py) script that may be used to collect results
+from various Slurm output files into a `timings.csv` file.
+[`analyze.py`](./analyze.py) file may then be used to extract the relevant data
+for the plotting scripts.
 
-We provide a `flake.nix` file that specifies all the required dependencies for running the scripts:
+We provide a [`flake.nix`](./flake.nix) file that specifies all the required
+dependencies for running the scripts:
 
 ```console
 $ cd /path/to/cloned/paw-atm-2023
@@ -168,4 +171,65 @@ $ nix develop
 $ gnuplot plot-blockHashed.gnu
 $ gnuplot plot-enumerateStates.gnu
 $ gnuplot plot-matrixVectorProduct.gnu
+```
+
+### Benchmarking against SPINPACK
+
+We compare the performance of lattice-symmetries against SPINPACK which we
+consider the current state of the art among the open source exact
+diagonalization codes.
+
+To make the sure that our use of Nix or Apptainer does not negatively affect
+the performance of SPINPACK, we compile SPINPACK using the software
+pre-installed on Snellius.
+
+We rely on the following modules:
+
+```sh
+module load 2023
+module load GCC/12.3.0 OpenMPI/4.1.5-GCC-12.3.0
+```
+
+We use the latest (at the time of writing) version of SPINPACK:
+[2.59d](https://www-e.uni-magdeburg.de/jschulen/spin/spinpack-2.59d.tgz). To
+measure the execution time of the matrix-vector product, we use the
+[spinpack-timings.patch](./data/spinpack/spinpack-timings.patch) patch that
+adds the relevant timers.
+
+The code is compiled using with a custom [Make_cfg.inc](./data/spinpack/Make_cfg.inc) that sets some configuration parameters:
+
+- `CONFIG_MPI=4096` because we run tests on up to 32 nodes, and each node has 128 cores;
+- `CONFIG_PTHREAD=128` because we have 128 cores per node;
+- `-march=native -mtune=native` such that SPINPACK can use vectorization.
+
+> **Note:** lattice-symmetries does not require setting `-march=native
+-mtune=native` to make use of vectorized code paths and is thus more portable
+> than SPINPACK. In lattice-symmetries, we also don't have to specify the
+> number of cores or nodes during the compilation phase.
+
+To run the code, we perform the following steps:
+
+```sh
+module load 2023
+module load GCC/12.3.0 OpenMPI/4.1.5-GCC-12.3.0
+
+# example_02 for the 40-spin system
+# example_03 for the 42-spin system
+cd data/spinpack/example_02
+srun /path/to/spinpack/exe/spin --maxmem=0
+```
+
+The `--maxmem=0` flag forces SPINPACK to use its matrix-free representation for
+the Hamiltonian. Otherwise SPINPACK would try to build a sparse matrix
+representation of the Hamiltonian.
+
+There is a [`spinpack.py`](./spinpack.py) script that extracts the timings from
+the raw Slurm output files and prepares a `spinpack.csv` file that can be
+consumed by the plotting scripts:
+
+```sh
+$ nix develop
+# It is assumed that all the Slurm output files are in data/spinpack
+$ python3 spinpack.py
+$ gnuplot ./plot-spinpack.gnu
 ```
