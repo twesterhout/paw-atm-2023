@@ -8,7 +8,7 @@ diagonalization methods in quantum many-body physics”
 </h3>
 <p>by Tom Westerhout (@twesterhout) and Bradford L. Chamberlain (@bradcray)</p>
 
-![paper](https://img.shields.io/badge/2308.XXXXX-arxiv?style=flat-square&logo=arxiv&logoColor=white&label=arXiv&labelColor=888888&color=blue)
+[![paper](https://img.shields.io/badge/2308.16712-arxiv?style=flat-square&logo=arxiv&logoColor=white&label=arXiv&labelColor=888888&color=blue)](https://arxiv.org/abs/2308.16712)
 [![build](https://img.shields.io/github/actions/workflow/status/twesterhout/paw-atm-2023/ci.yml?style=flat-square)](https://github.com/twesterhout/paw-atm-2023/actions/workflows/ci.yml)
 
 </div>
