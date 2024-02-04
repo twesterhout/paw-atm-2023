@@ -8,7 +8,7 @@ load "plot-common.gnu"
 
 set key top left
 set border back
-set xlabel "Number of nodes\n{/=8(128 cores per nodes)}"
+set xlabel "Number of nodes\n{/=8(128 cores per node)}"
 set ylabel "Speedup over the 1-node run\n{/=8 (40 spins: 102.1 s; 42 spins: 407.5 s)" font "Linux Libertine O,10" offset -1.5,0
 set xtics 8
 set xtics add ("1" 1)
